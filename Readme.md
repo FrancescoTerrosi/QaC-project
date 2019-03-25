@@ -1,1 +1,1 @@
-Repository for Qaulity and Certification project
+Repository for Quality and Certification project
