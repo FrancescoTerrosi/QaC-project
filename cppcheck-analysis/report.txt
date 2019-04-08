@@ -1,0 +1,418 @@
+[CXString.h:89]: (style) Struct 'CXStringBuf' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[ARCMigrate.cpp]: (information) The configuration 'CLANG_ENABLE_ARCMT=0' was not checked because its code equals another one.
+[CIndex.cpp:3602]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+[CIndex.cpp:4006]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+[CIndex.cpp:3717]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:3728]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:3735]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:3743]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:3753]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:3760]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CIndex.cpp:7249] -> [CIndex.cpp:7249]: (style) Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.
+[CIndex.cpp:3796]: (style) Variable 'floatStr' is assigned a value that is never used.
+[CIndexDiagnostic.h:31]: (style) Class 'CXDiagnosticSetImpl' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CIndexDiagnostic.h:99]: (style) Class 'CXDiagnosticImpl' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CIndexer.h:48]: (style) Class 'CIndexer' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CXCursor.h:187]: (style) Class 'MacroExpansionCursor' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CXTranslationUnit.h:74]: (style) Class 'CXTUOwner' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CIndex.cpp:2130]: (style) Class 'OMPClauseEnqueue' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CIndexer.h:48]: (performance) Parameter 'PCHContainerOps' is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++.
+[CIndex.cpp]: (information) The configuration '__APPLE__' was not checked because its code equals another one.
+[CIndexCodeCompletion.cpp:250]: (style) Struct 'AllocatedCXCodeCompleteResults' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CIndexCodeCompletion.cpp]: (information) The configuration 'UDP_CODE_COMPLETION_LOGGER' was not checked because its code equals another one.
+[CIndexCodeCompletion.cpp:834]: (information) Skipping configuration 'UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT' since the value of 'UDP_CODE_COMPLETION_LOGGER' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[CIndexCodeCompletion.cpp:833]: (information) Skipping configuration 'UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT' since the value of 'UDP_CODE_COMPLETION_LOGGER_PORT' is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.
+[CXCompilationDatabase.cpp:41]: (style) Struct 'AllocatedCXCompileCommands' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CXCompilationDatabase.cpp:41]: (performance) Parameter 'Cmd' is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++.
+[CXIndexDataConsumer.h:53]: (warning) Member variable 'EntityInfo::Dcl' is not initialized in the constructor.
+[CXIndexDataConsumer.h:53]: (warning) Member variable 'EntityInfo::IndexCtx' is not initialized in the constructor.
+[CXIndexDataConsumer.h:86]: (warning) Member variable 'DeclInfo::SemanticContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:86]: (warning) Member variable 'DeclInfo::LexicalContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:86]: (warning) Member variable 'DeclInfo::DeclAsContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:96]: (warning) Member variable 'DeclInfo::SemanticContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:96]: (warning) Member variable 'DeclInfo::LexicalContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:96]: (warning) Member variable 'DeclInfo::DeclAsContainer' is not initialized in the constructor.
+[CXIndexDataConsumer.h:147]: (style) Struct 'ObjCInterfaceDeclInfo' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CXIndexDataConsumer.h:161]: (style) Struct 'ObjCProtocolDeclInfo' has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.
+[CXIndexDataConsumer.h:32]: (warning) The class 'ScratchAlloc' has 'copy constructor' but lack of 'operator='.
+[CXLoadedDiagnostic.cpp:170]: (style) C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.
+[CXLoadedDiagnostic.h:25]: (warning) Member variable 'CXLoadedDiagnostic::Spelling' is not initialized in the constructor.
+[Indexing.cpp:902]: (warning) %d in format string (no. 1) requires 'int' but the argument type is 'unsigned int'.
+[Indexing.cpp:156]: (warning) Member variable 'TUSkipBodyControl::LastIsParsed' is not initialized in the constructor.
+[Indexing.cpp:357]: (performance) Parameter 'dataConsumer' is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++.
+[Indexing.cpp:361]: (style) The function 'CreateASTConsumer' is never used.
+[Indexing.cpp:230]: (style) The function 'FileChanged' is never used.
+[Indexing.cpp:339]: (style) The function 'HandleDiagnostic' is never used.
+[Indexing.cpp:300]: (style) The function 'HandleTopLevelDecl' is never used.
+[Indexing.cpp:295]: (style) The function 'HandleTranslationUnit' is never used.
+[Indexing.cpp:244]: (style) The function 'InclusionDirective' is never used.
+[Indexing.cpp:290]: (style) The function 'Initialize' is never used.
+[Indexing.cpp:257]: (style) The function 'MacroDefined' is never used.
+[Indexing.cpp:266]: (style) The function 'MacroExpands' is never used.
+[Indexing.cpp:261]: (style) The function 'MacroUndefined' is never used.
+[CIndexCodeCompletion.cpp:576]: (style) The function 'ProcessCodeCompleteResults' is never used.
+[CIndexCodeCompletion.cpp:657]: (style) The function 'ProcessOverloadCandidates' is never used.
+[CIndex.cpp:8716]: (style) The function 'SetSafetyThreadStackSize' is never used.
+[Indexing.cpp:272]: (style) The function 'SourceRangeSkipped' is never used.
+[CIndex.cpp:586]: (style) The function 'VisitBlockDecl' is never used.
+[CIndex.cpp:1964]: (style) The function 'VisitCXXDefaultArgExpr' is never used.
+[CIndex.cpp:937]: (style) The function 'VisitClassTemplateDecl' is never used.
+[CIndex.cpp:737]: (style) The function 'VisitClassTemplatePartialSpecializationDecl' is never used.
+[CIndex.cpp:705]: (style) The function 'VisitClassTemplateSpecializationDecl' is never used.
+[CIndex.cpp:764]: (style) The function 'VisitEnumConstantDecl' is never used.
+[CIndex.cpp:893]: (style) The function 'VisitFieldDecl' is never used.
+[CIndex.cpp:1280]: (style) The function 'VisitFriendDecl' is never used.
+[CIndex.cpp:927]: (style) The function 'VisitFunctionTemplateDecl' is never used.
+[CXIndexDataConsumer.cpp:145]: (style) The function 'VisitImportDecl' is never used.
+[CIndex.cpp:1497]: (style) The function 'VisitLinkageSpecDecl' is never used.
+[CXIndexDataConsumer.cpp:49]: (style) The function 'VisitMSPropertyDecl' is never used.
+[CIndex.cpp:1218]: (style) The function 'VisitNamespaceAliasDecl' is never used.
+[CIndex.cpp:1214]: (style) The function 'VisitNamespaceDecl' is never used.
+[CIndex.cpp:1317]: (style) The function 'VisitNestedNameSpecifier' is never used.
+[CIndex.cpp:916]: (style) The function 'VisitNonTypeTemplateParmDecl' is never used.
+[CIndex.cpp:1068]: (style) The function 'VisitObjCCategoryDecl' is never used.
+[CIndex.cpp:1183]: (style) The function 'VisitObjCCategoryImplDecl' is never used.
+[CIndex.cpp:1192]: (style) The function 'VisitObjCImplementationDecl' is never used.
+[CIndex.cpp:1149]: (style) The function 'VisitObjCInterfaceDecl' is never used.
+[CIndex.cpp:970]: (style) The function 'VisitObjCMethodDecl' is never used.
+[CIndex.cpp:1098]: (style) The function 'VisitObjCPropertyDecl' is never used.
+[CIndex.cpp:1206]: (style) The function 'VisitObjCPropertyImplDecl' is never used.
+[CIndex.cpp:1085]: (style) The function 'VisitObjCProtocolDecl' is never used.
+[CIndex.cpp:958]: (style) The function 'VisitObjCTypeParamDecl' is never used.
+[CIndex.cpp:1271]: (style) The function 'VisitStaticAssertDecl' is never used.
+[CIndex.cpp:947]: (style) The function 'VisitTemplateTemplateParmDecl' is never used.
+[CIndex.cpp:754]: (style) The function 'VisitTemplateTypeParmDecl' is never used.
+[CIndex.cpp:676]: (style) The function 'VisitTranslationUnitDecl' is never used.
+[CIndex.cpp:687]: (style) The function 'VisitTypeAliasDecl' is never used.
+[CIndex.cpp:680]: (style) The function 'VisitTypeAliasTemplateDecl' is never used.
+[CIndex.cpp:694]: (style) The function 'VisitTypedefDecl' is never used.
+[CXIndexDataConsumer.cpp:58]: (style) The function 'VisitTypedefNameDecl' is never used.
+[CIndex.cpp:1261]: (style) The function 'VisitUnresolvedUsingTypenameDecl' is never used.
+[CIndex.cpp:1251]: (style) The function 'VisitUnresolvedUsingValueDecl' is never used.
+[CIndex.cpp:1228]: (style) The function 'VisitUsingDecl' is never used.
+[CIndex.cpp:1241]: (style) The function 'VisitUsingDirectiveDecl' is never used.
+[CIndex.cpp:906]: (style) The function 'VisitVarDecl' is never used.
+[CIndexDiagnostic.cpp:94]: (style) The function 'beginDiagnostic' is never used.
+[CXComment.cpp:240]: (style) The function 'clang_BlockCommandComment_getArgText' is never used.
+[CXComment.cpp:223]: (style) The function 'clang_BlockCommandComment_getCommandName' is never used.
+[CXComment.cpp:232]: (style) The function 'clang_BlockCommandComment_getNumArgs' is never used.
+[CXComment.cpp:249]: (style) The function 'clang_BlockCommandComment_getParagraph' is never used.
+[CXCursor.cpp:1391]: (style) The function 'clang_CXCursorSet_contains' is never used.
+[CXCursor.cpp:1398]: (style) The function 'clang_CXCursorSet_insert' is never used.
+[CIndex.cpp:3295]: (style) The function 'clang_CXIndex_getGlobalOptions' is never used.
+[CIndex.cpp:3290]: (style) The function 'clang_CXIndex_setGlobalOptions' is never used.
+[CIndex.cpp:3301]: (style) The function 'clang_CXIndex_setInvocationEmissionPathOption' is never used.
+[CIndex.cpp:8343]: (style) The function 'clang_CXXConstructor_isConvertingConstructor' is never used.
+[CIndex.cpp:8323]: (style) The function 'clang_CXXConstructor_isCopyConstructor' is never used.
+[CIndex.cpp:8313]: (style) The function 'clang_CXXConstructor_isDefaultConstructor' is never used.
+[CIndex.cpp:8333]: (style) The function 'clang_CXXConstructor_isMoveConstructor' is never used.
+[CIndex.cpp:8354]: (style) The function 'clang_CXXField_isMutable' is never used.
+[CIndex.cpp:8374]: (style) The function 'clang_CXXMethod_isConst' is never used.
+[CIndex.cpp:8384]: (style) The function 'clang_CXXMethod_isDefaulted' is never used.
+[CIndex.cpp:8364]: (style) The function 'clang_CXXMethod_isPureVirtual' is never used.
+[CIndex.cpp:8394]: (style) The function 'clang_CXXMethod_isStatic' is never used.
+[CIndex.cpp:8404]: (style) The function 'clang_CXXMethod_isVirtual' is never used.
+[CIndex.cpp:8414]: (style) The function 'clang_CXXRecord_isAbstract' is never used.
+[CXComment.cpp:97]: (style) The function 'clang_Comment_getChild' is never used.
+[CXComment.cpp:41]: (style) The function 'clang_Comment_getKind' is never used.
+[CXComment.cpp:89]: (style) The function 'clang_Comment_getNumChildren' is never used.
+[CXComment.cpp:105]: (style) The function 'clang_Comment_isWhitespace' is never used.
+[CXCompilationDatabase.cpp:32]: (style) The function 'clang_CompilationDatabase_dispose' is never used.
+[CXCompilationDatabase.cpp:11]: (style) The function 'clang_CompilationDatabase_fromDirectory' is never used.
+[CXCompilationDatabase.cpp:59]: (style) The function 'clang_CompilationDatabase_getAllCompileCommands' is never used.
+[CXCompilationDatabase.cpp:46]: (style) The function 'clang_CompilationDatabase_getCompileCommands' is never used.
+[CXCompilationDatabase.cpp:132]: (style) The function 'clang_CompileCommand_getArg' is never used.
+[CXCompilationDatabase.cpp:103]: (style) The function 'clang_CompileCommand_getDirectory' is never used.
+[CXCompilationDatabase.cpp:113]: (style) The function 'clang_CompileCommand_getFilename' is never used.
+[CXCompilationDatabase.cpp:162]: (style) The function 'clang_CompileCommand_getMappedSourceContent' is never used.
+[CXCompilationDatabase.cpp:154]: (style) The function 'clang_CompileCommand_getMappedSourcePath' is never used.
+[CXCompilationDatabase.cpp:123]: (style) The function 'clang_CompileCommand_getNumArgs' is never used.
+[CXCompilationDatabase.cpp:146]: (style) The function 'clang_CompileCommand_getNumMappedSources' is never used.
+[CXCompilationDatabase.cpp:70]: (style) The function 'clang_CompileCommands_dispose' is never used.
+[CXCompilationDatabase.cpp:88]: (style) The function 'clang_CompileCommands_getCommand' is never used.
+[CXCompilationDatabase.cpp:76]: (style) The function 'clang_CompileCommands_getSize' is never used.
+[CIndex.cpp:3931]: (style) The function 'clang_Cursor_Evaluate' is never used.
+[CXCursor.cpp:1181]: (style) The function 'clang_Cursor_getArgument' is never used.
+[CIndex.cpp:8197]: (style) The function 'clang_Cursor_getBriefCommentText' is never used.
+[CIndex.cpp:4719]: (style) The function 'clang_Cursor_getCXXManglings' is never used.
+[CIndex.cpp:8169]: (style) The function 'clang_Cursor_getCommentRange' is never used.
+[CIndex.cpp:4705]: (style) The function 'clang_Cursor_getMangling' is never used.
+[CIndex.cpp:8216]: (style) The function 'clang_Cursor_getModule' is never used.
+[CXCursor.cpp:1159]: (style) The function 'clang_Cursor_getNumArguments' is never used.
+[CXCursor.cpp:1216]: (style) The function 'clang_Cursor_getNumTemplateArguments' is never used.
+[CIndex.cpp:8099]: (style) The function 'clang_Cursor_getObjCDeclQualifiers' is never used.
+[CIndex.cpp:4733]: (style) The function 'clang_Cursor_getObjCManglings' is never used.
+[CIndex.cpp:8045]: (style) The function 'clang_Cursor_getObjCPropertyAttributes' is never used.
+[CIndex.cpp:8075]: (style) The function 'clang_Cursor_getObjCPropertyGetterName' is never used.
+[CIndex.cpp:8087]: (style) The function 'clang_Cursor_getObjCPropertySetterName' is never used.
+[CIndex.cpp:6436]: (style) The function 'clang_Cursor_getObjCSelectorIndex' is never used.
+[CXType.cpp:1033]: (style) The function 'clang_Cursor_getOffsetOfField' is never used.
+[CXComment.cpp:28]: (style) The function 'clang_Cursor_getParsedComment' is never used.
+[CIndex.cpp:8182]: (style) The function 'clang_Cursor_getRawCommentText' is never used.
+[CXCursor.cpp:1585]: (style) The function 'clang_Cursor_getReceiverType' is never used.
+[CIndex.cpp:4610]: (style) The function 'clang_Cursor_getSpellingNameRange' is never used.
+[CIndex.cpp:7969]: (style) The function 'clang_Cursor_getStorageClass' is never used.
+[CXCursor.cpp:1279]: (style) The function 'clang_Cursor_getTemplateArgumentKind' is never used.
+[CXCursor.cpp:1303]: (style) The function 'clang_Cursor_getTemplateArgumentType' is never used.
+[CXCursor.cpp:1333]: (style) The function 'clang_Cursor_getTemplateArgumentUnsignedValue' is never used.
+[CXCursor.cpp:1317]: (style) The function 'clang_Cursor_getTemplateArgumentValue' is never used.
+[CIndex.cpp:3941]: (style) The function 'clang_Cursor_hasAttrs' is never used.
+[CXType.cpp:1235]: (style) The function 'clang_Cursor_isAnonymous' is never used.
+[CXType.cpp:1070]: (style) The function 'clang_Cursor_isBitField' is never used.
+[CXCursor.cpp:1546]: (style) The function 'clang_Cursor_isDynamicCall' is never used.
+[CIndex.cpp:8149]: (style) The function 'clang_Cursor_isExternalSymbol' is never used.
+[CIndex.cpp:3659]: (style) The function 'clang_Cursor_isFunctionInlined' is never used.
+[CIndex.cpp:3647]: (style) The function 'clang_Cursor_isMacroBuiltin' is never used.
+[CIndex.cpp:3635]: (style) The function 'clang_Cursor_isMacroFunctionLike' is never used.
+[CIndex.cpp:8123]: (style) The function 'clang_Cursor_isObjCOptional' is never used.
+[CIndex.cpp:8136]: (style) The function 'clang_Cursor_isVariadic' is never used.
+[CIndex.cpp:8425]: (style) The function 'clang_EnumDecl_isScoped' is never used.
+[CIndex.cpp:3709]: (style) The function 'clang_EvalResult_dispose' is never used.
+[CIndex.cpp:3749]: (style) The function 'clang_EvalResult_getAsDouble' is never used.
+[CIndex.cpp:3720]: (style) The function 'clang_EvalResult_getAsInt' is never used.
+[CIndex.cpp:3756]: (style) The function 'clang_EvalResult_getAsStr' is never used.
+[CIndex.cpp:3738]: (style) The function 'clang_EvalResult_getAsUnsigned' is never used.
+[CIndex.cpp:3713]: (style) The function 'clang_EvalResult_getKind' is never used.
+[CIndex.cpp:3734]: (style) The function 'clang_EvalResult_isUnsignedInt' is never used.
+[CIndex.cpp:4270]: (style) The function 'clang_File_isEqual' is never used.
+[CIndex.cpp:4282]: (style) The function 'clang_File_tryGetRealPathName' is never used.
+[CXComment.cpp:376]: (style) The function 'clang_FullComment_getAsHTML' is never used.
+[CXComment.cpp:391]: (style) The function 'clang_FullComment_getAsXML' is never used.
+[CXComment.cpp:191]: (style) The function 'clang_HTMLStartTagComment_isSelfClosing' is never used.
+[CXComment.cpp:207]: (style) The function 'clang_HTMLStartTag_getAttrName' is never used.
+[CXComment.cpp:215]: (style) The function 'clang_HTMLStartTag_getAttrValue' is never used.
+[CXComment.cpp:199]: (style) The function 'clang_HTMLStartTag_getNumAttrs' is never used.
+[CXComment.cpp:361]: (style) The function 'clang_HTMLTagComment_getAsString' is never used.
+[CXComment.cpp:183]: (style) The function 'clang_HTMLTagComment_getTagName' is never used.
+[Indexing.cpp:826]: (style) The function 'clang_IndexAction_create' is never used.
+[Indexing.cpp:830]: (style) The function 'clang_IndexAction_dispose' is never used.
+[CXComment.cpp:174]: (style) The function 'clang_InlineCommandComment_getArgText' is never used.
+[CXComment.cpp:135]: (style) The function 'clang_InlineCommandComment_getCommandName' is never used.
+[CXComment.cpp:166]: (style) The function 'clang_InlineCommandComment_getNumArgs' is never used.
+[CXComment.cpp:145]: (style) The function 'clang_InlineCommandComment_getRenderKind' is never used.
+[CXComment.cpp:119]: (style) The function 'clang_InlineContentComment_hasTrailingNewline' is never used.
+[CXSourceLocation.cpp:210]: (style) The function 'clang_Location_isFromMainFile' is never used.
+[CXSourceLocation.cpp:199]: (style) The function 'clang_Location_isInSystemHeader' is never used.
+[BuildSystem.cpp:101]: (style) The function 'clang_ModuleMapDescriptor_create' is never used.
+[BuildSystem.cpp:149]: (style) The function 'clang_ModuleMapDescriptor_dispose' is never used.
+[BuildSystem.cpp:106]: (style) The function 'clang_ModuleMapDescriptor_setFrameworkModuleName' is never used.
+[BuildSystem.cpp:116]: (style) The function 'clang_ModuleMapDescriptor_setUmbrellaHeader' is never used.
+[BuildSystem.cpp:126]: (style) The function 'clang_ModuleMapDescriptor_writeToBuffer' is never used.
+[CIndex.cpp:8242]: (style) The function 'clang_Module_getASTFile' is never used.
+[CIndex.cpp:8263]: (style) The function 'clang_Module_getFullName' is never used.
+[CIndex.cpp:8256]: (style) The function 'clang_Module_getName' is never used.
+[CIndex.cpp:8277]: (style) The function 'clang_Module_getNumTopLevelHeaders' is never used.
+[CIndex.cpp:8249]: (style) The function 'clang_Module_getParent' is never used.
+[CIndex.cpp:8291]: (style) The function 'clang_Module_getTopLevelHeader' is never used.
+[CIndex.cpp:8270]: (style) The function 'clang_Module_isSystem' is never used.
+[CXComment.cpp:289]: (style) The function 'clang_ParamCommandComment_getDirection' is never used.
+[CXComment.cpp:273]: (style) The function 'clang_ParamCommandComment_getParamIndex' is never used.
+[CXComment.cpp:257]: (style) The function 'clang_ParamCommandComment_getParamName' is never used.
+[CXComment.cpp:281]: (style) The function 'clang_ParamCommandComment_isDirectionExplicit' is never used.
+[CXComment.cpp:265]: (style) The function 'clang_ParamCommandComment_isParamIndexValid' is never used.
+[CIndex.cpp:4753]: (style) The function 'clang_PrintingPolicy_dispose' is never used.
+[CIndex.cpp:4759]: (style) The function 'clang_PrintingPolicy_getProperty' is never used.
+[CIndex.cpp:4824]: (style) The function 'clang_PrintingPolicy_setProperty' is never used.
+[CXComment.cpp:324]: (style) The function 'clang_TParamCommandComment_getDepth' is never used.
+[CXComment.cpp:332]: (style) The function 'clang_TParamCommandComment_getIndex' is never used.
+[CXComment.cpp:308]: (style) The function 'clang_TParamCommandComment_getParamName' is never used.
+[CXComment.cpp:316]: (style) The function 'clang_TParamCommandComment_isParamPositionValid' is never used.
+[CIndex.cpp:4182]: (style) The function 'clang_TargetInfo_dispose' is never used.
+[CIndex.cpp:4170]: (style) The function 'clang_TargetInfo_getPointerWidth' is never used.
+[CIndex.cpp:4156]: (style) The function 'clang_TargetInfo_getTriple' is never used.
+[CXComment.cpp:127]: (style) The function 'clang_TextComment_getText' is never used.
+[CXType.cpp:880]: (style) The function 'clang_Type_getAlignOf' is never used.
+[CXType.cpp:1052]: (style) The function 'clang_Type_getCXXRefQualifier' is never used.
+[CXType.cpp:903]: (style) The function 'clang_Type_getClassType' is never used.
+[CXType.cpp:1022]: (style) The function 'clang_Type_getModifiedType' is never used.
+[CXType.cpp:1248]: (style) The function 'clang_Type_getNamedType' is never used.
+[CXType.cpp:1267]: (style) The function 'clang_Type_getNullability' is never used.
+[CXType.cpp:1151]: (style) The function 'clang_Type_getNumObjCProtocolRefs' is never used.
+[CXType.cpp:1179]: (style) The function 'clang_Type_getNumObjCTypeArgs' is never used.
+[CXType.cpp:1114]: (style) The function 'clang_Type_getNumTemplateArguments' is never used.
+[CIndex.cpp:3614]: (style) The function 'clang_Type_getObjCEncoding' is never used.
+[CXType.cpp:1139]: (style) The function 'clang_Type_getObjCObjectBaseType' is never used.
+[CXType.cpp:1163]: (style) The function 'clang_Type_getObjCProtocolDecl' is never used.
+[CXType.cpp:1191]: (style) The function 'clang_Type_getObjCTypeArg' is never used.
+[CXType.cpp:991]: (style) The function 'clang_Type_getOffsetOf' is never used.
+[CXType.cpp:914]: (style) The function 'clang_Type_getSizeOf' is never used.
+[CXType.cpp:1126]: (style) The function 'clang_Type_getTemplateArgumentAsType' is never used.
+[CXType.cpp:1258]: (style) The function 'clang_Type_isTransparentTagTypedef' is never used.
+[CXType.cpp:1207]: (style) The function 'clang_Type_visitFields' is never used.
+[CXComment.cpp:340]: (style) The function 'clang_VerbatimBlockLineComment_getText' is never used.
+[CXComment.cpp:349]: (style) The function 'clang_VerbatimLineComment_getText' is never used.
+[BuildSystem.cpp:38]: (style) The function 'clang_VirtualFileOverlay_addFileMapping' is never used.
+[BuildSystem.cpp:91]: (style) The function 'clang_VirtualFileOverlay_dispose' is never used.
+[BuildSystem.cpp:61]: (style) The function 'clang_VirtualFileOverlay_setCaseSensitivity' is never used.
+[BuildSystem.cpp:70]: (style) The function 'clang_VirtualFileOverlay_writeToBuffer' is never used.
+[CIndex.cpp:7600]: (style) The function 'clang_annotateTokens' is never used.
+[CIndexCodeCompletion.cpp:853]: (style) The function 'clang_codeCompleteAt' is never used.
+[CIndexCodeCompletion.cpp:935]: (style) The function 'clang_codeCompleteGetContainerKind' is never used.
+[CIndexCodeCompletion.cpp:950]: (style) The function 'clang_codeCompleteGetContainerUSR' is never used.
+[CIndexCodeCompletion.cpp:926]: (style) The function 'clang_codeCompleteGetContexts' is never used.
+[CIndexCodeCompletion.cpp:911]: (style) The function 'clang_codeCompleteGetDiagnostic' is never used.
+[CIndexCodeCompletion.cpp:901]: (style) The function 'clang_codeCompleteGetNumDiagnostics' is never used.
+[CIndexCodeCompletion.cpp:960]: (style) The function 'clang_codeCompleteGetObjCSelector' is never used.
+[CIndexUSRs.cpp:124]: (style) The function 'clang_constructUSR_ObjCCategory' is never used.
+[CIndexUSRs.cpp:110]: (style) The function 'clang_constructUSR_ObjCClass' is never used.
+[CIndexUSRs.cpp:92]: (style) The function 'clang_constructUSR_ObjCIvar' is never used.
+[CIndexUSRs.cpp:100]: (style) The function 'clang_constructUSR_ObjCMethod' is never used.
+[CIndexUSRs.cpp:132]: (style) The function 'clang_constructUSR_ObjCProperty' is never used.
+[CIndexUSRs.cpp:117]: (style) The function 'clang_constructUSR_ObjCProtocol' is never used.
+[CXCursor.cpp:1383]: (style) The function 'clang_createCXCursorSet' is never used.
+[CIndex.cpp:3250]: (style) The function 'clang_createIndex' is never used.
+[CIndex.cpp:3361]: (style) The function 'clang_createTranslationUnitFromSourceFile' is never used.
+[CIndexCodeCompletion.cpp:887]: (style) The function 'clang_defaultCodeCompleteOptions' is never used.
+[CIndex.cpp:3355]: (style) The function 'clang_defaultEditingTranslationUnitOptions' is never used.
+[CIndex.cpp:4049]: (style) The function 'clang_defaultReparseOptions' is never used.
+[CIndex.cpp:3953]: (style) The function 'clang_defaultSaveOptions' is never used.
+[CXCursor.cpp:1387]: (style) The function 'clang_disposeCXCursorSet' is never used.
+[CIndex.cpp:7922]: (style) The function 'clang_disposeCXPlatformAvailability' is never used.
+[CIndexCodeCompletion.cpp:891]: (style) The function 'clang_disposeCodeCompleteResults' is never used.
+[CIndexDiagnostic.cpp:238]: (style) The function 'clang_disposeDiagnostic' is never used.
+[CIndexDiagnostic.cpp:443]: (style) The function 'clang_disposeDiagnosticSet' is never used.
+[CIndex.cpp:3285]: (style) The function 'clang_disposeIndex' is never used.
+[CXCursor.cpp:1526]: (style) The function 'clang_disposeOverriddenCursors' is never used.
+[CIndex.cpp:8677]: (style) The function 'clang_disposeSourceRangeList' is never used.
+[CXString.cpp:185]: (style) The function 'clang_disposeStringSet' is never used.
+[CIndex.cpp:6798]: (style) The function 'clang_disposeTokens' is never used.
+[CIndex.cpp:6556]: (style) The function 'clang_enableStackTraces' is never used.
+[CXSourceLocation.cpp:45]: (style) The function 'clang_equalLocations' is never used.
+[CXType.cpp:622]: (style) The function 'clang_equalTypes' is never used.
+[CIndex.cpp:6561]: (style) The function 'clang_executeOnThread' is never used.
+[CIndexHigh.cpp:526]: (style) The function 'clang_findIncludesInFileWithBlock' is never used.
+[CIndexHigh.cpp:518]: (style) The function 'clang_findReferencesInFileWithBlock' is never used.
+[BuildSystem.cpp:87]: (style) The function 'clang_free' is never used.
+[CXType.cpp:417]: (style) The function 'clang_getAddressSpace' is never used.
+[CIndex.cpp:8650]: (style) The function 'clang_getAllSkippedRanges' is never used.
+[CXType.cpp:690]: (style) The function 'clang_getArgType' is never used.
+[CXType.cpp:837]: (style) The function 'clang_getArrayElementType' is never used.
+[CXType.cpp:863]: (style) The function 'clang_getArraySize' is never used.
+[BuildSystem.cpp:26]: (style) The function 'clang_getBuildSessionTimestamp' is never used.
+[CIndexCXX.cpp:30]: (style) The function 'clang_getCXXAccessSpecifier' is never used.
+[CIndex.cpp:6417]: (style) The function 'clang_getCanonicalCursor' is never used.
+[CXType.cpp:387]: (style) The function 'clang_getCanonicalType' is never used.
+[CIndexDiagnostic.cpp:458]: (style) The function 'clang_getChildDiagnostics' is never used.
+[CIndex.cpp:8846]: (style) The function 'clang_getClangVersion' is never used.
+[CIndexCodeCompletion.cpp:210]: (style) The function 'clang_getCompletionAnnotation' is never used.
+[CIndexCodeCompletion.cpp:198]: (style) The function 'clang_getCompletionAvailability' is never used.
+[CIndexCodeCompletion.cpp:231]: (style) The function 'clang_getCompletionBriefComment' is never used.
+[CIndexCodeCompletion.cpp:150]: (style) The function 'clang_getCompletionChunkCompletionString' is never used.
+[CIndexCodeCompletion.cpp:57]: (style) The function 'clang_getCompletionChunkKind' is never used.
+[CIndexCodeCompletion.cpp:111]: (style) The function 'clang_getCompletionChunkText' is never used.
+[CIndexCodeCompletion.cpp:322]: (style) The function 'clang_getCompletionFixIt' is never used.
+[CIndexCodeCompletion.cpp:204]: (style) The function 'clang_getCompletionNumAnnotations' is never used.
+[CIndexCodeCompletion.cpp:312]: (style) The function 'clang_getCompletionNumFixIts' is never used.
+[CIndexCodeCompletion.cpp:218]: (style) The function 'clang_getCompletionParent' is never used.
+[CIndexCodeCompletion.cpp:192]: (style) The function 'clang_getCompletionPriority' is never used.
+[CIndex.cpp:5613]: (style) The function 'clang_getCursor' is never used.
+[CIndex.cpp:7757]: (style) The function 'clang_getCursorAvailability' is never used.
+[CXCursor.cpp:1413]: (style) The function 'clang_getCursorCompletionString' is never used.
+[CXType.cpp:768]: (style) The function 'clang_getCursorExceptionSpecificationType' is never used.
+[CIndex.cpp:7927]: (style) The function 'clang_getCursorLanguage' is never used.
+[CIndex.cpp:8020]: (style) The function 'clang_getCursorLexicalParent' is never used.
+[CIndex.cpp:7643]: (style) The function 'clang_getCursorLinkage' is never used.
+[CIndex.cpp:7877]: (style) The function 'clang_getCursorPlatformAvailability' is never used.
+[CIndex.cpp:4915]: (style) The function 'clang_getCursorPrettyPrinted' is never used.
+[CIndex.cpp:4747]: (style) The function 'clang_getCursorPrintingPolicy' is never used.
+[CXType.cpp:717]: (style) The function 'clang_getCursorResultType' is never used.
+[CIndex.cpp:7934]: (style) The function 'clang_getCursorTLSKind' is never used.
+[CIndex.cpp:7666]: (style) The function 'clang_getCursorVisibility' is never used.
+[CXType.cpp:1079]: (style) The function 'clang_getDeclObjCTypeEncoding' is never used.
+[CIndex.cpp:6486]: (style) The function 'clang_getDefinitionSpellingAndExtent' is never used.
+[CIndexDiagnostic.cpp:211]: (style) The function 'clang_getDiagnostic' is never used.
+[CIndexDiagnostic.cpp:402]: (style) The function 'clang_getDiagnosticCategoryName' is never used.
+[CIndexDiagnostic.cpp:432]: (style) The function 'clang_getDiagnosticFixIt' is never used.
+[CIndexDiagnostic.cpp:450]: (style) The function 'clang_getDiagnosticInSet' is never used.
+[CIndexDiagnostic.cpp:426]: (style) The function 'clang_getDiagnosticNumFixIts' is never used.
+[CXType.cpp:785]: (style) The function 'clang_getElementType' is never used.
+[CXType.cpp:356]: (style) The function 'clang_getEnumConstantDeclUnsignedValue' is never used.
+[CXType.cpp:340]: (style) The function 'clang_getEnumConstantDeclValue' is never used.
+[CXType.cpp:322]: (style) The function 'clang_getEnumDeclIntegerType' is never used.
+[CXType.cpp:372]: (style) The function 'clang_getFieldDeclBitWidth' is never used.
+[CIndex.cpp:4209]: (style) The function 'clang_getFile' is never used.
+[CIndex.cpp:4221]: (style) The function 'clang_getFileContents' is never used.
+[CIndex.cpp:4201]: (style) The function 'clang_getFileTime' is never used.
+[CIndex.cpp:4258]: (style) The function 'clang_getFileUniqueID' is never used.
+[CXType.cpp:640]: (style) The function 'clang_getFunctionTypeCallingConv' is never used.
+[CIndex.cpp:8438]: (style) The function 'clang_getIBOutletCollectionType' is never used.
+[CIndex.cpp:8037]: (style) The function 'clang_getIncludedFile' is never used.
+[CIndexInclusionStack.cpp:70]: (style) The function 'clang_getInclusions' is never used.
+[CXSourceLocation.cpp:293]: (style) The function 'clang_getInstantiationLocation' is never used.
+[CXSourceLocation.cpp:114]: (style) The function 'clang_getLocation' is never used.
+[CXSourceLocation.cpp:149]: (style) The function 'clang_getLocationForOffset' is never used.
+[CIndex.cpp:8226]: (style) The function 'clang_getModuleForFile' is never used.
+[CXType.cpp:674]: (style) The function 'clang_getNumArgTypes' is never used.
+[CIndexCodeCompletion.cpp:187]: (style) The function 'clang_getNumCompletionChunks' is never used.
+[CIndexDiagnostic.cpp:201]: (style) The function 'clang_getNumDiagnostics' is never used.
+[CIndexDiagnostic.cpp:466]: (style) The function 'clang_getNumDiagnosticsInSet' is never used.
+[CXType.cpp:817]: (style) The function 'clang_getNumElements' is never used.
+[CIndex.cpp:6459]: (style) The function 'clang_getOverloadedDecl' is never used.
+[CXCursor.cpp:1469]: (style) The function 'clang_getOverriddenCursors' is never used.
+[CXType.cpp:441]: (style) The function 'clang_getPointeeType' is never used.
+[CXSourceLocation.cpp:262]: (style) The function 'clang_getPresumedLocation' is never used.
+[ARCMigrate.cpp:35]: (style) The function 'clang_getRemappings' is never used.
+[ARCMigrate.cpp:77]: (style) The function 'clang_getRemappingsFromFileList' is never used.
+[CIndex.cpp:8608]: (style) The function 'clang_getSkippedRanges' is never used.
+[CIndexCXX.cpp:82]: (style) The function 'clang_getSpecializedCursorTemplate' is never used.
+[CIndexCXX.cpp:50]: (style) The function 'clang_getTemplateCursorKind' is never used.
+[CIndex.cpp:6724]: (style) The function 'clang_getToken' is never used.
+[CIndex.cpp:6638]: (style) The function 'clang_getTokenExtent' is never used.
+[CIndex.cpp:6582]: (style) The function 'clang_getTokenSpelling' is never used.
+[CIndex.cpp:4135]: (style) The function 'clang_getTranslationUnitCursor' is never used.
+[CIndex.cpp:4145]: (style) The function 'clang_getTranslationUnitTargetInfo' is never used.
+[CXType.cpp:541]: (style) The function 'clang_getTypeKindSpelling' is never used.
+[CXType.cpp:289]: (style) The function 'clang_getTypeSpelling' is never used.
+[CXType.cpp:304]: (style) The function 'clang_getTypedefDeclUnderlyingType' is never used.
+[CXType.cpp:430]: (style) The function 'clang_getTypedefName' is never used.
+[CIndex.cpp:5695]: (style) The function 'clang_hashCursor' is never used.
+[Indexing.cpp:963]: (style) The function 'clang_indexLoc_getCXSourceLocation' is never used.
+[Indexing.cpp:942]: (style) The function 'clang_indexLoc_getFileLocation' is never used.
+[Indexing.cpp:835]: (style) The function 'clang_indexSourceFile' is never used.
+[Indexing.cpp:914]: (style) The function 'clang_indexTranslationUnit' is never used.
+[Indexing.cpp:784]: (style) The function 'clang_index_getCXXClassDeclInfo' is never used.
+[Indexing.cpp:796]: (style) The function 'clang_index_getClientContainer' is never used.
+[Indexing.cpp:811]: (style) The function 'clang_index_getClientEntity' is never used.
+[Indexing.cpp:771]: (style) The function 'clang_index_getIBOutletCollectionAttrInfo' is never used.
+[Indexing.cpp:725]: (style) The function 'clang_index_getObjCCategoryDeclInfo' is never used.
+[Indexing.cpp:699]: (style) The function 'clang_index_getObjCContainerDeclInfo' is never used.
+[Indexing.cpp:712]: (style) The function 'clang_index_getObjCInterfaceDeclInfo' is never used.
+[Indexing.cpp:759]: (style) The function 'clang_index_getObjCPropertyDeclInfo' is never used.
+[Indexing.cpp:738]: (style) The function 'clang_index_getObjCProtocolRefListInfo' is never used.
+[Indexing.cpp:694]: (style) The function 'clang_index_isEntityObjCContainerKind' is never used.
+[Indexing.cpp:803]: (style) The function 'clang_index_setClientContainer' is never used.
+[Indexing.cpp:818]: (style) The function 'clang_index_setClientEntity' is never used.
+[CXType.cpp:402]: (style) The function 'clang_isConstQualifiedType' is never used.
+[CIndex.cpp:4242]: (style) The function 'clang_isFileMultipleIncludeGuarded' is never used.
+[CXType.cpp:626]: (style) The function 'clang_isFunctionTypeVariadic' is never used.
+[CIndex.cpp:5713]: (style) The function 'clang_isInvalidDeclaration' is never used.
+[CXType.cpp:775]: (style) The function 'clang_isPODType' is never used.
+[CXType.cpp:412]: (style) The function 'clang_isRestrictQualifiedType' is never used.
+[CIndex.cpp:5746]: (style) The function 'clang_isUnexposed' is never used.
+[CIndexCXX.cpp:22]: (style) The function 'clang_isVirtualBase' is never used.
+[CXType.cpp:407]: (style) The function 'clang_isVolatileQualifiedType' is never used.
+[CXLoadedDiagnostic.cpp:389]: (style) The function 'clang_loadDiagnostics' is never used.
+[ARCMigrate.cpp:136]: (style) The function 'clang_remap_dispose' is never used.
+[ARCMigrate.cpp:126]: (style) The function 'clang_remap_getFilenames' is never used.
+[ARCMigrate.cpp:121]: (style) The function 'clang_remap_getNumFiles' is never used.
+[CIndex.cpp:4095]: (style) The function 'clang_reparseTranslationUnit' is never used.
+[CIndex.cpp:3968]: (style) The function 'clang_saveTranslationUnit' is never used.
+[CIndexCodeCompletion.cpp:1041]: (style) The function 'clang_sortCodeCompletionResults' is never used.
+[CIndex.cpp:4035]: (style) The function 'clang_suspendTranslationUnit' is never used.
+[CIndex.cpp:3307]: (style) The function 'clang_toggleCrashRecovery' is never used.
+[CIndex.cpp:6760]: (style) The function 'clang_tokenize' is never used.
+[CIndex.cpp:4407]: (style) The function 'clang_visitChildrenWithBlock' is never used.
+[CIndex.cpp:1827]: (style) The function 'classof' is never used.
+[CIndexDiagnostic.cpp:132]: (style) The function 'emitCodeContext' is never used.
+[CIndexDiagnostic.cpp:128]: (style) The function 'emitDiagnosticLoc' is never used.
+[CIndexDiagnostic.cpp:112]: (style) The function 'emitDiagnosticMessage' is never used.
+[CIndexDiagnostic.cpp:136]: (style) The function 'emitNote' is never used.
+[CXCursor.cpp:1365]: (style) The function 'getEmptyKey' is never used.
+[CXCursor.cpp:1368]: (style) The function 'getTombstoneKey' is never used.
+[Indexing.cpp:384]: (style) The function 'getTranslationUnitKind' is never used.
+[Indexing.cpp:390]: (style) The function 'hasCodeCompletionSupport' is never used.
+[CXCursor.cpp:1375]: (style) The function 'isEqual' is never used.
+[CXString.cpp:152]: (style) The function 'isManagedByPool' is never used.
+[CXCursor.cpp:1135]: (style) The function 'operator==' is never used.
+[Indexing.cpp:304]: (style) The function 'shouldSkipFunctionBody' is never used.
+(information) Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project's include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config.

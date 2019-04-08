@@ -1,0 +1,1508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.80"/>
+    <errors>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="ARCMigrate.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="BuildSystem.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686">
+            <location file="CIndex.cpp" line="3602"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686">
+            <location file="CIndex.cpp" line="4006"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3717"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3728"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3735"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3743"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3753"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CIndex.cpp" line="3760"/>
+        </error>
+        <error id="duplicateExpression" severity="style" msg="Same expression on both sides of &apos;|&apos;." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398">
+            <location file="CIndex.cpp" line="7249"/>
+            <location file="CIndex.cpp" line="7249"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;floatStr&apos; is assigned a value that is never used." verbose="Variable &apos;floatStr&apos; is assigned a value that is never used." cwe="563">
+            <location file="CIndex.cpp" line="3796"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndex.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;OMPClauseEnqueue&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;OMPClauseEnqueue&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file="CIndex.cpp" line="2130"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndex.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCXX.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCXX.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexCXX.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;AllocatedCXCodeCompleteResults&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;AllocatedCXCodeCompleteResults&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file="CIndexCodeCompletion.cpp" line="250"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexCodeCompletion.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT&apos; since the value of &apos;UDP_CODE_COMPLETION_LOGGER&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT&apos; since the value of &apos;UDP_CODE_COMPLETION_LOGGER&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="CIndexCodeCompletion.cpp" line="834"/>
+        </error>
+        <error id="ConfigurationNotChecked" severity="information" msg="Skipping configuration &apos;UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT&apos; since the value of &apos;UDP_CODE_COMPLETION_LOGGER_PORT&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly." verbose="Skipping configuration &apos;UDP_CODE_COMPLETION_LOGGER;UDP_CODE_COMPLETION_LOGGER_PORT&apos; since the value of &apos;UDP_CODE_COMPLETION_LOGGER_PORT&apos; is unknown. Use -D if you want to check it. You can use -U to skip it explicitly.">
+            <location file="CIndexCodeCompletion.cpp" line="833"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexDiagnostic.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexHigh.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexHigh.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexHigh.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexInclusionStack.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexInclusionStack.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexInclusionStack.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexInclusionStack.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexUSRs.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexUSRs.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexUSRs.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexUSRs.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexUSRs.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexer.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CIndexer.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CIndexer.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXComment.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXComment.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXComment.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXCompilationDatabase.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;AllocatedCXCompileCommands&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;AllocatedCXCompileCommands&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file="CXCompilationDatabase.cpp" line="41"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;Cmd&apos; should be passed by reference." verbose="Parameter &apos;Cmd&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file="CXCompilationDatabase.cpp" line="41"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXCursor.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXCursor.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXCursor.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EntityInfo::Dcl&apos; is not initialized in the constructor." verbose="Member variable &apos;EntityInfo::Dcl&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="53"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EntityInfo::IndexCtx&apos; is not initialized in the constructor." verbose="Member variable &apos;EntityInfo::IndexCtx&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="53"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ObjCInterfaceDeclInfo&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ObjCInterfaceDeclInfo&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="147"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ObjCProtocolDeclInfo&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ObjCProtocolDeclInfo&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="161"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXIndexDataConsumer.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="copyCtorAndEqOperator" severity="warning" msg="The class &apos;ScratchAlloc&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;." verbose="The class &apos;ScratchAlloc&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;.">
+            <location file0="CXIndexDataConsumer.cpp" file="CXIndexDataConsumer.h" line="32"/>
+        </error>
+        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
+            <location file="CXLoadedDiagnostic.cpp" line="170"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CXLoadedDiagnostic::Spelling&apos; is not initialized in the constructor." verbose="Member variable &apos;CXLoadedDiagnostic::Spelling&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXLoadedDiagnostic.cpp" file="CXLoadedDiagnostic.h" line="25"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXLoadedDiagnostic.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXLoadedDiagnostic.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXLoadedDiagnostic.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;CXLoadedDiagnostic::Spelling&apos; is not initialized in the constructor." verbose="Member variable &apos;CXLoadedDiagnostic::Spelling&apos; is not initialized in the constructor." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CXLoadedDiagnostic.h" line="25"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CXSourceLocation.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CXStoredDiagnostic.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXString.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXString.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXType.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXType.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXType.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="CXType.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="CXType.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="invalidPrintfArgType_sint" severity="warning" msg="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." verbose="%d in format string (no. 1) requires &apos;int&apos; but the argument type is &apos;unsigned int&apos;." cwe="686">
+            <location file="Indexing.cpp" line="902"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EntityInfo::Dcl&apos; is not initialized in the constructor." verbose="Member variable &apos;EntityInfo::Dcl&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="53"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;EntityInfo::IndexCtx&apos; is not initialized in the constructor." verbose="Member variable &apos;EntityInfo::IndexCtx&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="53"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="86"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::SemanticContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::LexicalContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." verbose="Member variable &apos;DeclInfo::DeclAsContainer&apos; is not initialized in the constructor." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="96"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;TUSkipBodyControl::LastIsParsed&apos; is not initialized in the constructor." verbose="Member variable &apos;TUSkipBodyControl::LastIsParsed&apos; is not initialized in the constructor." cwe="398">
+            <location file="Indexing.cpp" line="156"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticSetImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CIndexDiagnostic.h" line="31"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXDiagnosticImpl&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CIndexDiagnostic.h" line="99"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CIndexer&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MacroExpansionCursor&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CXCursor.h" line="187"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ObjCInterfaceDeclInfo&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ObjCInterfaceDeclInfo&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="147"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;ObjCProtocolDeclInfo&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;ObjCProtocolDeclInfo&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="161"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit." verbose="Struct &apos;CXStringBuf&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CXString.h" line="89"/>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;CXTUOwner&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="Indexing.cpp" file="CXTranslationUnit.h" line="74"/>
+        </error>
+        <error id="copyCtorAndEqOperator" severity="warning" msg="The class &apos;ScratchAlloc&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;." verbose="The class &apos;ScratchAlloc&apos; has &apos;copy constructor&apos; but lack of &apos;operator=&apos;.">
+            <location file0="Indexing.cpp" file="CXIndexDataConsumer.h" line="32"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;PCHContainerOps&apos; should be passed by reference." verbose="Parameter &apos;PCHContainerOps&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file0="Indexing.cpp" file="CIndexer.h" line="48"/>
+        </error>
+        <error id="passedByValue" severity="performance" msg="Function parameter &apos;dataConsumer&apos; should be passed by reference." verbose="Parameter &apos;dataConsumer&apos; is passed by value. It could be passed as a (const) reference which is usually faster and recommended in C++." cwe="398">
+            <location file="Indexing.cpp" line="357"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;CreateASTConsumer&apos; is never used." verbose="The function &apos;CreateASTConsumer&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="361"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;FileChanged&apos; is never used." verbose="The function &apos;FileChanged&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="230"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;HandleDiagnostic&apos; is never used." verbose="The function &apos;HandleDiagnostic&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="339"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;HandleTopLevelDecl&apos; is never used." verbose="The function &apos;HandleTopLevelDecl&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="300"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;HandleTranslationUnit&apos; is never used." verbose="The function &apos;HandleTranslationUnit&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="295"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;InclusionDirective&apos; is never used." verbose="The function &apos;InclusionDirective&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="244"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;Initialize&apos; is never used." verbose="The function &apos;Initialize&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="290"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;MacroDefined&apos; is never used." verbose="The function &apos;MacroDefined&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="257"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;MacroExpands&apos; is never used." verbose="The function &apos;MacroExpands&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="266"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;MacroUndefined&apos; is never used." verbose="The function &apos;MacroUndefined&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="261"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ProcessCodeCompleteResults&apos; is never used." verbose="The function &apos;ProcessCodeCompleteResults&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="576"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;ProcessOverloadCandidates&apos; is never used." verbose="The function &apos;ProcessOverloadCandidates&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="657"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;SetSafetyThreadStackSize&apos; is never used." verbose="The function &apos;SetSafetyThreadStackSize&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8716"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;SourceRangeSkipped&apos; is never used." verbose="The function &apos;SourceRangeSkipped&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="272"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitBlockDecl&apos; is never used." verbose="The function &apos;VisitBlockDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="586"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitCXXDefaultArgExpr&apos; is never used." verbose="The function &apos;VisitCXXDefaultArgExpr&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1964"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitClassTemplateDecl&apos; is never used." verbose="The function &apos;VisitClassTemplateDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="937"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitClassTemplatePartialSpecializationDecl&apos; is never used." verbose="The function &apos;VisitClassTemplatePartialSpecializationDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="737"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitClassTemplateSpecializationDecl&apos; is never used." verbose="The function &apos;VisitClassTemplateSpecializationDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="705"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitEnumConstantDecl&apos; is never used." verbose="The function &apos;VisitEnumConstantDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="764"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitFieldDecl&apos; is never used." verbose="The function &apos;VisitFieldDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="893"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitFriendDecl&apos; is never used." verbose="The function &apos;VisitFriendDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1280"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitFunctionTemplateDecl&apos; is never used." verbose="The function &apos;VisitFunctionTemplateDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="927"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitImportDecl&apos; is never used." verbose="The function &apos;VisitImportDecl&apos; is never used." cwe="561">
+            <location file="CXIndexDataConsumer.cpp" line="145"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitLinkageSpecDecl&apos; is never used." verbose="The function &apos;VisitLinkageSpecDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1497"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitMSPropertyDecl&apos; is never used." verbose="The function &apos;VisitMSPropertyDecl&apos; is never used." cwe="561">
+            <location file="CXIndexDataConsumer.cpp" line="49"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitNamespaceAliasDecl&apos; is never used." verbose="The function &apos;VisitNamespaceAliasDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1218"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitNamespaceDecl&apos; is never used." verbose="The function &apos;VisitNamespaceDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1214"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitNestedNameSpecifier&apos; is never used." verbose="The function &apos;VisitNestedNameSpecifier&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1317"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitNonTypeTemplateParmDecl&apos; is never used." verbose="The function &apos;VisitNonTypeTemplateParmDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="916"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCCategoryDecl&apos; is never used." verbose="The function &apos;VisitObjCCategoryDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1068"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCCategoryImplDecl&apos; is never used." verbose="The function &apos;VisitObjCCategoryImplDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1183"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCImplementationDecl&apos; is never used." verbose="The function &apos;VisitObjCImplementationDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1192"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCInterfaceDecl&apos; is never used." verbose="The function &apos;VisitObjCInterfaceDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1149"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCMethodDecl&apos; is never used." verbose="The function &apos;VisitObjCMethodDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="970"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCPropertyDecl&apos; is never used." verbose="The function &apos;VisitObjCPropertyDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1098"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCPropertyImplDecl&apos; is never used." verbose="The function &apos;VisitObjCPropertyImplDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1206"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCProtocolDecl&apos; is never used." verbose="The function &apos;VisitObjCProtocolDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1085"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitObjCTypeParamDecl&apos; is never used." verbose="The function &apos;VisitObjCTypeParamDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="958"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitStaticAssertDecl&apos; is never used." verbose="The function &apos;VisitStaticAssertDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1271"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTemplateTemplateParmDecl&apos; is never used." verbose="The function &apos;VisitTemplateTemplateParmDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="947"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTemplateTypeParmDecl&apos; is never used." verbose="The function &apos;VisitTemplateTypeParmDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="754"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTranslationUnitDecl&apos; is never used." verbose="The function &apos;VisitTranslationUnitDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="676"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTypeAliasDecl&apos; is never used." verbose="The function &apos;VisitTypeAliasDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="687"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTypeAliasTemplateDecl&apos; is never used." verbose="The function &apos;VisitTypeAliasTemplateDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="680"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTypedefDecl&apos; is never used." verbose="The function &apos;VisitTypedefDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="694"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitTypedefNameDecl&apos; is never used." verbose="The function &apos;VisitTypedefNameDecl&apos; is never used." cwe="561">
+            <location file="CXIndexDataConsumer.cpp" line="58"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitUnresolvedUsingTypenameDecl&apos; is never used." verbose="The function &apos;VisitUnresolvedUsingTypenameDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1261"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitUnresolvedUsingValueDecl&apos; is never used." verbose="The function &apos;VisitUnresolvedUsingValueDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1251"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitUsingDecl&apos; is never used." verbose="The function &apos;VisitUsingDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1228"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitUsingDirectiveDecl&apos; is never used." verbose="The function &apos;VisitUsingDirectiveDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1241"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;VisitVarDecl&apos; is never used." verbose="The function &apos;VisitVarDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="906"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;beginDiagnostic&apos; is never used." verbose="The function &apos;beginDiagnostic&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="94"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_BlockCommandComment_getArgText&apos; is never used." verbose="The function &apos;clang_BlockCommandComment_getArgText&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="240"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_BlockCommandComment_getCommandName&apos; is never used." verbose="The function &apos;clang_BlockCommandComment_getCommandName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="223"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_BlockCommandComment_getNumArgs&apos; is never used." verbose="The function &apos;clang_BlockCommandComment_getNumArgs&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="232"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_BlockCommandComment_getParagraph&apos; is never used." verbose="The function &apos;clang_BlockCommandComment_getParagraph&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="249"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXCursorSet_contains&apos; is never used." verbose="The function &apos;clang_CXCursorSet_contains&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1391"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXCursorSet_insert&apos; is never used." verbose="The function &apos;clang_CXCursorSet_insert&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1398"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXIndex_getGlobalOptions&apos; is never used." verbose="The function &apos;clang_CXIndex_getGlobalOptions&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3295"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXIndex_setGlobalOptions&apos; is never used." verbose="The function &apos;clang_CXIndex_setGlobalOptions&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3290"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXIndex_setInvocationEmissionPathOption&apos; is never used." verbose="The function &apos;clang_CXIndex_setInvocationEmissionPathOption&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3301"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXConstructor_isConvertingConstructor&apos; is never used." verbose="The function &apos;clang_CXXConstructor_isConvertingConstructor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8343"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXConstructor_isCopyConstructor&apos; is never used." verbose="The function &apos;clang_CXXConstructor_isCopyConstructor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8323"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXConstructor_isDefaultConstructor&apos; is never used." verbose="The function &apos;clang_CXXConstructor_isDefaultConstructor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8313"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXConstructor_isMoveConstructor&apos; is never used." verbose="The function &apos;clang_CXXConstructor_isMoveConstructor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8333"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXField_isMutable&apos; is never used." verbose="The function &apos;clang_CXXField_isMutable&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8354"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXMethod_isConst&apos; is never used." verbose="The function &apos;clang_CXXMethod_isConst&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8374"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXMethod_isDefaulted&apos; is never used." verbose="The function &apos;clang_CXXMethod_isDefaulted&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8384"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXMethod_isPureVirtual&apos; is never used." verbose="The function &apos;clang_CXXMethod_isPureVirtual&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8364"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXMethod_isStatic&apos; is never used." verbose="The function &apos;clang_CXXMethod_isStatic&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8394"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXMethod_isVirtual&apos; is never used." verbose="The function &apos;clang_CXXMethod_isVirtual&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8404"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CXXRecord_isAbstract&apos; is never used." verbose="The function &apos;clang_CXXRecord_isAbstract&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8414"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Comment_getChild&apos; is never used." verbose="The function &apos;clang_Comment_getChild&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="97"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Comment_getKind&apos; is never used." verbose="The function &apos;clang_Comment_getKind&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="41"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Comment_getNumChildren&apos; is never used." verbose="The function &apos;clang_Comment_getNumChildren&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="89"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Comment_isWhitespace&apos; is never used." verbose="The function &apos;clang_Comment_isWhitespace&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="105"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompilationDatabase_dispose&apos; is never used." verbose="The function &apos;clang_CompilationDatabase_dispose&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="32"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompilationDatabase_fromDirectory&apos; is never used." verbose="The function &apos;clang_CompilationDatabase_fromDirectory&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="11"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompilationDatabase_getAllCompileCommands&apos; is never used." verbose="The function &apos;clang_CompilationDatabase_getAllCompileCommands&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="59"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompilationDatabase_getCompileCommands&apos; is never used." verbose="The function &apos;clang_CompilationDatabase_getCompileCommands&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="46"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getArg&apos; is never used." verbose="The function &apos;clang_CompileCommand_getArg&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="132"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getDirectory&apos; is never used." verbose="The function &apos;clang_CompileCommand_getDirectory&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="103"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getFilename&apos; is never used." verbose="The function &apos;clang_CompileCommand_getFilename&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="113"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getMappedSourceContent&apos; is never used." verbose="The function &apos;clang_CompileCommand_getMappedSourceContent&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="162"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getMappedSourcePath&apos; is never used." verbose="The function &apos;clang_CompileCommand_getMappedSourcePath&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="154"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getNumArgs&apos; is never used." verbose="The function &apos;clang_CompileCommand_getNumArgs&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="123"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommand_getNumMappedSources&apos; is never used." verbose="The function &apos;clang_CompileCommand_getNumMappedSources&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="146"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommands_dispose&apos; is never used." verbose="The function &apos;clang_CompileCommands_dispose&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="70"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommands_getCommand&apos; is never used." verbose="The function &apos;clang_CompileCommands_getCommand&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="88"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_CompileCommands_getSize&apos; is never used." verbose="The function &apos;clang_CompileCommands_getSize&apos; is never used." cwe="561">
+            <location file="CXCompilationDatabase.cpp" line="76"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_Evaluate&apos; is never used." verbose="The function &apos;clang_Cursor_Evaluate&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3931"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getArgument&apos; is never used." verbose="The function &apos;clang_Cursor_getArgument&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1181"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getBriefCommentText&apos; is never used." verbose="The function &apos;clang_Cursor_getBriefCommentText&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8197"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getCXXManglings&apos; is never used." verbose="The function &apos;clang_Cursor_getCXXManglings&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4719"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getCommentRange&apos; is never used." verbose="The function &apos;clang_Cursor_getCommentRange&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8169"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getMangling&apos; is never used." verbose="The function &apos;clang_Cursor_getMangling&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4705"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getModule&apos; is never used." verbose="The function &apos;clang_Cursor_getModule&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8216"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getNumArguments&apos; is never used." verbose="The function &apos;clang_Cursor_getNumArguments&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1159"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getNumTemplateArguments&apos; is never used." verbose="The function &apos;clang_Cursor_getNumTemplateArguments&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1216"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCDeclQualifiers&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCDeclQualifiers&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8099"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCManglings&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCManglings&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4733"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCPropertyAttributes&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCPropertyAttributes&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8045"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCPropertyGetterName&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCPropertyGetterName&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8075"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCPropertySetterName&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCPropertySetterName&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8087"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getObjCSelectorIndex&apos; is never used." verbose="The function &apos;clang_Cursor_getObjCSelectorIndex&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6436"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getOffsetOfField&apos; is never used." verbose="The function &apos;clang_Cursor_getOffsetOfField&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1033"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getParsedComment&apos; is never used." verbose="The function &apos;clang_Cursor_getParsedComment&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="28"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getRawCommentText&apos; is never used." verbose="The function &apos;clang_Cursor_getRawCommentText&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8182"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getReceiverType&apos; is never used." verbose="The function &apos;clang_Cursor_getReceiverType&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1585"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getSpellingNameRange&apos; is never used." verbose="The function &apos;clang_Cursor_getSpellingNameRange&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4610"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getStorageClass&apos; is never used." verbose="The function &apos;clang_Cursor_getStorageClass&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7969"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getTemplateArgumentKind&apos; is never used." verbose="The function &apos;clang_Cursor_getTemplateArgumentKind&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1279"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getTemplateArgumentType&apos; is never used." verbose="The function &apos;clang_Cursor_getTemplateArgumentType&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1303"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getTemplateArgumentUnsignedValue&apos; is never used." verbose="The function &apos;clang_Cursor_getTemplateArgumentUnsignedValue&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1333"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_getTemplateArgumentValue&apos; is never used." verbose="The function &apos;clang_Cursor_getTemplateArgumentValue&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1317"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_hasAttrs&apos; is never used." verbose="The function &apos;clang_Cursor_hasAttrs&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3941"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isAnonymous&apos; is never used." verbose="The function &apos;clang_Cursor_isAnonymous&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1235"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isBitField&apos; is never used." verbose="The function &apos;clang_Cursor_isBitField&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1070"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isDynamicCall&apos; is never used." verbose="The function &apos;clang_Cursor_isDynamicCall&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1546"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isExternalSymbol&apos; is never used." verbose="The function &apos;clang_Cursor_isExternalSymbol&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8149"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isFunctionInlined&apos; is never used." verbose="The function &apos;clang_Cursor_isFunctionInlined&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3659"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isMacroBuiltin&apos; is never used." verbose="The function &apos;clang_Cursor_isMacroBuiltin&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3647"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isMacroFunctionLike&apos; is never used." verbose="The function &apos;clang_Cursor_isMacroFunctionLike&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3635"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isObjCOptional&apos; is never used." verbose="The function &apos;clang_Cursor_isObjCOptional&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8123"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Cursor_isVariadic&apos; is never used." verbose="The function &apos;clang_Cursor_isVariadic&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8136"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EnumDecl_isScoped&apos; is never used." verbose="The function &apos;clang_EnumDecl_isScoped&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8425"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_dispose&apos; is never used." verbose="The function &apos;clang_EvalResult_dispose&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3709"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_getAsDouble&apos; is never used." verbose="The function &apos;clang_EvalResult_getAsDouble&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3749"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_getAsInt&apos; is never used." verbose="The function &apos;clang_EvalResult_getAsInt&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3720"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_getAsStr&apos; is never used." verbose="The function &apos;clang_EvalResult_getAsStr&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3756"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_getAsUnsigned&apos; is never used." verbose="The function &apos;clang_EvalResult_getAsUnsigned&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3738"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_getKind&apos; is never used." verbose="The function &apos;clang_EvalResult_getKind&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3713"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_EvalResult_isUnsignedInt&apos; is never used." verbose="The function &apos;clang_EvalResult_isUnsignedInt&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3734"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_File_isEqual&apos; is never used." verbose="The function &apos;clang_File_isEqual&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4270"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_File_tryGetRealPathName&apos; is never used." verbose="The function &apos;clang_File_tryGetRealPathName&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4282"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_FullComment_getAsHTML&apos; is never used." verbose="The function &apos;clang_FullComment_getAsHTML&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="376"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_FullComment_getAsXML&apos; is never used." verbose="The function &apos;clang_FullComment_getAsXML&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="391"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLStartTagComment_isSelfClosing&apos; is never used." verbose="The function &apos;clang_HTMLStartTagComment_isSelfClosing&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="191"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLStartTag_getAttrName&apos; is never used." verbose="The function &apos;clang_HTMLStartTag_getAttrName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="207"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLStartTag_getAttrValue&apos; is never used." verbose="The function &apos;clang_HTMLStartTag_getAttrValue&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="215"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLStartTag_getNumAttrs&apos; is never used." verbose="The function &apos;clang_HTMLStartTag_getNumAttrs&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="199"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLTagComment_getAsString&apos; is never used." verbose="The function &apos;clang_HTMLTagComment_getAsString&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="361"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_HTMLTagComment_getTagName&apos; is never used." verbose="The function &apos;clang_HTMLTagComment_getTagName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="183"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_IndexAction_create&apos; is never used." verbose="The function &apos;clang_IndexAction_create&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="826"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_IndexAction_dispose&apos; is never used." verbose="The function &apos;clang_IndexAction_dispose&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="830"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_InlineCommandComment_getArgText&apos; is never used." verbose="The function &apos;clang_InlineCommandComment_getArgText&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="174"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_InlineCommandComment_getCommandName&apos; is never used." verbose="The function &apos;clang_InlineCommandComment_getCommandName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="135"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_InlineCommandComment_getNumArgs&apos; is never used." verbose="The function &apos;clang_InlineCommandComment_getNumArgs&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="166"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_InlineCommandComment_getRenderKind&apos; is never used." verbose="The function &apos;clang_InlineCommandComment_getRenderKind&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="145"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_InlineContentComment_hasTrailingNewline&apos; is never used." verbose="The function &apos;clang_InlineContentComment_hasTrailingNewline&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="119"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Location_isFromMainFile&apos; is never used." verbose="The function &apos;clang_Location_isFromMainFile&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="210"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Location_isInSystemHeader&apos; is never used." verbose="The function &apos;clang_Location_isInSystemHeader&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="199"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ModuleMapDescriptor_create&apos; is never used." verbose="The function &apos;clang_ModuleMapDescriptor_create&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="101"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ModuleMapDescriptor_dispose&apos; is never used." verbose="The function &apos;clang_ModuleMapDescriptor_dispose&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="149"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ModuleMapDescriptor_setFrameworkModuleName&apos; is never used." verbose="The function &apos;clang_ModuleMapDescriptor_setFrameworkModuleName&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="106"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ModuleMapDescriptor_setUmbrellaHeader&apos; is never used." verbose="The function &apos;clang_ModuleMapDescriptor_setUmbrellaHeader&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="116"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ModuleMapDescriptor_writeToBuffer&apos; is never used." verbose="The function &apos;clang_ModuleMapDescriptor_writeToBuffer&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="126"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getASTFile&apos; is never used." verbose="The function &apos;clang_Module_getASTFile&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8242"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getFullName&apos; is never used." verbose="The function &apos;clang_Module_getFullName&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8263"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getName&apos; is never used." verbose="The function &apos;clang_Module_getName&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8256"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getNumTopLevelHeaders&apos; is never used." verbose="The function &apos;clang_Module_getNumTopLevelHeaders&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8277"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getParent&apos; is never used." verbose="The function &apos;clang_Module_getParent&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8249"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_getTopLevelHeader&apos; is never used." verbose="The function &apos;clang_Module_getTopLevelHeader&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8291"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Module_isSystem&apos; is never used." verbose="The function &apos;clang_Module_isSystem&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8270"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ParamCommandComment_getDirection&apos; is never used." verbose="The function &apos;clang_ParamCommandComment_getDirection&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="289"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ParamCommandComment_getParamIndex&apos; is never used." verbose="The function &apos;clang_ParamCommandComment_getParamIndex&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="273"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ParamCommandComment_getParamName&apos; is never used." verbose="The function &apos;clang_ParamCommandComment_getParamName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="257"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ParamCommandComment_isDirectionExplicit&apos; is never used." verbose="The function &apos;clang_ParamCommandComment_isDirectionExplicit&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="281"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_ParamCommandComment_isParamIndexValid&apos; is never used." verbose="The function &apos;clang_ParamCommandComment_isParamIndexValid&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="265"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_PrintingPolicy_dispose&apos; is never used." verbose="The function &apos;clang_PrintingPolicy_dispose&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4753"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_PrintingPolicy_getProperty&apos; is never used." verbose="The function &apos;clang_PrintingPolicy_getProperty&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4759"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_PrintingPolicy_setProperty&apos; is never used." verbose="The function &apos;clang_PrintingPolicy_setProperty&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4824"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TParamCommandComment_getDepth&apos; is never used." verbose="The function &apos;clang_TParamCommandComment_getDepth&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="324"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TParamCommandComment_getIndex&apos; is never used." verbose="The function &apos;clang_TParamCommandComment_getIndex&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="332"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TParamCommandComment_getParamName&apos; is never used." verbose="The function &apos;clang_TParamCommandComment_getParamName&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="308"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TParamCommandComment_isParamPositionValid&apos; is never used." verbose="The function &apos;clang_TParamCommandComment_isParamPositionValid&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="316"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TargetInfo_dispose&apos; is never used." verbose="The function &apos;clang_TargetInfo_dispose&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4182"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TargetInfo_getPointerWidth&apos; is never used." verbose="The function &apos;clang_TargetInfo_getPointerWidth&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4170"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TargetInfo_getTriple&apos; is never used." verbose="The function &apos;clang_TargetInfo_getTriple&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4156"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_TextComment_getText&apos; is never used." verbose="The function &apos;clang_TextComment_getText&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="127"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getAlignOf&apos; is never used." verbose="The function &apos;clang_Type_getAlignOf&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="880"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getCXXRefQualifier&apos; is never used." verbose="The function &apos;clang_Type_getCXXRefQualifier&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1052"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getClassType&apos; is never used." verbose="The function &apos;clang_Type_getClassType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="903"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getModifiedType&apos; is never used." verbose="The function &apos;clang_Type_getModifiedType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1022"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getNamedType&apos; is never used." verbose="The function &apos;clang_Type_getNamedType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1248"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getNullability&apos; is never used." verbose="The function &apos;clang_Type_getNullability&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1267"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getNumObjCProtocolRefs&apos; is never used." verbose="The function &apos;clang_Type_getNumObjCProtocolRefs&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1151"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getNumObjCTypeArgs&apos; is never used." verbose="The function &apos;clang_Type_getNumObjCTypeArgs&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1179"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getNumTemplateArguments&apos; is never used." verbose="The function &apos;clang_Type_getNumTemplateArguments&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1114"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getObjCEncoding&apos; is never used." verbose="The function &apos;clang_Type_getObjCEncoding&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3614"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getObjCObjectBaseType&apos; is never used." verbose="The function &apos;clang_Type_getObjCObjectBaseType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1139"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getObjCProtocolDecl&apos; is never used." verbose="The function &apos;clang_Type_getObjCProtocolDecl&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1163"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getObjCTypeArg&apos; is never used." verbose="The function &apos;clang_Type_getObjCTypeArg&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1191"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getOffsetOf&apos; is never used." verbose="The function &apos;clang_Type_getOffsetOf&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="991"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getSizeOf&apos; is never used." verbose="The function &apos;clang_Type_getSizeOf&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="914"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_getTemplateArgumentAsType&apos; is never used." verbose="The function &apos;clang_Type_getTemplateArgumentAsType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1126"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_isTransparentTagTypedef&apos; is never used." verbose="The function &apos;clang_Type_isTransparentTagTypedef&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1258"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_Type_visitFields&apos; is never used." verbose="The function &apos;clang_Type_visitFields&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1207"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VerbatimBlockLineComment_getText&apos; is never used." verbose="The function &apos;clang_VerbatimBlockLineComment_getText&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="340"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VerbatimLineComment_getText&apos; is never used." verbose="The function &apos;clang_VerbatimLineComment_getText&apos; is never used." cwe="561">
+            <location file="CXComment.cpp" line="349"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VirtualFileOverlay_addFileMapping&apos; is never used." verbose="The function &apos;clang_VirtualFileOverlay_addFileMapping&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="38"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VirtualFileOverlay_dispose&apos; is never used." verbose="The function &apos;clang_VirtualFileOverlay_dispose&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="91"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VirtualFileOverlay_setCaseSensitivity&apos; is never used." verbose="The function &apos;clang_VirtualFileOverlay_setCaseSensitivity&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="61"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_VirtualFileOverlay_writeToBuffer&apos; is never used." verbose="The function &apos;clang_VirtualFileOverlay_writeToBuffer&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="70"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_annotateTokens&apos; is never used." verbose="The function &apos;clang_annotateTokens&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7600"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteAt&apos; is never used." verbose="The function &apos;clang_codeCompleteAt&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="853"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetContainerKind&apos; is never used." verbose="The function &apos;clang_codeCompleteGetContainerKind&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="935"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetContainerUSR&apos; is never used." verbose="The function &apos;clang_codeCompleteGetContainerUSR&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="950"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetContexts&apos; is never used." verbose="The function &apos;clang_codeCompleteGetContexts&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="926"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetDiagnostic&apos; is never used." verbose="The function &apos;clang_codeCompleteGetDiagnostic&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="911"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetNumDiagnostics&apos; is never used." verbose="The function &apos;clang_codeCompleteGetNumDiagnostics&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="901"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_codeCompleteGetObjCSelector&apos; is never used." verbose="The function &apos;clang_codeCompleteGetObjCSelector&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="960"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCCategory&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCCategory&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="124"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCClass&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCClass&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="110"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCIvar&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCIvar&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="92"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCMethod&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCMethod&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="100"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCProperty&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCProperty&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="132"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_constructUSR_ObjCProtocol&apos; is never used." verbose="The function &apos;clang_constructUSR_ObjCProtocol&apos; is never used." cwe="561">
+            <location file="CIndexUSRs.cpp" line="117"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_createCXCursorSet&apos; is never used." verbose="The function &apos;clang_createCXCursorSet&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1383"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_createIndex&apos; is never used." verbose="The function &apos;clang_createIndex&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3250"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_createTranslationUnitFromSourceFile&apos; is never used." verbose="The function &apos;clang_createTranslationUnitFromSourceFile&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3361"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_defaultCodeCompleteOptions&apos; is never used." verbose="The function &apos;clang_defaultCodeCompleteOptions&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="887"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_defaultEditingTranslationUnitOptions&apos; is never used." verbose="The function &apos;clang_defaultEditingTranslationUnitOptions&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3355"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_defaultReparseOptions&apos; is never used." verbose="The function &apos;clang_defaultReparseOptions&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4049"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_defaultSaveOptions&apos; is never used." verbose="The function &apos;clang_defaultSaveOptions&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3953"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeCXCursorSet&apos; is never used." verbose="The function &apos;clang_disposeCXCursorSet&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1387"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeCXPlatformAvailability&apos; is never used." verbose="The function &apos;clang_disposeCXPlatformAvailability&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7922"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeCodeCompleteResults&apos; is never used." verbose="The function &apos;clang_disposeCodeCompleteResults&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="891"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeDiagnostic&apos; is never used." verbose="The function &apos;clang_disposeDiagnostic&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="238"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeDiagnosticSet&apos; is never used." verbose="The function &apos;clang_disposeDiagnosticSet&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="443"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeIndex&apos; is never used." verbose="The function &apos;clang_disposeIndex&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3285"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeOverriddenCursors&apos; is never used." verbose="The function &apos;clang_disposeOverriddenCursors&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1526"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeSourceRangeList&apos; is never used." verbose="The function &apos;clang_disposeSourceRangeList&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8677"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeStringSet&apos; is never used." verbose="The function &apos;clang_disposeStringSet&apos; is never used." cwe="561">
+            <location file="CXString.cpp" line="185"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_disposeTokens&apos; is never used." verbose="The function &apos;clang_disposeTokens&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6798"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_enableStackTraces&apos; is never used." verbose="The function &apos;clang_enableStackTraces&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6556"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_equalLocations&apos; is never used." verbose="The function &apos;clang_equalLocations&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="45"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_equalTypes&apos; is never used." verbose="The function &apos;clang_equalTypes&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="622"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_executeOnThread&apos; is never used." verbose="The function &apos;clang_executeOnThread&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6561"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_findIncludesInFileWithBlock&apos; is never used." verbose="The function &apos;clang_findIncludesInFileWithBlock&apos; is never used." cwe="561">
+            <location file="CIndexHigh.cpp" line="526"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_findReferencesInFileWithBlock&apos; is never used." verbose="The function &apos;clang_findReferencesInFileWithBlock&apos; is never used." cwe="561">
+            <location file="CIndexHigh.cpp" line="518"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_free&apos; is never used." verbose="The function &apos;clang_free&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="87"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getAddressSpace&apos; is never used." verbose="The function &apos;clang_getAddressSpace&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="417"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getAllSkippedRanges&apos; is never used." verbose="The function &apos;clang_getAllSkippedRanges&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8650"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getArgType&apos; is never used." verbose="The function &apos;clang_getArgType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="690"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getArrayElementType&apos; is never used." verbose="The function &apos;clang_getArrayElementType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="837"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getArraySize&apos; is never used." verbose="The function &apos;clang_getArraySize&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="863"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getBuildSessionTimestamp&apos; is never used." verbose="The function &apos;clang_getBuildSessionTimestamp&apos; is never used." cwe="561">
+            <location file="BuildSystem.cpp" line="26"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCXXAccessSpecifier&apos; is never used." verbose="The function &apos;clang_getCXXAccessSpecifier&apos; is never used." cwe="561">
+            <location file="CIndexCXX.cpp" line="30"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCanonicalCursor&apos; is never used." verbose="The function &apos;clang_getCanonicalCursor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6417"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCanonicalType&apos; is never used." verbose="The function &apos;clang_getCanonicalType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="387"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getChildDiagnostics&apos; is never used." verbose="The function &apos;clang_getChildDiagnostics&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="458"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getClangVersion&apos; is never used." verbose="The function &apos;clang_getClangVersion&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8846"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionAnnotation&apos; is never used." verbose="The function &apos;clang_getCompletionAnnotation&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="210"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionAvailability&apos; is never used." verbose="The function &apos;clang_getCompletionAvailability&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="198"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionBriefComment&apos; is never used." verbose="The function &apos;clang_getCompletionBriefComment&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="231"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionChunkCompletionString&apos; is never used." verbose="The function &apos;clang_getCompletionChunkCompletionString&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="150"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionChunkKind&apos; is never used." verbose="The function &apos;clang_getCompletionChunkKind&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="57"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionChunkText&apos; is never used." verbose="The function &apos;clang_getCompletionChunkText&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="111"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionFixIt&apos; is never used." verbose="The function &apos;clang_getCompletionFixIt&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="322"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionNumAnnotations&apos; is never used." verbose="The function &apos;clang_getCompletionNumAnnotations&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="204"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionNumFixIts&apos; is never used." verbose="The function &apos;clang_getCompletionNumFixIts&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="312"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionParent&apos; is never used." verbose="The function &apos;clang_getCompletionParent&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="218"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCompletionPriority&apos; is never used." verbose="The function &apos;clang_getCompletionPriority&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="192"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursor&apos; is never used." verbose="The function &apos;clang_getCursor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="5613"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorAvailability&apos; is never used." verbose="The function &apos;clang_getCursorAvailability&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7757"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorCompletionString&apos; is never used." verbose="The function &apos;clang_getCursorCompletionString&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1413"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorExceptionSpecificationType&apos; is never used." verbose="The function &apos;clang_getCursorExceptionSpecificationType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="768"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorLanguage&apos; is never used." verbose="The function &apos;clang_getCursorLanguage&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7927"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorLexicalParent&apos; is never used." verbose="The function &apos;clang_getCursorLexicalParent&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8020"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorLinkage&apos; is never used." verbose="The function &apos;clang_getCursorLinkage&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7643"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorPlatformAvailability&apos; is never used." verbose="The function &apos;clang_getCursorPlatformAvailability&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7877"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorPrettyPrinted&apos; is never used." verbose="The function &apos;clang_getCursorPrettyPrinted&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4915"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorPrintingPolicy&apos; is never used." verbose="The function &apos;clang_getCursorPrintingPolicy&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4747"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorResultType&apos; is never used." verbose="The function &apos;clang_getCursorResultType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="717"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorTLSKind&apos; is never used." verbose="The function &apos;clang_getCursorTLSKind&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7934"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getCursorVisibility&apos; is never used." verbose="The function &apos;clang_getCursorVisibility&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="7666"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDeclObjCTypeEncoding&apos; is never used." verbose="The function &apos;clang_getDeclObjCTypeEncoding&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="1079"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDefinitionSpellingAndExtent&apos; is never used." verbose="The function &apos;clang_getDefinitionSpellingAndExtent&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6486"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDiagnostic&apos; is never used." verbose="The function &apos;clang_getDiagnostic&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="211"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDiagnosticCategoryName&apos; is never used." verbose="The function &apos;clang_getDiagnosticCategoryName&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="402"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDiagnosticFixIt&apos; is never used." verbose="The function &apos;clang_getDiagnosticFixIt&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="432"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDiagnosticInSet&apos; is never used." verbose="The function &apos;clang_getDiagnosticInSet&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="450"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getDiagnosticNumFixIts&apos; is never used." verbose="The function &apos;clang_getDiagnosticNumFixIts&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="426"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getElementType&apos; is never used." verbose="The function &apos;clang_getElementType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="785"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getEnumConstantDeclUnsignedValue&apos; is never used." verbose="The function &apos;clang_getEnumConstantDeclUnsignedValue&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="356"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getEnumConstantDeclValue&apos; is never used." verbose="The function &apos;clang_getEnumConstantDeclValue&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="340"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getEnumDeclIntegerType&apos; is never used." verbose="The function &apos;clang_getEnumDeclIntegerType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="322"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFieldDeclBitWidth&apos; is never used." verbose="The function &apos;clang_getFieldDeclBitWidth&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="372"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFile&apos; is never used." verbose="The function &apos;clang_getFile&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4209"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFileContents&apos; is never used." verbose="The function &apos;clang_getFileContents&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4221"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFileTime&apos; is never used." verbose="The function &apos;clang_getFileTime&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4201"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFileUniqueID&apos; is never used." verbose="The function &apos;clang_getFileUniqueID&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4258"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getFunctionTypeCallingConv&apos; is never used." verbose="The function &apos;clang_getFunctionTypeCallingConv&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="640"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getIBOutletCollectionType&apos; is never used." verbose="The function &apos;clang_getIBOutletCollectionType&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8438"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getIncludedFile&apos; is never used." verbose="The function &apos;clang_getIncludedFile&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8037"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getInclusions&apos; is never used." verbose="The function &apos;clang_getInclusions&apos; is never used." cwe="561">
+            <location file="CIndexInclusionStack.cpp" line="70"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getInstantiationLocation&apos; is never used." verbose="The function &apos;clang_getInstantiationLocation&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="293"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getLocation&apos; is never used." verbose="The function &apos;clang_getLocation&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="114"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getLocationForOffset&apos; is never used." verbose="The function &apos;clang_getLocationForOffset&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="149"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getModuleForFile&apos; is never used." verbose="The function &apos;clang_getModuleForFile&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8226"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getNumArgTypes&apos; is never used." verbose="The function &apos;clang_getNumArgTypes&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="674"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getNumCompletionChunks&apos; is never used." verbose="The function &apos;clang_getNumCompletionChunks&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="187"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getNumDiagnostics&apos; is never used." verbose="The function &apos;clang_getNumDiagnostics&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="201"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getNumDiagnosticsInSet&apos; is never used." verbose="The function &apos;clang_getNumDiagnosticsInSet&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="466"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getNumElements&apos; is never used." verbose="The function &apos;clang_getNumElements&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="817"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getOverloadedDecl&apos; is never used." verbose="The function &apos;clang_getOverloadedDecl&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6459"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getOverriddenCursors&apos; is never used." verbose="The function &apos;clang_getOverriddenCursors&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1469"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getPointeeType&apos; is never used." verbose="The function &apos;clang_getPointeeType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="441"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getPresumedLocation&apos; is never used." verbose="The function &apos;clang_getPresumedLocation&apos; is never used." cwe="561">
+            <location file="CXSourceLocation.cpp" line="262"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getRemappings&apos; is never used." verbose="The function &apos;clang_getRemappings&apos; is never used." cwe="561">
+            <location file="ARCMigrate.cpp" line="35"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getRemappingsFromFileList&apos; is never used." verbose="The function &apos;clang_getRemappingsFromFileList&apos; is never used." cwe="561">
+            <location file="ARCMigrate.cpp" line="77"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getSkippedRanges&apos; is never used." verbose="The function &apos;clang_getSkippedRanges&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="8608"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getSpecializedCursorTemplate&apos; is never used." verbose="The function &apos;clang_getSpecializedCursorTemplate&apos; is never used." cwe="561">
+            <location file="CIndexCXX.cpp" line="82"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTemplateCursorKind&apos; is never used." verbose="The function &apos;clang_getTemplateCursorKind&apos; is never used." cwe="561">
+            <location file="CIndexCXX.cpp" line="50"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getToken&apos; is never used." verbose="The function &apos;clang_getToken&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6724"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTokenExtent&apos; is never used." verbose="The function &apos;clang_getTokenExtent&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6638"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTokenSpelling&apos; is never used." verbose="The function &apos;clang_getTokenSpelling&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6582"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTranslationUnitCursor&apos; is never used." verbose="The function &apos;clang_getTranslationUnitCursor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4135"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTranslationUnitTargetInfo&apos; is never used." verbose="The function &apos;clang_getTranslationUnitTargetInfo&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4145"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTypeKindSpelling&apos; is never used." verbose="The function &apos;clang_getTypeKindSpelling&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="541"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTypeSpelling&apos; is never used." verbose="The function &apos;clang_getTypeSpelling&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="289"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTypedefDeclUnderlyingType&apos; is never used." verbose="The function &apos;clang_getTypedefDeclUnderlyingType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="304"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_getTypedefName&apos; is never used." verbose="The function &apos;clang_getTypedefName&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="430"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_hashCursor&apos; is never used." verbose="The function &apos;clang_hashCursor&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="5695"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_indexLoc_getCXSourceLocation&apos; is never used." verbose="The function &apos;clang_indexLoc_getCXSourceLocation&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="963"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_indexLoc_getFileLocation&apos; is never used." verbose="The function &apos;clang_indexLoc_getFileLocation&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="942"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_indexSourceFile&apos; is never used." verbose="The function &apos;clang_indexSourceFile&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="835"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_indexTranslationUnit&apos; is never used." verbose="The function &apos;clang_indexTranslationUnit&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="914"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getCXXClassDeclInfo&apos; is never used." verbose="The function &apos;clang_index_getCXXClassDeclInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="784"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getClientContainer&apos; is never used." verbose="The function &apos;clang_index_getClientContainer&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="796"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getClientEntity&apos; is never used." verbose="The function &apos;clang_index_getClientEntity&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="811"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getIBOutletCollectionAttrInfo&apos; is never used." verbose="The function &apos;clang_index_getIBOutletCollectionAttrInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="771"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getObjCCategoryDeclInfo&apos; is never used." verbose="The function &apos;clang_index_getObjCCategoryDeclInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="725"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getObjCContainerDeclInfo&apos; is never used." verbose="The function &apos;clang_index_getObjCContainerDeclInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="699"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getObjCInterfaceDeclInfo&apos; is never used." verbose="The function &apos;clang_index_getObjCInterfaceDeclInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="712"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getObjCPropertyDeclInfo&apos; is never used." verbose="The function &apos;clang_index_getObjCPropertyDeclInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="759"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_getObjCProtocolRefListInfo&apos; is never used." verbose="The function &apos;clang_index_getObjCProtocolRefListInfo&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="738"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_isEntityObjCContainerKind&apos; is never used." verbose="The function &apos;clang_index_isEntityObjCContainerKind&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="694"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_setClientContainer&apos; is never used." verbose="The function &apos;clang_index_setClientContainer&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="803"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_index_setClientEntity&apos; is never used." verbose="The function &apos;clang_index_setClientEntity&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="818"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isConstQualifiedType&apos; is never used." verbose="The function &apos;clang_isConstQualifiedType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="402"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isFileMultipleIncludeGuarded&apos; is never used." verbose="The function &apos;clang_isFileMultipleIncludeGuarded&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4242"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isFunctionTypeVariadic&apos; is never used." verbose="The function &apos;clang_isFunctionTypeVariadic&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="626"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isInvalidDeclaration&apos; is never used." verbose="The function &apos;clang_isInvalidDeclaration&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="5713"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isPODType&apos; is never used." verbose="The function &apos;clang_isPODType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="775"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isRestrictQualifiedType&apos; is never used." verbose="The function &apos;clang_isRestrictQualifiedType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="412"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isUnexposed&apos; is never used." verbose="The function &apos;clang_isUnexposed&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="5746"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isVirtualBase&apos; is never used." verbose="The function &apos;clang_isVirtualBase&apos; is never used." cwe="561">
+            <location file="CIndexCXX.cpp" line="22"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_isVolatileQualifiedType&apos; is never used." verbose="The function &apos;clang_isVolatileQualifiedType&apos; is never used." cwe="561">
+            <location file="CXType.cpp" line="407"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_loadDiagnostics&apos; is never used." verbose="The function &apos;clang_loadDiagnostics&apos; is never used." cwe="561">
+            <location file="CXLoadedDiagnostic.cpp" line="389"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_remap_dispose&apos; is never used." verbose="The function &apos;clang_remap_dispose&apos; is never used." cwe="561">
+            <location file="ARCMigrate.cpp" line="136"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_remap_getFilenames&apos; is never used." verbose="The function &apos;clang_remap_getFilenames&apos; is never used." cwe="561">
+            <location file="ARCMigrate.cpp" line="126"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_remap_getNumFiles&apos; is never used." verbose="The function &apos;clang_remap_getNumFiles&apos; is never used." cwe="561">
+            <location file="ARCMigrate.cpp" line="121"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_reparseTranslationUnit&apos; is never used." verbose="The function &apos;clang_reparseTranslationUnit&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4095"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_saveTranslationUnit&apos; is never used." verbose="The function &apos;clang_saveTranslationUnit&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3968"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_sortCodeCompletionResults&apos; is never used." verbose="The function &apos;clang_sortCodeCompletionResults&apos; is never used." cwe="561">
+            <location file="CIndexCodeCompletion.cpp" line="1041"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_suspendTranslationUnit&apos; is never used." verbose="The function &apos;clang_suspendTranslationUnit&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4035"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_toggleCrashRecovery&apos; is never used." verbose="The function &apos;clang_toggleCrashRecovery&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="3307"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_tokenize&apos; is never used." verbose="The function &apos;clang_tokenize&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="6760"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;clang_visitChildrenWithBlock&apos; is never used." verbose="The function &apos;clang_visitChildrenWithBlock&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="4407"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;classof&apos; is never used." verbose="The function &apos;classof&apos; is never used." cwe="561">
+            <location file="CIndex.cpp" line="1827"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;emitCodeContext&apos; is never used." verbose="The function &apos;emitCodeContext&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="132"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;emitDiagnosticLoc&apos; is never used." verbose="The function &apos;emitDiagnosticLoc&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="128"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;emitDiagnosticMessage&apos; is never used." verbose="The function &apos;emitDiagnosticMessage&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="112"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;emitNote&apos; is never used." verbose="The function &apos;emitNote&apos; is never used." cwe="561">
+            <location file="CIndexDiagnostic.cpp" line="136"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getEmptyKey&apos; is never used." verbose="The function &apos;getEmptyKey&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1365"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getTombstoneKey&apos; is never used." verbose="The function &apos;getTombstoneKey&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1368"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;getTranslationUnitKind&apos; is never used." verbose="The function &apos;getTranslationUnitKind&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="384"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;hasCodeCompletionSupport&apos; is never used." verbose="The function &apos;hasCodeCompletionSupport&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="390"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;isEqual&apos; is never used." verbose="The function &apos;isEqual&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1375"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;isManagedByPool&apos; is never used." verbose="The function &apos;isManagedByPool&apos; is never used." cwe="561">
+            <location file="CXString.cpp" line="152"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;operator==&apos; is never used." verbose="The function &apos;operator==&apos; is never used." cwe="561">
+            <location file="CXCursor.cpp" line="1135"/>
+        </error>
+        <error id="unusedFunction" severity="style" msg="The function &apos;shouldSkipFunctionBody&apos; is never used." verbose="The function &apos;shouldSkipFunctionBody&apos; is never used." cwe="561">
+            <location file="Indexing.cpp" line="304"/>
+        </error>
+        <error id="missingInclude" severity="information" msg="Cppcheck cannot find all the include files (use --check-config for details)" verbose="Cppcheck cannot find all the include files. Cppcheck can check the code without the include files found. But the results will probably be more accurate if all the include files are found. Please check your project&apos;s include directories and add all of them as include directories for Cppcheck. To see what files Cppcheck cannot find use --check-config."/>
+    </errors>
+</results>
