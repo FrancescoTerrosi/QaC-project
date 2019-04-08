@@ -1,0 +1,16 @@
+\chapter{Introduzione}
+
+\begin{itemize}
+	\item Understand
+		\begin{itemize}
+			\item Cartella INPUTS fa crashare understand (overflow?)
+			\item Il lavoro e' stato effettuato analizzando la cartella "tools/libclang"
+		\end{itemize}
+	\item Rosechecker
+		\begin{itemize}
+			\item E' stato necessario spostare tutto i file .h in un'unica cartella
+			\item E' stato necessario modificare tutte le istruzioni include "clang-c/file.h" in "file.h" perche' rosechecker andava ogni volta a cercare nelle sotto-cartelle
+			\item Idem per altri import
+		\end{itemize}
+	\item SonarCloud non e' stato possibile utilizzarlo perché richiede la build dell'intero progetto (rip)
+\end{itemize}
