@@ -1,0 +1,191 @@
+Flawfinder version 1.31, (C) 2001-2014 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 169
+Examining ./Index_Internal.h
+Examining ./CIndexHigh.cpp
+Examining ./CXLoadedDiagnostic.h
+Examining ./CIndexDiagnostic.cpp
+Examining ./CLog.h
+Examining ./CXTranslationUnit.h
+Examining ./CXComment.cpp
+Examining ./CIndexUSRs.cpp
+Examining ./CXSourceLocation.h
+Examining ./CursorVisitor.h
+Examining ./CIndexer.cpp
+Examining ./Indexing.cpp
+Examining ./CXString.cpp
+Examining ./CIndex.cpp
+Examining ./CXType.cpp
+Examining ./CXCursor.cpp
+Examining ./BuildSystem.cpp
+Examining ./ARCMigrate.cpp
+Examining ./CXSourceLocation.cpp
+Examining ./CXString.h
+Examining ./CXCursor.h
+Examining ./CIndexCXX.cpp
+Examining ./CIndexer.h
+Examining ./CXCompilationDatabase.cpp
+Examining ./CXType.h
+Examining ./CXIndexDataConsumer.cpp
+Examining ./CIndexInclusionStack.cpp
+Examining ./CIndexDiagnostic.h
+Examining ./CXStoredDiagnostic.cpp
+Examining ./CXIndexDataConsumer.h
+Examining ./CXComment.h
+Examining ./CXLoadedDiagnostic.cpp
+Examining ./CIndexCodeCompletion.cpp
+
+FINAL RESULTS:
+
+./CIndexCodeCompletion.cpp:821:  [4] (misc) getlogin:
+  It's often easy to fool getlogin. Sometimes it does not work at all,
+  because some program messed up the utmp file. Often, it gives only the
+  first 8 characters of the login name. The user currently logged in on the
+  controlling tty of our program need not be the user who started it. Avoid
+  getlogin() for security-related purposes (CWE-807). Use getpwuid(geteuid())
+  and extract the desired information instead.
+./CIndexer.cpp:115:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Consider using strcpy_s, strncpy, or strlcpy (warning, strncpy is easily
+  misused).
+./ARCMigrate.cpp:40:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./ARCMigrate.cpp:83:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:3254:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:3275:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:3278:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:3606:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:3992:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:4011:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:4118:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:8707:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndex.cpp:8723:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndexCodeCompletion.cpp:368:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndexCodeCompletion.cpp:380:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndexCodeCompletion.cpp:706:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CIndexCodeCompletion.cpp:881:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./CLog.h:47:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./Indexing.cpp:906:  [3] (buffer) getenv:
+  Environment variables are untrustable input if they can be set by an
+  attacker. They can have any content and length, and the same variable can
+  be set more than once (CWE-807, CWE-20). Check environment variables
+  carefully before using them.
+./BuildSystem.cpp:83:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./BuildSystem.cpp:145:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./CIndexCodeCompletion.cpp:685:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./CIndexer.cpp:108:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119:CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+./CIndexer.cpp:114:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119:CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+./CXLoadedDiagnostic.cpp:52:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./Indexing.cpp:438:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./Indexing.cpp:659:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+./CIndex.cpp:3825:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers (CWE-120).
+./CIndex.cpp:3846:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers (CWE-120).
+./CIndex.cpp:3865:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers (CWE-120).
+./CIndex.cpp:3890:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers (CWE-120).
+./CIndex.cpp:3903:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers (CWE-120).
+
+ANALYSIS SUMMARY:
+
+Hits = 32
+Lines analyzed = 20753 in approximately 0.69 seconds (30102 lines/second)
+Physical Source Lines of Code (SLOC) = 15895
+Hits@level = [0]   0 [1]   5 [2]   8 [3]  17 [4]   2 [5]   0
+Hits@level+ = [0+]  32 [1+]  32 [2+]  27 [3+]  19 [4+]   2 [5+]   0
+Hits/KSLOC@level+ = [0+] 2.01321 [1+] 2.01321 [2+] 1.69865 [3+] 1.19534 [4+] 0.125826 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming for Linux and Unix HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.
