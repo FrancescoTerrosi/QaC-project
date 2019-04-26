@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.9)  26 APR 2019 18:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.9)  26 APR 2019 18:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2184,14 +2184,28 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 97--101
  []
 
 ) [6] [7 <./img/overflowUnderstand.png>]
+\openout2 = `Chapters/ClangAnalysis.aux'.
+
+ (./Chapters/ClangAnalysis.tex [8
+
+
+
+
+]
+chapter 2.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 5--107
+
+ []
+
+[9]
 \openout2 = `Chapters/bibliografia.aux'.
 
- (./Chapters/bibliografia.tex
-(./thesis.brf)
+ (./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
- [8
+ [10
 
 
 
@@ -2201,24 +2215,37 @@ LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <12> not available
 (Font)              Font shape `T1/fvm/m/sl' tried instead on input line 4.
 LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
 (Font)              scaled to size 10.20007pt on input line 4.
-) [9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (./thesis.aux (./titlePage.aux)
-(./Chapters/Introduzione.aux) (./Chapters/bibliografia.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: D4AAC5B377A8E6C4D79EC75908C161C8;291.
+) [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+ (./thesis.aux
+(./titlePage.aux) (./Chapters/Introduzione.aux) (./Chapters/ClangAnalysis.aux)
+(./Chapters/bibliografia.aux)
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: D4AAC5B377A8E6C4D79EC75908C161C8;291
+(rerunfilecheck)             After:  C4C3F81C4D77EFDB4DF8A64BCEF9F504;398.
 Package rerunfilecheck Info: File `thesis.brf' has not changed.
 (rerunfilecheck)             Checksum: ACCF0E99405ABD5D6B6DCEE9D1F85DE0;44.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 37567 strings out of 492982
- 718631 string characters out of 6134897
+ 37581 strings out of 492982
+ 718914 string characters out of 6134897
  908315 words of memory out of 5000000
- 40282 multiletter control sequences out of 15000+600000
+ 40287 multiletter control sequences out of 15000+600000
  601219 words of font info for 258 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,13n,73p,10405b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2230,10 +2257,10 @@ e1/public/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ber
 a/fvmro8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (10 pages, 188671 bytes).
+Output written on thesis.pdf (12 pages, 190103 bytes).
 PDF statistics:
- 152 PDF objects out of 1000 (max. 8388607)
- 126 compressed objects within 2 object streams
- 22 named destinations out of 1000 (max. 500000)
+ 163 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
  69183 words of extra memory for PDF output out of 74296 (max. 10000000)
 
