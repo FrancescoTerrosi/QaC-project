@@ -90,6 +90,12 @@ In our work we are interested in \textbf{Unit Level Analysis}.
 
 \section{LLVM-Clang Compiler}
 
-The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends \cite{bibitem1}. It is a middle-layer between the frontend (C, C++, Python\dots) and the backend (low-level hardware-dependent assembly). The high-level source code is translated into LLVM bitcode, where optimization and analysis is performed before being translated to low-level code.\newline\newline
+The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends \cite{bibitem1}. It is a middle-layer between the frontend (C, C++, Python\dots) and the backend (low-level hardware-dependent assembly). The high-level source code is translated into LLVM bitcode, where optimization and analysis is performed before being translated to low-level code.\newline
 The Clang compiler is a C/C++ (and several others) compiler frontend that uses the LLVM infrastracture.\newline
-The project is structured in a complex hierarchy of directories and files, referencing each others. Because of this, it was chosen to work on a sub-part of the project . ....
+The project is structured in a complex hierarchy of directories and files, referencing each others. This was one of the two reasons that forced us to work on a sub-part of the project: the \textbf{tools/libclang} directory. The other reason was that some files made some of the static analyzers (e.g. Understand) crash in unexpected manners, probably because of some sort of overflow.\newline
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/overflowUnderstand.png}
+	\captionof{figure}{As we can see from this example, the same warning is displayed multiple times. This is most likely an overflow on the specific check}
+\end{minipage}
+
