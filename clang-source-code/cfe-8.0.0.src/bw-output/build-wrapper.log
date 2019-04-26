@@ -1,0 +1,80 @@
+Fri Apr 26 17:18:11 2019: build-wrapper, version 6.1 (linux-x86)
+Fri Apr 26 17:18:11 2019: System name: Linux Nodename: francesco-G11CB Release: 4.18.0-17-generic Version: #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019 Machine: x86_64
+Fri Apr 26 17:18:11 2019: socket path: /tmp/build-wrapper-socket.0L1bgG
+Fri Apr 26 17:18:11 2019: dynamic library found: /home/francesco/Programmi/build-wrapper-linux-x86/libinterceptor-i686.so
+Fri Apr 26 17:18:11 2019: dynamic library found: /home/francesco/Programmi/build-wrapper-linux-x86/libinterceptor-x86_64.so
+Fri Apr 26 17:18:11 2019: command executed as: <build-wrapper-linux-x86-64>
+Fri Apr 26 17:18:11 2019: command line received: <make clean all>
+Fri Apr 26 17:18:11 2019: env 0: <CLUTTER_IM_MODULE=xim>
+Fri Apr 26 17:18:11 2019: env 1: <LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:>
+Fri Apr 26 17:18:11 2019: env 2: <LC_MEASUREMENT=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 3: <LESSCLOSE=/usr/bin/lesspipe %s %s>
+Fri Apr 26 17:18:11 2019: env 4: <LC_PAPER=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 5: <LC_MONETARY=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 6: <XDG_MENU_PREFIX=gnome->
+Fri Apr 26 17:18:11 2019: env 7: <LANG=en_US.UTF-8>
+Fri Apr 26 17:18:11 2019: env 8: <DISPLAY=:1>
+Fri Apr 26 17:18:11 2019: env 9: <SDKMAN_CANDIDATES_API=https://api.sdkman.io/2>
+Fri Apr 26 17:18:11 2019: env 10: <GNOME_SHELL_SESSION_MODE=ubuntu>
+Fri Apr 26 17:18:11 2019: env 11: <COLORTERM=truecolor>
+Fri Apr 26 17:18:11 2019: env 12: <DESKTOP_AUTOSTART_ID=108f623a445e143319155629176783740300000024400007>
+Fri Apr 26 17:18:11 2019: env 13: <USERNAME=francesco>
+Fri Apr 26 17:18:11 2019: env 14: <XDG_VTNR=2>
+Fri Apr 26 17:18:11 2019: env 15: <SSH_AUTH_SOCK=/run/user/1000/keyring/ssh>
+Fri Apr 26 17:18:11 2019: env 16: <MANDATORY_PATH=/usr/share/gconf/ubuntu.mandatory.path>
+Fri Apr 26 17:18:11 2019: env 17: <LC_NAME=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 18: <XDG_SESSION_ID=3>
+Fri Apr 26 17:18:11 2019: env 19: <USER=francesco>
+Fri Apr 26 17:18:11 2019: env 20: <DESKTOP_SESSION=ubuntu>
+Fri Apr 26 17:18:11 2019: env 21: <QT4_IM_MODULE=xim>
+Fri Apr 26 17:18:11 2019: env 22: <TEXTDOMAINDIR=/usr/share/locale/>
+Fri Apr 26 17:18:11 2019: env 23: <GRADLE_HOME=/home/francesco/.sdkman/candidates/gradle/current>
+Fri Apr 26 17:18:11 2019: env 24: <GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/c7e0afd5_b6ac_4d38_9803_ca03750e42b5>
+Fri Apr 26 17:18:11 2019: env 25: <DEFAULTS_PATH=/usr/share/gconf/ubuntu.default.path>
+Fri Apr 26 17:18:11 2019: env 26: <PWD=/home/francesco/git/QaC-project/clang-source-code/cfe-8.0.0.src>
+Fri Apr 26 17:18:11 2019: env 27: <HOME=/home/francesco>
+Fri Apr 26 17:18:11 2019: env 28: <TEXTDOMAIN=im-config>
+Fri Apr 26 17:18:11 2019: env 29: <SSH_AGENT_PID=2536>
+Fri Apr 26 17:18:11 2019: env 30: <QT_ACCESSIBILITY=1>
+Fri Apr 26 17:18:11 2019: env 31: <XDG_SESSION_TYPE=x11>
+Fri Apr 26 17:18:11 2019: env 32: <XDG_DATA_DIRS=/usr/share/ubuntu:/usr/local/share:/usr/share:/var/lib/snapd/desktop>
+Fri Apr 26 17:18:11 2019: env 33: <XDG_SESSION_DESKTOP=ubuntu>
+Fri Apr 26 17:18:11 2019: env 34: <LC_ADDRESS=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 35: <LC_NUMERIC=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 36: <SDKMAN_DIR=/home/francesco/.sdkman>
+Fri Apr 26 17:18:11 2019: env 37: <GTK_MODULES=gail:atk-bridge>
+Fri Apr 26 17:18:11 2019: env 38: <WINDOWPATH=2>
+Fri Apr 26 17:18:11 2019: env 39: <VTE_VERSION=5202>
+Fri Apr 26 17:18:11 2019: env 40: <TERM=xterm-256color>
+Fri Apr 26 17:18:11 2019: env 41: <SHELL=/bin/bash>
+Fri Apr 26 17:18:11 2019: env 42: <QT_IM_MODULE=ibus>
+Fri Apr 26 17:18:11 2019: env 43: <XMODIFIERS=@im=ibus>
+Fri Apr 26 17:18:11 2019: env 44: <IM_CONFIG_PHASE=2>
+Fri Apr 26 17:18:11 2019: env 45: <SDKMAN_CANDIDATES_DIR=/home/francesco/.sdkman/candidates>
+Fri Apr 26 17:18:11 2019: env 46: <XDG_CURRENT_DESKTOP=ubuntu:GNOME>
+Fri Apr 26 17:18:11 2019: env 47: <GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1>
+Fri Apr 26 17:18:11 2019: env 48: <GNOME_TERMINAL_SERVICE=:1.76>
+Fri Apr 26 17:18:11 2019: env 49: <XDG_SEAT=seat0>
+Fri Apr 26 17:18:11 2019: env 50: <SHLVL=1>
+Fri Apr 26 17:18:11 2019: env 51: <LC_TELEPHONE=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 52: <GDMSESSION=ubuntu>
+Fri Apr 26 17:18:11 2019: env 53: <GNOME_DESKTOP_SESSION_ID=this-is-deprecated>
+Fri Apr 26 17:18:11 2019: env 54: <LOGNAME=francesco>
+Fri Apr 26 17:18:11 2019: env 55: <DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus>
+Fri Apr 26 17:18:11 2019: env 56: <XDG_RUNTIME_DIR=/run/user/1000>
+Fri Apr 26 17:18:11 2019: env 57: <XAUTHORITY=/run/user/1000/gdm/Xauthority>
+Fri Apr 26 17:18:11 2019: env 58: <XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg>
+Fri Apr 26 17:18:11 2019: env 59: <PATH=/home/francesco/.sdkman/candidates/gradle/current/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/francesco/Programmi/sonar-scanner-3.3.0.1492-linux/bin:/home/francesco/Programmi/build-wrapper-linux-x86>
+Fri Apr 26 17:18:11 2019: env 60: <LC_IDENTIFICATION=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 61: <SDKMAN_VERSION=5.7.3+337>
+Fri Apr 26 17:18:11 2019: env 62: <SDKMAN_PLATFORM=Linux64>
+Fri Apr 26 17:18:11 2019: env 63: <SESSION_MANAGER=local/francesco-G11CB:@/tmp/.ICE-unix/2440,unix/francesco-G11CB:/tmp/.ICE-unix/2440>
+Fri Apr 26 17:18:11 2019: env 64: <LESSOPEN=| /usr/bin/lesspipe %s>
+Fri Apr 26 17:18:11 2019: env 65: <GTK_IM_MODULE=ibus>
+Fri Apr 26 17:18:11 2019: env 66: <LC_TIME=it_IT.UTF-8>
+Fri Apr 26 17:18:11 2019: env 67: <OLDPWD=/home/francesco/git/QaC-project/clang-source-code>
+Fri Apr 26 17:18:11 2019: env 68: <_=/home/francesco/Programmi/build-wrapper-linux-x86/build-wrapper-linux-x86-64>
+Fri Apr 26 17:18:11 2019: executing: <make clean all>
+Fri Apr 26 17:18:11 2019: initializing json file
+Fri Apr 26 17:18:11 2019: finalizing json file
+Fri Apr 26 17:18:11 2019: returned with code: 2
