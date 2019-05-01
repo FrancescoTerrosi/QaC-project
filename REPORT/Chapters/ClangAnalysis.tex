@@ -69,3 +69,40 @@ Mastering the options of these two powerful features gives to the user much more
 All the output perspectives can be exported in suitable formats (e.g. Treemap is exported in .png files while lists of violations are exported in .txt or .html files) that facilitate the second phase of the analysis.
 
 \subsection{Understand Results}
+
+As it has been said in the introduction, multiple analysis with different checks were ran:
+\begin{itemize}
+	\item[$a)$] MISRA-C++ 2008
+	\item[$b)$] SciTools' Recommended Checks
+	\item[$c)$] Clang Static Analyzer
+	\item[$d)$] All Checks
+\end{itemize}
+
+\hspace{-0.6cm} $a)$  
+This check is based on the MISRA-C++ 2008 standard, which is a standard developed for the quality of C++ source files.\newline
+Results has been sorted by files and by MISRA rules. After that a compact view of these was produced showing the numbers of violations for each MISRA and for each file.\newline
+Analyzing the reports it can be observed that:
+\begin{itemize}
+	\item The total number of violations in the \textbf{libclang} folder is 8450
+	\item The first three rules that were violated the most are:
+	\begin{itemize}
+		\item[$1.\:$] MISRA08\_7-1-1 - \textbf{A variable which is not modified shall be const qualified} - 1845 violations.\newline If a variable does not need to be modified, then it shall be declared with const qualification so that it cannot be modified. A non-parametric variable will then require its initialization at the point of declaration. Also, future maintenance cannot accidentally modify the value.
+		\item[$2.\:$] MISRA08\_6-4-1 - \textbf{An if condition construct shall be followed by a compund statement. The else keyword shall be followed by either a compound statement or another if statement} - 1239 violations.\newline If the bodies of these constructs are not compound statements, then errors can occur if a developer fails to add the required braces when attempting to change a single statement body to a multistatement body.
+		Requiring that the body of these constructs shall be a compound statement (enclosed within braces) ensures that these errors cannot arise.
+		\item[$3.\:$] MISRA08\_0-1-10 -\textbf{All defined functions called} - 733 violations.\newline Functions or procedures that are not called may be symptomatic of a serious problem, such as missing paths.
+	\end{itemize}
+	\item The first three files that contains the most violations are:
+		\begin{itemize}
+		\item[$1.\:$] CIndex.cpp - 3828 violations.
+		\item[$2.\:$] CXType.cpp - 757 violations.
+		\item[$3.\:$] CXCursor.cpp - 558 violations.
+	\end{itemize}
+\end{itemize}
+
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{pdf/Misra_Summary.pdf}
+	\captionof{figure}{Summary of the MISRA checks}
+\end{minipage}
+
+\subsection{Understand Performances}
