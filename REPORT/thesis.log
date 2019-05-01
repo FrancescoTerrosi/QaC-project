@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.9)  1 MAY 2019 18:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.9)  1 MAY 2019 19:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2275,45 +2275,76 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 63--68
 []$[]$
  []
 
-[10] [11 <./img/AllChecksTreeMap.png>]
-<pdf/Misra_Summary.pdf, id=169, 597.55246pt x 845.07718pt>
-File: pdf/Misra_Summary.pdf Graphic file (type pdf)
-<use pdf/Misra_Summary.pdf>
-Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 99.
-(pdftex.def)             Requested size: 384.1122pt x 543.2331pt.
+[10] [11 <./img/AllChecksTreeMap.png>] [12]
+Overfull \hbox (65.17473pt too wide) in paragraph at lines 113--114
+\T1/pplj/m/n/12 (-20) serv-able that the first 3 files in terms of $\U/zeur/m/n
+/12 NumberOfViolations=CountLineCode$
+ []
 
+<img/TreemapCountLine.png, id=174, 1185.42876pt x 795.97375pt>
+File: img/TreemapCountLine.png Graphic file (type png)
+<use img/TreemapCountLine.png>
+Package pdftex.def Info: img/TreemapCountLine.png  used on input line 120.
+(pdftex.def)             Requested size: 384.1122pt x 257.91109pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 100.
+(caption)                particular \caption on input line 121.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 98--102
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
+[][]|[]\T1/pplj/m/n/10.95 (+20) Result Treemap where files are sorted by
+ []
+
+
+Underfull \hbox (badness 3861) in paragraph at lines 121--121
+\U/zeur/m/n/10.95 NumberOfViolations=CountLineCode$ \T1/pplj/m/n/10.95 (+20) ra
+-tio. Darker boxes in-
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 119--123
 []$[]$ 
  []
 
-[12]) [13 <./pdf/Misra_Summary.pdf>] [14]
+<pdf/Misra_Summary.pdf, id=175, 597.55246pt x 845.07718pt>
+File: pdf/Misra_Summary.pdf Graphic file (type pdf)
+<use pdf/Misra_Summary.pdf>
+Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 126.
+(pdftex.def)             Requested size: 384.1122pt x 543.2331pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 127.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 125--129
+[]$[]$ 
+ []
+
+[13 <./img/TreemapCountLine.png>]) [14 <./pdf/Misra_Summary.pdf>] [15]
 \openout2 = `Chapters/bibliografia.aux'.
 
- (./Chapters/bibliografia.tex
-(./thesis.brf)
+
+(./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
-LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <12> not available
-(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 4.
-LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
-(Font)              scaled to size 10.20007pt on input line 4.
-) [15
+ [16
 
 
 
 
 ]
+LaTeX Font Info:    Font shape `T1/fvm/m/it' in size <12> not available
+(Font)              Font shape `T1/fvm/m/sl' tried instead on input line 4.
+LaTeX Font Info:    Font shape `T1/fvm/m/sl' will be
+(Font)              scaled to size 10.20007pt on input line 4.
+) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
- (./thesis.aux (./titlePage.aux)
-(./Chapters/Introduzione.aux) (./Chapters/ClangAnalysis.aux)
+ (./thesis.aux
+(./titlePage.aux) (./Chapters/Introduzione.aux) (./Chapters/ClangAnalysis.aux)
 (./Chapters/bibliografia.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
@@ -2324,13 +2355,13 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 37767 strings out of 492982
- 721127 string characters out of 6134897
+ 37795 strings out of 492982
+ 721455 string characters out of 6134897
  907315 words of memory out of 5000000
- 40322 multiletter control sequences out of 15000+600000
- 611897 words of font info for 361 fonts, out of 8000000 for 9000
+ 40328 multiletter control sequences out of 15000+600000
+ 614122 words of font info for 377 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,13n,73p,10405b,843s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,73p,10405b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-d
@@ -2341,10 +2372,10 @@ lic/bera/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr
 o8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (16 pages, 664879 bytes).
+Output written on thesis.pdf (18 pages, 964961 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 207 compressed objects within 3 object streams
- 39 named destinations out of 1000 (max. 500000)
- 77459 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 258 PDF objects out of 1000 (max. 8388607)
+ 214 compressed objects within 3 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 77464 words of extra memory for PDF output out of 89155 (max. 10000000)
 

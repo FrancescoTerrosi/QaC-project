@@ -74,8 +74,8 @@ As it has been said in the introduction, multiple analysis with different checks
 \begin{itemize}
 	\item[$a)$] MISRA-C++ 2008
 	\item[$b)$] SciTools' Recommended Checks
-	\item[$c)$] Clang Static Analyzer
-	\item[$d)$] All Checks
+	\item[$c)$] All Checks
+	\item[$d)$] Clang Static Analyzer
 \end{itemize}
 
 \hspace{-0.6cm} $a)$  
@@ -98,6 +98,28 @@ Analyzing the reports it can be observed that:
 		\item[$3.\:$] CXCursor.cpp - 558 violations.
 	\end{itemize}
 \end{itemize}
+
+Looking at the complete report, considerations can be made on the following aspects:
+
+\begin{itemize}
+	\item Some of the violations found (e.g. MISRA08\_0-1-10) include for sure some false-positive, due to the fact that the analysis was performed on a small subset of the complete project. Maybe the violation count for these rules could be reduced by performing a more comprehensive analysis.
+	\item The violations distribution is reasonable, that is that most of the files have a similar issues count and the same can be said for MISRA rules.
+	\item There is an exception both for files and for MISRA:
+	\begin{itemize}
+		\item[FILE: ] CIndex.cpp (3828 violations wrt 8450 total violations)
+		\item[MISRA: ] MISRA08\_7-1-1 (1845 violations wrt 8450 total violations)
+	\end{itemize}
+	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.27 - 1.75].
+	\item Combining the use of the Result Treemap and Result Locator it is observable that the first 3 files in terms of $NumberOfViolations/CountLineCode$ ratio are relatively small files compared to the others.
+	
+\end{itemize}
+
+\vspace{1cm}
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/TreemapCountLine.png}
+	\captionof{figure}{Result Treemap where files are sorted by $NumberOfViolations/CountLineCode$ ratio. Darker boxes indicates more distinct violation types while wider boxes indicate higher ratio.}
+\end{minipage}
 
 
 \begin{minipage}{\linewidth}
