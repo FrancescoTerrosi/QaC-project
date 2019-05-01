@@ -9,17 +9,25 @@ The last used tool is \textbf{flawfinder} which puts its focus more on security 
 Other tools such as \textbf{SonarQube} and \textbf{Cert C Rosechecker} were used but due to their characteristics they were unusable for our purpose.
 \pagebreak
 
+\section{Analysis Methodology}
+
+The LLVM Clang compiler was analized with all the tools listed above.\newline
+Since some issues arose while analyzing the whole project, as it was pointed in the previous section, a representative subset of it was chosen. In particular the folder \textbf{src/tool/libclang} was analyzed because it has been observed that the source files in this folder contained much of the compiler logic. This was the input folder for all the static analysis tools used.\newline\newline
+After the output was produced, the second phase of the analysis can start. Since the output format of the various tool is hetherogenous, it was necessary to convert them in excel sheets in order to collect evidences about what files were the most vulnerable/contained more bugs.
+
 \section{Understand}
 
 Understand is a very powerful tool for static analysis that can be used to analyze software written in multiple languages suchs as Java, Ada, Cobol, Python, C/C++\dots
-Among the tools used, it is the only one that comes with a nice and user-friendly user interface that allows users to navigate through the software files.\newline\newline
+Among the tools used, it is the only one that comes with a nice and user-friendly user interface that allows users to navigate through the software files.
+
+\subsection{Understand Project}
+
 First of all, it must be created an \textsl{Understand Project}. In this first step you are asked to select the language of the software (C/C++ in our case study) and the directories to analyze.\newline\newline
 \vspace{1cm}
 \begin{minipage}{\linewidth}
 	\includegraphics[width=\textwidth]{img/libclangDirectory.png}
 	\captionof{figure}{The whole subdirectory tools/libclang is imported in the Understand project in order to run the analysis.}
 \end{minipage}
-\pagebreak
 
 When the files are loaded in the program, the analysis can be run simply by opening the \textsl{codecheck perspective} and selecting which standard should guide it.\newline\newline
 \vspace{1cm}
@@ -37,3 +45,27 @@ When the files are loaded in the program, the analysis can be run simply by open
 	\item \textsl{Clang Static Analyzer} - Is an implementation of the tool incorporated in Understand.
 	\item \textsl{All Checks} - This is a collection of checks which consists of generic good programming rules and some of the MISRA rules. Despite its name, not all the checks are included for real, this is the reason why it is not correct to use only this option for a consistent analysis.
 \end{itemize}
+
+\subsection{Understand Output Format}
+
+When the analysis ends, it is possible to navigate through different perspectives of what has been observed. For example it is possible to list results \textsl{by file}, in order to check which issues are present in each file (and at which line of code) and what files contains the most issues. Another possibility is to display result \textsl{by check}, that is: for each rule (e.g. MISRA) how many times it has been violated and where (in terms of files).\newline
+Two very interesting features offered by Understand are the:
+\begin{itemize}
+	\item Result Locator
+	\item Result Treemap
+\end{itemize}
+
+The first one offers the possibility to navigate through the findings, filtering them by file, by violation and some other options, giving the possibility to jump to the desired \textsl{vulnerable} line of code in the source file.\newline
+The result treemap instead gives you a graphic representation of the files vulnerabilities, in terms of criticity and quantity. These characteristics can be viewed graphically using colored boxes, where the meaning of the color/dimension of the boxes can be defined by the user.\newline
+Mastering the options of these two powerful features gives to the user much more control of the analysis and a wider perspective of the whole project quality.\newline\newline
+
+\vspace{1cm}
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/AllChecksTreeMap.png}
+	\captionof{figure}{Result Treemap view.}
+\end{minipage}
+\vspace{1cm}
+
+All the output perspectives can be exported in suitable formats (e.g. Treemap is exported in .png files while lists of violations are exported in .txt or .html files) that facilitate the second phase of the analysis.
+
+\subsection{Understand Results}
