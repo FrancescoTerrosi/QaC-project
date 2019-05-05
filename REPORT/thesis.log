@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  5 MAY 2019 19:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  5 MAY 2019 19:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2393,7 +2393,17 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 166--170
  []
 
 [16 <./img/SciToolsViolationsRatio.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 175--178
+Underfull \hbox (badness 10000) in paragraph at lines 173--176
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
@@ -2402,31 +2412,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 184--185
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 185--186
-
- []
-
 [17]
 File: img/AllChecksTreeMap.png Graphic file (type png)
 <use img/AllChecksTreeMap.png>
-Package pdftex.def Info: img/AllChecksTreeMap.png  used on input line 212. on i
-nput line 212.
+Package pdftex.def Info: img/AllChecksTreeMap.png  used on input line 210. on i
+nput line 210.
 Package pdftex.def Info: Requested size: 384.1122pt x 188.1835pt on input line 
-212.
+210.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 213.
+(caption)                particular \caption on input line 211.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 211--215
+Overfull \hbox (12.0pt too wide) in paragraph at lines 209--213
 []$[]$ 
  []
 
@@ -2434,49 +2434,59 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 211--215
 File: img/AllChecksViolationsRatio.png Graphic file (type png)
 <use img/AllChecksViolationsRatio.png>
 Package pdftex.def Info: img/AllChecksViolationsRatio.png  used on input line 2
-17. on input line 217.
+15. on input line 215.
 Package pdftex.def Info: Requested size: 384.1122pt x 187.71915pt on input line
- 217.
+ 215.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 218.
+(caption)                particular \caption on input line 216.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 216--220
+Overfull \hbox (12.0pt too wide) in paragraph at lines 214--218
 []$[]$ 
  []
 
 [18]
-<pdf/Misra_Summary.pdf, id=219, pagebox=cropbox, 597.55246pt x 845.07718pt>
+Underfull \hbox (badness 10000) in paragraph at lines 225--232
+
+ []
+
+[19 <./img/AllChecksViolationsRatio.png>]
+<pdf/Misra_Summary.pdf, id=224, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: pdf/Misra_Summary.pdf Graphic file (type pdf)
 <use pdf/Misra_Summary.pdf>
-Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 228. on inpu
-t line 228.
+Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 237. on inpu
+t line 237.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-228.
+237.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 229.
+(caption)                particular \caption on input line 238.
 See the caption package documentation for explanation.
 
-[19 <./img/AllChecksViolationsRatio.png>] [20 <./pdf/Misra_Summary.pdf>]
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 236--240
+[]$[]$ 
+ []
+
+[20 <./pdf/Misra_Summary.pdf>]
 <pdf/SciTools_Summary.pdf, id=236, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: pdf/SciTools_Summary.pdf Graphic file (type pdf)
 <use pdf/SciTools_Summary.pdf>
-Package pdftex.def Info: pdf/SciTools_Summary.pdf  used on input line 235. on i
-nput line 235.
+Package pdftex.def Info: pdf/SciTools_Summary.pdf  used on input line 244. on i
+nput line 244.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-235.
+244.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 236.
+(caption)                particular \caption on input line 245.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 234--238
+Overfull \hbox (12.0pt too wide) in paragraph at lines 243--247
 []$[]$ 
  []
 
@@ -2485,18 +2495,18 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 234--238
 
 File: pdf/AllChecks_Summary.pdf Graphic file (type pdf)
 <use pdf/AllChecks_Summary.pdf>
-Package pdftex.def Info: pdf/AllChecks_Summary.pdf  used on input line 242. on 
-input line 242.
+Package pdftex.def Info: pdf/AllChecks_Summary.pdf  used on input line 251. on 
+input line 251.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-242.
+251.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 243.
+(caption)                particular \caption on input line 252.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 241--245
+Overfull \hbox (12.0pt too wide) in paragraph at lines 250--254
 []$[]$ 
  []
 
@@ -2533,11 +2543,11 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
  ) 
 Here is how much of TeX's memory you used:
- 37576 strings out of 492990
- 717163 string characters out of 6135005
+ 37581 strings out of 492990
+ 717203 string characters out of 6135005
  898456 words of memory out of 5000000
  40052 multiletter control sequences out of 15000+600000
- 615537 words of font info for 397 fonts, out of 8000000 for 9000
+ 615818 words of font info for 401 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,13n,73p,10405b,889s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -2551,7 +2561,7 @@ r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (26 pages, 1840069 bytes).
+Output written on thesis.pdf (26 pages, 1840495 bytes).
 PDF statistics:
  334 PDF objects out of 1000 (max. 8388607)
  274 compressed objects within 3 object streams

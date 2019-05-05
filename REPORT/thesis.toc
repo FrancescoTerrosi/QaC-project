@@ -13,5 +13,5 @@
 \contentsline {subsection}{\numberline {2.3.2}Understand Output Format}{10}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Understand Results}{11}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}CLang Static Analyzer}{19}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Reports Summary}{20}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.5}Reports Summary}{19}{subsection.2.3.5}
 \contentsline {subsection}{\numberline {2.3.6}Understand Performances}{23}{subsection.2.3.6}

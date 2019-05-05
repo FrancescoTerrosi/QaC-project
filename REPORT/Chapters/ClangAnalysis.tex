@@ -170,8 +170,6 @@ Looking at the complete dataset and comparing it to the previous one, the follow
 
 \pagebreak
 
-********************************************************
-
 \hspace{-0.6cm} \textbf{$c)$}  
 The \textsl{AllChecks} check set is the biggest among the provided ones. It includes most of the checks already seen in the previous sections, plus some completely new checks.\newline
 Results has been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
@@ -220,9 +218,20 @@ Let's now proceed with some considerations on this analysis as well:
 
 \subsection{CLang Static Analyzer}
 
-abc
+
 
 \subsection{Reports Summary}
+
+Rapporto più o meno costante nel rateo $violazioni/righedicodice$\newline
+Sempre gli stessi file in cima (a parte in AllChecks)\newline
+CLang Static Analyzer nessuna violazione. È coerente che un software sviluppato seguendo delle metriche definite dal team di sviluppo non abbia violazioni delle metriche stesse.\newline
+È coerente che utilizzando altre metriche vengano trovate millemila violazioni.\newline
+In alcuni casi consapevole in altri no (es: commentare la variabile BUONO - mettere const ovunque RIP)\newline
+Falsi positivi\newline
+Duplicati\newline
+
+
+\pagebreak
 
 \begin{minipage}{\linewidth}
 	\includegraphics[width=\textwidth]{pdf/Misra_Summary.pdf}
