@@ -1,4 +1,4 @@
-\babel@toc {english}{}
+\select@language {english}
 \vspace {-\cftbeforepartskip }
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Project Assignment}{3}{section.1.1}
@@ -12,4 +12,4 @@
 \contentsline {subsection}{\numberline {2.3.1}Understand Project}{8}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Understand Output Format}{10}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Understand Results}{11}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Understand Performances}{15}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.4}Understand Performances}{17}{subsection.2.3.4}

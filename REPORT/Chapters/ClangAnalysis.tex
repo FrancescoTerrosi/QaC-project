@@ -78,7 +78,7 @@ As it has been said in the introduction, multiple analysis with different checks
 	\item[$d)$] Clang Static Analyzer
 \end{itemize}
 
-\hspace{-0.6cm} $a)$  
+\hspace{-0.6cm} \textbf{$a)$}  
 This check is based on the MISRA-C++ 2008 standard, which is a standard developed for the quality of C++ source files.\newline
 Results has been sorted by files and by MISRA rules. After that a compact view of these was produced showing the numbers of violations for each MISRA and for each file.\newline
 Analyzing the reports it can be observed that:
@@ -120,6 +120,41 @@ Looking at the complete report, considerations can be made on the following aspe
 	\includegraphics[width=\textwidth]{img/TreemapCountLine.png}
 	\captionof{figure}{Result Treemap where files are sorted by $NumberOfViolations/CountLineCode$ ratio. Darker boxes indicates more distinct violation types while wider boxes indicate higher ratio.}
 \end{minipage}
+\pagebreak
+
+\hspace{-0.6cm} \textbf{$b)$}  
+SciTools Recommended Checks is a set of 17 quality checks based on code quality conventions that does not follow any precise standard.\newline
+Results has been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
+
+\begin{itemize}
+	\item The total number of violations in the \textbf{libclang} folder is 3299 (roughly 1000 violations less than the MISRA-check).
+	\item The first three checks that were violated the most are:
+	\begin{itemize}
+		\item[$1.\:$] RECOMMENDED\_16 - \textbf{Each variable declaration should have a comment} - 1774 violations.\newline
+		\item[$2.\:$] RECOMMENDED\_13 - \textbf{Every defined function shall be called at least once} - 733 violations.\newline 
+		\item[$3.\:$] RECOMMENDED\_08 -\textbf{All fixed values will be defined constants} - 405 violations.\newline
+	\end{itemize}
+	\item The first three files that contains the most violations are:
+		\begin{itemize}
+		\item[$1.\:$] CIndex.cpp - 1472 violations.
+		\item[$2.\:$] CXType.cpp - 266 violations.
+		\item[$3.\:$] CXCursor.cpp - 250 violations.
+	\end{itemize}
+\end{itemize}
+
+As it can be noticed by these data, the three files that have the most violations are the same as in the MISRA analysis.\newline
+Looking at the complete dataset and comparing it to the previous one, the following considerations can be made:
+\begin{itemize}
+	\item The \textsl{RECOMMENDED\_13} plays a similar role as the MISRA08\_0-1-10. We can expect that when the analysis runs on the whole project the count number of this violation (\textsl{Every defined function shall be called at least once}) drops.
+	\item The \textsl{RECOMMENDED\_16} check may seem too exaggerated but, if we think to big project as LLVM-Clang is, where multiple teams cooperate writing different chunks of code, this check become reasonable.
+	\item The violations distribution with respect to files is quite odd. It can be observed that the average of the violations count is approximately 100. If we exclude the CIndex.cpp file the average drops approximately to 55.
+	\item There is an exception both for files and for check, as we saw in the previous section:
+	\begin{itemize}
+		\item[FILE: ] CIndex.cpp (1472 violations wrt 3299 total violations)
+		\item[MISRA: ] RECOMMENDED\_16(1774 violations wrt 3299 total violations)
+	\end{itemize}
+	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.09 - 0.39].
+\end{itemize}
 
 
 \begin{minipage}{\linewidth}
@@ -128,3 +163,5 @@ Looking at the complete report, considerations can be made on the following aspe
 \end{minipage}
 
 \subsection{Understand Performances}
+
+PARLARE DEI DUPLICATI
