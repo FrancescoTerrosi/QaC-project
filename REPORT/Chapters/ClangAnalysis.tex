@@ -215,21 +215,26 @@ Let's now proceed with some considerations on this analysis as well:
 	\includegraphics[width=\textwidth]{img/AllChecksViolationsRatio.png}
 	\captionof{figure}{Even if the proportion of the $max/min$ of the ratio is similar to the previous, the ratio distribution itself is quite sparse (it ranges between 1 and 5.5), as well as the first analysis.}
 \end{minipage}
+\pagebreak
 
-\subsection{CLang Static Analyzer}
-
-
+\hspace{-0.6cm} \textbf{$d)$}  
+The \textsl{Clang Static Analyzer} check set is an implementation of the Clang Static Analyzer tool, developed as part of the LLVM-Clang project.\newline
+The Clang Static Analyzer itself has not been used since it requires the build of the \textsl{whole} project to scan it. Moreover the increased knowledge of Understand and the presence of this set of checks embedded in the tool led us to the choice of using this implementation rather than the standalone tool.\newline\newline
+This analysis did not find any violation. This seems reasonable since the metrics and quality practices chosen during the development of the LLVM-Clang compiler are probably the same metrics and checks implemented in the analyzer.
 
 \subsection{Reports Summary}
 
-Rapporto più o meno costante nel rateo $violazioni/righedicodice$\newline
-Sempre gli stessi file in cima (a parte in AllChecks)\newline
-CLang Static Analyzer nessuna violazione. È coerente che un software sviluppato seguendo delle metriche definite dal team di sviluppo non abbia violazioni delle metriche stesse.\newline
-È coerente che utilizzando altre metriche vengano trovate millemila violazioni.\newline
-In alcuni casi consapevole in altri no (es: commentare la variabile BUONO - mettere const ovunque RIP)\newline
-Falsi positivi\newline
-Duplicati\newline
+In this conclusive section for the Understand analyzer, will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analysis are reported at the end of this paragraph.\newline
+\begin{itemize}
 
+	\item All the analysis agreed that CIndex.cpp is the file with the largest violations count. The violations number of this file is usually very large, compared to the others.
+	\item CXType.cpp is always the second file with the largest violations count. There are variations from the third position onwards, for example: CXCursor.cpp appears 2 times in the third position, while CXIndexDataConsumer.cpp appears 1 time.
+	\item Looking at the $violationsCount/countLineCode$ ratio, it is observable that across the three analysis the $min/max$ proportion is very similar ($\approx 5.5 \pm 1$).
+	\item It seems reasonable that using the metrics chosen by the project developers to analyze the source code no violations are found while, when different metrics are used, there are some violations.
+	\item In some cases the violated metrics could be considered as a warning (e.g. to write a comment for every variable helps to keep the project well documented) while in some other cases (e.g. do not use try-catch construct) they are critical issues.
+	\item Very likely, in these analyses, there are some false positives. This is because of the fact that the analyses were not performed on the whole project (e.g. functions that are never called in the analyzed modules could be called somewhere else).
+	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues had been removed in order to clean the dataset. No duplications were found using the other sets of rules.
+\end{itemize}
 
 \pagebreak
 
@@ -254,4 +259,8 @@ Duplicati\newline
 
 \subsection{Understand Performances}
 
-PARLARE DEI DUPLICATI
+Understand is a very powerful tool, that comes with an easy-to-use user-interface and that gives a lot of informations about the performed analysis (e.g. result Treemap, result Locator, sort by check/file\dots)
+On the other hand, it is not a lightweight program: we experienced unexpected crashes during analyses, issues duplication and a slow execution time in general. These are some of the main reasons that forced us to work on a subset of the LLVM-Clang compiler.\newline
+Compared to the tools that will be presented in the next sections, this is indeed the most efficient in terms of \textsl{informations} and \textsl{versatility} (The various views it offers are a very powerful tool to navigate through the data). On the other hand, in terms of actual performance, it was the slowest one.
+
+\section{CppCheck}
