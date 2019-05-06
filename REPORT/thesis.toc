@@ -13,5 +13,5 @@
 \contentsline {subsection}{\numberline {2.3.2}Understand Output Format}{10}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Understand Results}{11}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Reports Summary}{20}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Understand Performances}{25}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}CppCheck}{25}{section.2.4}
+\contentsline {subsection}{\numberline {2.3.5}Understand Performances}{21}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Cppcheck Analysis}{25}{section.2.4}

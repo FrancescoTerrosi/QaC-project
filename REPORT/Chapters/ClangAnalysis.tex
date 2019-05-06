@@ -224,7 +224,7 @@ This analysis did not find any violation. This seems reasonable since the metric
 
 \subsection{Reports Summary}
 
-In this conclusive section for the Understand analyzer, will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analysis are reported at the end of this paragraph.\newline
+In this conclusive section for the Understand analyzer, will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analysis are reported at the end of the \textsl{Understand section}.\newline
 \begin{itemize}
 
 	\item All the analysis agreed that CIndex.cpp is the file with the largest violations count. The violations number of this file is usually very large, compared to the others.
@@ -235,6 +235,12 @@ In this conclusive section for the Understand analyzer, will be presented a summ
 	\item Very likely, in these analyses, there are some false positives. This is because of the fact that the analyses were not performed on the whole project (e.g. functions that are never called in the analyzed modules could be called somewhere else).
 	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues had been removed in order to clean the dataset. No duplications were found using the other sets of rules.
 \end{itemize}
+
+\subsection{Understand Performances}
+
+Understand is a very powerful tool, that comes with an easy-to-use user-interface and that gives a lot of informations about the performed analysis (e.g. result Treemap, result Locator, sort by check/file\dots)
+On the other hand, it is not a lightweight program: we experienced unexpected crashes during analyses, issues duplication and a slow execution time in general. These are some of the main reasons that forced us to work on a subset of the LLVM-Clang compiler.\newline
+Compared to the tools that will be presented in the next sections, this is indeed the most efficient in terms of \textsl{informations} and \textsl{versatility} (The various views it offers are a very powerful tool to navigate through the data). On the other hand, in terms of actual performance, it was the slowest one.
 
 \pagebreak
 
@@ -257,10 +263,6 @@ In this conclusive section for the Understand analyzer, will be presented a summ
 	\captionof{figure}{Summary of the AllChecks checks}
 \end{minipage}
 
-\subsection{Understand Performances}
+\section{Cppcheck Analysis}
 
-Understand is a very powerful tool, that comes with an easy-to-use user-interface and that gives a lot of informations about the performed analysis (e.g. result Treemap, result Locator, sort by check/file\dots)
-On the other hand, it is not a lightweight program: we experienced unexpected crashes during analyses, issues duplication and a slow execution time in general. These are some of the main reasons that forced us to work on a subset of the LLVM-Clang compiler.\newline
-Compared to the tools that will be presented in the next sections, this is indeed the most efficient in terms of \textsl{informations} and \textsl{versatility} (The various views it offers are a very powerful tool to navigate through the data). On the other hand, in terms of actual performance, it was the slowest one.
-
-\section{CppCheck}
+a
