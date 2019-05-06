@@ -70,7 +70,7 @@ All the output perspectives can be exported in suitable formats (e.g. Treemap is
 
 \subsection{Understand Results}
 
-As it has been said in the introduction, multiple analysis with different checks were ran:
+As it has been said in the introduction, multiple analysis with different checks were run:
 \begin{itemize}
 	\item[$a)$] MISRA-C++ 2008
 	\item[$b)$] SciTools' Recommended Checks
@@ -80,7 +80,7 @@ As it has been said in the introduction, multiple analysis with different checks
 
 \hspace{-0.6cm} \textbf{$a)$}  
 This check is based on the MISRA-C++ 2008 standard, which is a standard developed for the quality of C++ source files.\newline
-Results has been sorted by files and by MISRA rules. After that a compact view of these was produced showing the numbers of violations for each MISRA and for each file.\newline
+Results have been sorted by files and by MISRA rules. After that a compact view of these was produced showing the numbers of violations for each MISRA and for each file.\newline
 Analyzing the reports it can be observed that:
 \begin{itemize}
 	\item The total number of violations in the \textbf{libclang} folder is 8450
@@ -265,4 +265,76 @@ Compared to the tools that will be presented in the next sections, this is indee
 
 \section{Cppcheck Analysis}
 
-a
+Cppcheck is a lightweight, open-source tool for static analysis of C/C++ files. It can be downloaded at \url{http://cppcheck.sourceforge.net} for Windows (an installer is provided), Mac and Linux distributions:
+\begin{itemize}
+	\item sudo apt-get install cppcheck (Linux)
+	\item brew install cppcheck (Mac)
+\end{itemize}
+Once installed, the tool can be run via terminal using the following command:
+\begin{itemize}
+	\item cppcheck [OPTIONS] [files or directories]
+\end{itemize}
+
+The [OPTIONS] option offers some sort of customization of the analyses, for example it allows the user to:
+\begin{itemize}
+	\item Write results to an xml file
+	\item Print the list of all the available checks
+	\item Print the error list in xml format (on the console)
+	\item Suppress specific warnings
+	\item Define/undefine preprocessor symbol
+	\item And more\dots
+\end{itemize}
+The analyzer can be fed with a single file, a list of files, or a whole directory. In this study, for compliance with the \textsl{Understand} analysis, the check was done on the \textbf{tools/libclang} directory.\newline
+The output was written to an xml file and postprocessed with excel.
+
+\subsection{Cppcheck Results}
+
+Cppcheck relies on the MITRE-CWE list to detect vulnerabilities and quality issues, plus some generic quality checks based on standard code quality practices.\newline
+The CWE list stands for Common Weakness Enumeration. It associate IDs to code issues categories that can be refined by users (e.g. it was not possible to find a 1:1 correspondence between the checkNames provided by Cppcheck and the checkNames provided in the CWE list, although the CWE IDs were identical).
+\newline In this analysis were found issues related to four CWE categories:
+
+\begin{itemize}
+	\item[(CWE-398) ] \textbf{Code Quality} - This category represents one of the phyla in the Seven Pernicious Kingdoms vulnerability classification. It includes weaknesses that do not directly introduce a weakness or vulnerability, but indicate that the product has not been carefully developed or maintained. According to the authors of the Seven Pernicious Kingdoms, "Poor code quality leads to unpredictable behavior. From a user's perspective that often manifests itself as poor usability. For an adversary it provides an opportunity to stress the system in unexpected ways." \cite{bibitem3}.
+	\item[(CWE-561) ] \textbf{Dead Code} - Dead code is source code that can never be executed in a running program. The surrounding code makes it impossible for a section of code to ever be executed \cite{bibitem4}.
+	\item[(CWE-563) ] \textbf{Assignment to Variable without Use} - After the assignment, the variable is either assigned another value or goes out of scope. It is likely that the variable is simply vestigial, but it is also possible that the unused variable points out a bug \cite{bibitem5}. 
+	\item[(CWE-686) ] \textbf{Function Call With Incorrect Argument Type} - This weakness is most likely to occur in loosely typed languages, or in strongly typed languages in which the types of variable arguments cannot be enforced at compilation time, or where there is implicit casting \cite{bibitem6}.
+\end{itemize}
+
+Results have been sorted, as the previous analyses, by files and by the checkName provided by Cppcheck. Again, results were aggregated in excel files to ease data observation.\newline
+Analyzing the reports it can be observed that:
+\begin{itemize}
+	\item The total number of violations in the \textbf{libclang} folder is 414 (very small number compared to e.g. MISRA violations)
+	\item The first three rules that were violated the most are:
+	\begin{itemize}
+		\item[$1.\:$] CWE-561 - \textbf{Unused Function} - 375 violations.
+		\item[$2.\:$] CWE-398 - \textbf{No explicit contructor} - 11 violations.
+		\item[$3.\:$] CWE-398 -\textbf{Uninit Member Var} - 10 violations.
+	\end{itemize}
+	\item The first three files that contains the most violations are:
+		\begin{itemize}
+		\item[$1.\:$] CIndex.cpp - 158 violations.
+		\item[$2.\:$] CXType.cpp - 47 violations.
+		\item[$3.\:$] Indexing.cpp - 35 violations.
+	\end{itemize}
+\end{itemize}
+
+****************************************************
+
+
+CONSIDERAZIONI DA FARE:
+
+- Controllare il check che sembrava duplicato (rispetto alle misra) ---> Uninit member var\newline
+- Unused function --> falso positivo come sempre\newline
+- In generale molti meno issues trovati (MOLTI meno)\newline
+- Distribuzione omogenea sia per file che per check eccetto: unused function (false positive) - CIndex (il king)\newline
+- Tool molto veloce ma che da' poche informazioni\newline
+- Output non human-readable (xml)\newline
+- Poca versatilita' rispetto ad Understand (anche rispetto alla navigazione sui dati)\newline
+- No duplicati\newline
+
+\pagebreak
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{pdf/Cppcheck_Summary.pdf}
+	\captionof{figure}{Summary of the MISRA checks}
+\end{minipage}
