@@ -360,7 +360,9 @@ Generally speaking Cppcheck reported less issues than Understand.
 
 \section{Flawfinder Analysis}
 
-Flawfinder has the same charachteristics as Cppcheck. It is a light (runnable from console, without UI) and open-source. It can be downloaded at \url{https://dwheeler.com/flawfinder/#downloading}.\newline
+Flawfinder has the same charachteristics as Cppcheck. It is a light (runnable from console, without UI) and open-source.\newline
+The big difference with the previous tools is that Flawfinder is designed to find vulnerabilities more related to \textsl{computer security} rather than code quality issues and bugs.\newline
+It can be downloaded at \url{https://dwheeler.com/flawfinder/#downloading}.\newline
 Once installed, the tool can be run via terminal using the following command:
 \begin{itemize}
 	\item flawfinder [OPTIONS] [files or directories]
@@ -379,3 +381,19 @@ As with the previous tools, Flawfinder performed its analyses on the \textbf{too
 
 \subsection{Flawfinder results}
 
+The checks performed by Flawfinder are based on the MITRE-CWE list as well as Cppcheck.\newline
+The issues categories found during the analyses are listed below:
+
+\begin{itemize}
+	\item[(CWE-20) ] \textbf{Improper Input Validation} - When software does not validate input properly, an attacker is able to craft the input in a form that is not expected by the rest of the application. This will lead to parts of the system receiving unintended input, which may result in altered control flow, arbitrary control of a resource, or arbitrary code execution \cite{bibitem7}.
+	\item[(CWE-120) ] \textbf{Buffer Copy without Checking Size of Input} - A buffer overflow condition exists when a program attempts to put more data in a buffer than it can hold, or when a program attempts to put data in a memory area outside of the boundaries of a buffer. The simplest type of error, and the most common cause of buffer overflows, is the "classic" case in which the program copies the buffer without restricting how much is copied. Other variants exist, but the existence of a classic overflow strongly suggests that the programmer is not considering even the most basic of security protections \cite{bibitem8}.
+	\item[(CWE-807) ] \textbf{Reliance on Untrusted Inputs in a Security Decision} - Developers may assume that inputs such as cookies, environment variables, and hidden form fields cannot be modified. However, an attacker could change these inputs using customized clients or other attacks. This change might not be detected. When security decisions such as authentication and authorization are made based on the values of these inputs, attackers can bypass the security of the software.\newline
+Without sufficient encryption, integrity checking, or other mechanism, any input that originates from an outsider cannot be trusted \cite{bibitem9}.
+\end{itemize}
+
+\pagebreak
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{pdf/Flawfinder_Summary.pdf}
+	\captionof{figure}{Summary of the Flawfinder checks}
+\end{minipage}
