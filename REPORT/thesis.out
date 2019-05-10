@@ -16,4 +16,7 @@
 \BOOKMARK [2][-]{subsection.2.4.1}{Cppcheck Results}{section.2.4}% 16
 \BOOKMARK [2][-]{subsection.2.4.2}{Cppcheck Performance \046 Comparison with Understand}{section.2.4}% 17
 \BOOKMARK [1][-]{section.2.5}{Flawfinder Analysis}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.5.1}{Flawfinder results}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.1}{Flawfinder Results}{section.2.5}% 19
+\BOOKMARK [1][-]{section.2.6}{SonarQube \046 CERT Rosecheckers}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.6.1}{SonarQube}{section.2.6}% 21
+\BOOKMARK [2][-]{subsection.2.6.2}{CERT Rosechecker}{section.2.6}% 22

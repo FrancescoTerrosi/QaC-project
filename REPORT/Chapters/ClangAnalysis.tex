@@ -282,7 +282,7 @@ The [OPTIONS] option offers some sort of customization of the analyses, for exam
 	\item Print the error list in xml format (on the console)
 	\item Suppress specific warnings
 	\item Define/undefine preprocessor symbol
-	\item And more\dots
+	\item And more (see cppcheck --help for more informations)\dots
 \end{itemize}
 The analyzer can be fed with a single file, a list of files, or a whole directory. In this study, for compliance with the \textsl{Understand} analysis, the check was done on the \textbf{tools/libclang} directory.\newline
 The output was written to an xml file and postprocessed with excel.
@@ -299,6 +299,9 @@ The CWE list stands for Common Weakness Enumeration. It associate IDs to code is
 	\item[(CWE-563) ] \textbf{Assignment to Variable without Use} - After the assignment, the variable is either assigned another value or goes out of scope. It is likely that the variable is simply vestigial, but it is also possible that the unused variable points out a bug \cite{bibitem5}. 
 	\item[(CWE-686) ] \textbf{Function Call With Incorrect Argument Type} - This weakness is most likely to occur in loosely typed languages, or in strongly typed languages in which the types of variable arguments cannot be enforced at compilation time, or where there is implicit casting \cite{bibitem6}.
 \end{itemize}
+
+Moreover, Cppcheck rise a warning about missing files that are included in source cpp files but that are not found in the analyzed directory.\newline
+This warning tells the user that the analysis will terminate but "results will probably be more accurate if all the include files are found".\newline\newline
 
 Results have been sorted, as the previous analyses, by files and by the checkName provided by Cppcheck. Again, results were aggregated in excel files to ease data observation.\newline
 Analyzing the reports it can be observed that:
@@ -374,12 +377,12 @@ Flawfinder has much more [OPTIONS] than Cppcheck, for example:\begin{itemize}
 	\item Set the minimum risk level to be included in the \textsl{hit list}
 	\item Display hits without waiting for the end of the analysis
 	\item An option to don't include false positive. This option was used for one analysis but, as pointed in the documentation, this is risky since it does not follow any standard procedure to exclude likely false positives. For this reason, results found using this options were not considered to be trustable.
-	\item And more\dots
+	\item And more (see flawfinder --help for more informations)\dots
 \end{itemize}
 
 As with the previous tools, Flawfinder performed its analyses on the \textbf{tools/libclang} directory.
 
-\subsection{Flawfinder results}
+\subsection{Flawfinder Results}
 
 The checks performed by Flawfinder are based on the MITRE-CWE list as well as Cppcheck.\newline
 The issues categories found during the analyses are listed below:
@@ -391,9 +394,89 @@ The issues categories found during the analyses are listed below:
 Without sufficient encryption, integrity checking, or other mechanism, any input that originates from an outsider cannot be trusted \cite{bibitem9}.
 \end{itemize}
 
+Some of the issues found by Flawfinder are tagged with the tag: [MS-banned]. This tag refers to particular functions that are in the \textsl{banned functions list} published by Microsoft \cite{bibitem10}. These are functions that contains critical and well-known security vulnerabilities such, e.g. \textsl{strcpy} that introduces a \textsl{buffer overflow} vulnerability.\newline\newline
+
+Comparing the issues found with the previous reports, Flawfinder found a small number of vulnerabilities, this is also caused by the fact that this tool only looks for security issues.\newline
+The total vulnerability count is 32, distributed in the 3 CWE categories listed above.\newline
+The top three vulnerabilities are:
+	\begin{itemize}
+		\item[$1.\:$] CWE-807, CWE-20 - Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once - 17 violations.
+		\item[$2.\:$] CWE-120 - Does not check for buffer overflows when copying to destination - 6 violations.
+		\item[$3.\:$] CWE-120 \textbf{[MS-banned]} - \textsl{strncpy} easily used incorrectly; doesn't always $\backslash0$-terminate or check for invalid pointers - 5 violations.
+	\end{itemize}
+
+And the top three files are:
+
+\begin{itemize}
+		\item[$1.\:$] CIndex.cpp - 14 violations.
+		\item[$2.\:$] CIndexCodeCompletion.cpp - 6 violations.
+		\item[$3.\:$] CIndexer.cpp \& Indexing.cpp - 3 violations. 
+\end{itemize}
+
+The number of violations found is very small so the only things that are noticeable are that:
+\begin{itemize}
+		\item CIndex.cpp also in this analysis is the file that contains the biggest amount of violations.
+		\item Differing from the other analyses, Flawfinder found vulnerabilities only on 8 files out of 33.
+		\item The most common causes of vulnerabilities found in this project are related to the use of environmental variables (17 violations out of 32) and the possible arise of buffer overflows (14 violations out of 32, combining different CWE checks).
+\end{itemize}
+
+Flawfinder offers an option to run the analysis without including possible false positives.\newline
+As already said in the beginning of this section, results found with this options are not accurate. In particular, it has been reported that the possible false positive is:
+
+\begin{itemize}
+	\item[(CWE-119/120) ] Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues.
+\end{itemize}
+
+This clearly isn't a false positive since this is a well-known vulnerability.\newline\newline
+Looking at performances, in terms of speed of analysis and easiness of the tool, it compares favoribly with the considerations made for Cppcheck.
+
 \pagebreak
 
 \begin{minipage}{\linewidth}
 	\includegraphics[width=\textwidth]{pdf/Flawfinder_Summary.pdf}
 	\captionof{figure}{Summary of the Flawfinder checks}
 \end{minipage}
+
+\section{SonarQube \& CERT Rosecheckers}
+
+SonarQube is a well known tool for static analysis, capable of detecting both code quality issues (referred as \textsl{Code Smells} and security issuds.\newline
+CERT Rosecheckers is a tool that follows the CERT C coding standard to perform it analyses, including CWEs entries and MISRA rules.\newline\newline
+These tools were not used in this work since they requires the build of the whole project.
+
+\subsection{SonarQube}
+
+SonarQube (available also via cloud at \url{https://sonarcloud.io}) is a general languages analysis tool. It uses different standards such as MISRA, CERT\dots and it also offers the possibility to define custom rules.\newline
+On SonarCloud after an organization's name is defined and a token linked to the project is created, the steps to follow to perform an analysis (on a Linux system) are the following:
+\vspace{1cm}
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/sonarqube-init.png}
+	\captionof{figure}{The build-scanner and the build-linux-wrapper have to be downloaded to perform the analysis locally}
+\end{minipage}
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/sonarqube-scan.png}
+	\captionof{figure}{The first command is used to compile the project.\newline
+	The second set of commands is used by SonarQube scanner to scan the project.\newline
+	As already mentioned, given the huge size of LLVM-Clang, this was unfeasible}
+\end{minipage}
+
+\subsection{CERT Rosechecker}
+
+CERT Rosecheckers is a free tool that can be downloaded from \url{https://sourceforge.net/projects/rosecheckers/} and it is available pre-installed in a Virtual Machine.\newline
+Once the virtual machine is executed it is possible to perform the analysis from the shell of the VM. It works by specifying a file, a set of files or a directory:
+
+\begin{itemize}
+	\item rosecheckers -rose:[OPTIONS] [FILES/DIRECTORY]
+\end{itemize}
+
+Listed below are some of the main options offered by Rosechecker:
+
+\begin{itemize}
+	\item \textsl{C\_Only}, \textsl{Fortran}, \textsl{Cxx\_Only}\dots and more to select specific languages source files
+	\item \textsl{strict} for a strict enforncement of ANSI/ISO standards
+	\item \textsl{excludeCommentsAndDirectives} to exlude comments and preprocessor directives
+	\item And more (see rosechekers --help for more informations)
+\end{itemize}
+
+The problem with this tool was that it requires all the \textsl{include} files to be in the same directory. Moreover
