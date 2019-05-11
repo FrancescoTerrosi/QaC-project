@@ -1,4 +1,4 @@
-\select@language {english}
+\babel@toc {english}{}
 \vspace {-\cftbeforepartskip }
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Project Assignment}{3}{section.1.1}
@@ -22,3 +22,4 @@
 \contentsline {section}{\numberline {2.6}SonarQube \& CERT Rosecheckers}{34}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}SonarQube}{34}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}CERT Rosechecker}{35}{subsection.2.6.2}
+\contentsline {chapter}{\numberline {3}Conclusions}{39}{chapter.3}

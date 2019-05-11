@@ -470,13 +470,46 @@ Once the virtual machine is executed it is possible to perform the analysis from
 	\item rosecheckers -rose:[OPTIONS] [FILES/DIRECTORY]
 \end{itemize}
 
+\begin{minipage}{\linewidth}
+\includegraphics[width=\textwidth]{img/rosechecker-commandline.png}
+\captionof{figure}{Screenshot of the Rosechecker Virtual Machine}
+\end{minipage}
+\pagebreak
+
 Listed below are some of the main options offered by Rosechecker:
 
 \begin{itemize}
-	\item \textsl{C\_Only}, \textsl{Fortran}, \textsl{Cxx\_Only}\dots and more to select specific languages source files
+	\item \textsl{C\_Only}, \textsl{Fortran}, \textsl{Cxx\_Only} and more to select specific languages source files
 	\item \textsl{strict} for a strict enforncement of ANSI/ISO standards
 	\item \textsl{excludeCommentsAndDirectives} to exlude comments and preprocessor directives
 	\item And more (see rosechekers --help for more informations)
 \end{itemize}
 
-The problem with this tool was that it requires all the \textsl{include} files to be in the same directory. Moreover
+The problem with this tool was that it requires all the \textsl{\#include} files to be in the same directory.\newline\newline
+
+\begin{minipage}{\linewidth}
+	\includegraphics[width=\textwidth]{img/rosechecker-error.png}
+	\captionof{figure}{Screenshot of the missing include fatal error}
+\end{minipage}
+\pagebreak
+
+There are two different solutions for this problem:
+\begin{itemize}
+	\item Manually remove all the \textsl{\#include} directives from the source files
+	\item Manually move all the \textsl{\#include} files in the directory to be analyzed
+\end{itemize}
+
+Obviously, the first solution is conceptually incorrect: the analysis is going to be performed on files that have been modified, compromising the final results.\newline
+The second approach is more reasonable (even if the project structure is modified we are interested only on a subset of the whole project and, in this way, we are not changing the interested source code files) but \textsl{Rosecheckers} looks in a recursive way for the \textsl{\#include} files in the files to be included, and so on\dots\newline\newline
+[e.g.]
+\begin{itemize}
+	\item CIndex.cpp has the include directive "\#include "clang/AST/Attr.h""
+	\item To solve the missing include issue is necessary to copy the \textsl{clang/AST)} directory in the analysis-root folder.
+	\item Rosechecker will then check the "include files" of the included file "Attr.h"
+	\item Attr.h has the include directive "\#include "clang/AST/Type.h""
+	\item To solve the missing include is necessary to to copy the \textsl{clang/AST)} directory in this path: \textsl{analysis-root/clang/AST}
+	\item At this point we have this situation: \textsl{analysis-root/clang/AST/clang/AST}
+	\item This procedure must be followed to solve all the \textsl{missing include} issues
+\end{itemize}
+
+This recursive procedure is obviously unfeasible since the number of folders to be copied/created grows exponentially with respect to the number of files to be included in a single source (or header) file.
