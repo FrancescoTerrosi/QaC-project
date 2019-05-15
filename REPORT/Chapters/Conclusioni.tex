@@ -1,3 +1,29 @@
 \chapter{Conclusions}
 
-Una conclusione
+In this work 5 different static analysis tools were used.\newline
+The first difference between these tools is the set of rules used. Different standards have been covered:
+
+\begin{itemize}
+	\item MISRA-C++ and Code Quality practices - \textbf{Understand}
+	\item MITRE-CWE - \textbf{Cppcheck}, \textbf{Flawfinder}
+	\item CERT-C - \textbf{Rosechecker}
+	\item Various standards and Code Quality practices - \textbf{SonarQube}
+\end{itemize}
+
+These tools are not meant to be mutually exclusive in their use. For example Cppcheck can be used in combination with Flawfinder to detect both \textsl{Code Quality} and \textsl{Security} issues, using the same standard (MITRE-CWE).\newline
+Specific considerations must be made for the tool \textsl{Clang Static Analyzer} which was used as an Understand addon.\newline
+The analysis with this tool provided no results. Seeing this we can suppose that the LLVM Developer Group defined a custom set of Quality rules without referring to any specific standard and that this set of rules was followed during the implementation of LLVM-Clang compiler and it is the one implemented in the Clang Static Analyzer tool.
+\newline\newline
+
+During the analyses it emerged that the file \textsl{CIndex.cpp}, which is the biggest source file in the analyzed directory \textsl{tools/libclang}, has always been the file with the most detected issues (always $\approx\: 50\%$ of the whole issues set). Since this anomaly was observed with all the tools we can consider it to be relevant and that this file needs some refactoring.\newline
+Another interesting thing noticed is that if we exlclude limit cases such as \textsl{CIndex.cpp} or very small files (2-3 
+
+ISSUES PROPORZIONATI A DIMENSIONE FILE
+50\% DIVISO FRA GLI ALTRI 32 FILE OSSERVIAMO DISTRIBUZIONE PIU O MENO NORMALE (GAUSSIANA A CAMPANA)
+
+
+
+
+
+
+IL PROGETTO FA SCHIFO QUALITY MERDA
