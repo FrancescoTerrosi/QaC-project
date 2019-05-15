@@ -5,21 +5,21 @@
 \contentsline {section}{\numberline {1.2}Overview}{4}{section.1.2}
 \contentsline {section}{\numberline {1.3}Static Analysis}{5}{section.1.3}
 \contentsline {section}{\numberline {1.4}LLVM-Clang Compiler}{6}{section.1.4}
-\contentsline {chapter}{\numberline {2}Clang Analysis}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Analysis Methodology}{8}{section.2.2}
-\contentsline {section}{\numberline {2.3}Understand}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Understand Project}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Understand Output Format}{10}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Understand Results}{11}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Reports Summary}{20}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Understand Performances}{21}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Cppcheck Analysis}{25}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Cppcheck Results}{25}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Cppcheck Performance \& Comparison with Understand}{27}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Flawfinder Analysis}{30}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Flawfinder Results}{30}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}SonarQube \& CERT Rosecheckers}{34}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}SonarQube}{34}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}CERT Rosechecker}{35}{subsection.2.6.2}
-\contentsline {chapter}{\numberline {3}Conclusions}{39}{chapter.3}
+\contentsline {chapter}{\numberline {2}Clang Analysis}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{9}{section.2.1}
+\contentsline {section}{\numberline {2.2}Analysis Methodology}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Understand}{10}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Understand Project}{10}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Understand Output Format}{12}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.3}Understand Results}{13}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Reports Summary}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Understand Performances}{23}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Cppcheck Analysis}{27}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Cppcheck Results}{27}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Cppcheck Performance \& Comparison with Understand}{29}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Flawfinder Analysis}{32}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Flawfinder Results}{32}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}SonarQube \& CERT Rosecheckers}{36}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}SonarQube}{36}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}CERT Rosechecker}{37}{subsection.2.6.2}
+\contentsline {chapter}{\numberline {3}Conclusions}{41}{chapter.3}

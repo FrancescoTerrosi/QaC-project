@@ -2,18 +2,18 @@
 
 \section{Introduction}
 
-In this chapter it will be described the analysis process for all the tools used.\newline\newline
-\textbf{Understand} is indeed the tools that gives the most accurate results in terms of checks, since it incorporates C/C++ MISRA standards, a beta version of the \textbf{CLang Static Analyzer}, which is a static analysis tool provided by the LLVM developers, and many other quality checks offered by SciTools itself.\newline
-A simpler but also quite effective tool is \textbf{Cppcheck} which is designed to "provide unique code analysis to detect bugs and to focus on detecting undefined behaviour and dangerous coding constructs" \cite{bibitem2}. Also, as pointed by the developers, its main focus is to  "detect only real errors in the code (i.e. have very few false positives)". Cppcheck refers to the \textsl{Common Weakness Enumeration} standard for the analysis, a formal list of security issues published by the MITRE institute. It is also possible to check MISRA-C project compliance but it requires to buy the standard so this feature was not used. \newline
-The last used tool is \textbf{flawfinder} which puts its focus more on security flaws rather than quality issues. This tool incorporates an option to run the analysis in order to detect possible false positives in an automated manner. This tools uses the CWE standard as Cppcheck does.\newline
+In this chapter it will be described the analysis process and the tools used.\newline\newline
+\textbf{Understand} is indeed the tool that gives the most accurate results in terms of checks, since it incorporates C/C++ MISRA standards, a beta version of the \textbf{Clang Static Analyzer}, which is a static analysis tool provided by the LLVM developers, and many other quality checks offered by SciTools itself.\newline
+A simpler but also quite effective tool is \textbf{Cppcheck} which is designed to "provide unique code analysis to detect bugs and to focus on detecting undefined behaviour and dangerous coding constructs" \cite{bibitem2}. Also, as pointed by the developers, its main focus is to  "detect only real errors in the code (i.e. have very few false positives)". Cppcheck refers to the \textsl{Common Weakness Enumeration} standard for the analysis, a formal list of quality and security issues published by the MITRE institute. It is also possible to check MISRA-C project compliance but it requires to buy the standard so this feature was not used. \newline
+The last used tool is \textbf{Flawfinder} which puts its focus more on security flaws rather than quality issues. This tool incorporates an option to run the analysis in order to detect possible false positives in an automated manner. This tools uses the CWE standard as Cppcheck does.\newline
 Other tools such as \textbf{SonarQube} and \textbf{Cert C Rosechecker} were used but due to their characteristics they were unusable for our purpose.
 \pagebreak
 
 \section{Analysis Methodology}
 
 The LLVM Clang compiler was analized with all the tools listed above.\newline
-Since some issues arose while analyzing the whole project, as it was pointed in the previous section, a representative subset of it was chosen. In particular the folder \textbf{src/tool/libclang} was analyzed because it has been observed that the source files in this folder contained much of the compiler logic. This was the input folder for all the static analysis tools used.\newline\newline
-After the output was produced, the second phase of the analysis can start. Since the output format of the various tool is hetherogenous, it was necessary to convert them in excel sheets in order to collect evidences about what files were the most vulnerable/contained more bugs.
+Since there were some technical problems while analyzing the whole project, as it was pointed in the previous section, a representative subset of it was chosen. In particular the folder \textbf{src/tools/libclang} was analyzed because it has been observed that the source files in this folder contained much of the compiler logic. This was the input folder for all the static analysis tools.\newline\newline
+After the output was produced, the second phase of the analysis could start. Since the output format of the various tool is hetherogenous, it was necessary to convert them in files of the same format: data were imported in Excel sheets in order to collect evidences about what files were the most vulnerable/contained more bugs and what kind of bugs/quality issues were the most common.
 
 \section{Understand}
 

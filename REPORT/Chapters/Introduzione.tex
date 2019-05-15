@@ -3,7 +3,7 @@
 \section{Project Assignment}
 
 The scope of this project is to perform a static analysis of the Clang compiler source code available at
-https://llvm.org/, https://clang.llvm.org/.
+\url{https://llvm.org/}, \url{https://clang.llvm.org/}.
 In details, the project consists in:
 \begin{itemize}
 	\item Analyze the C/C++ source code for the Clang project, using different tools for static analysis. The
@@ -26,8 +26,8 @@ Some possible tools for static analysis are:
 
 Depending on the characteristics of the selected tool, it is recommended to comment on:
 \begin{itemize}
-	\item the output of the static analyzers with respect to the computed metrics
-	\item compliance to coding rules as MISRA, CERT C, ISO/IET 17961
+	\item the output of the static analyzers with respect to the computed metrics,
+	\item compliance to coding rules as MISRA, CERT C, ISO/IET 17961,
 	\item correct/missed/false detection.
 \end{itemize}
 
@@ -36,7 +36,7 @@ the source code and provided by the developers, especially in terms of existing 
 
 \section{Overview}
 
-The scope of this work is to analyze the Clang compiler with a set of static analyzer tools, in order to detect violations to common and accepted coding rules (such as MISRA) and security weaknesses such as the ones pointed in the CWE (Common Weaknesses Enumerator).\newline\newline
+The scope of this work is to analyze the Clang compiler with a set of static analysis tools, in order to detect violations to standards and to common coding rules (such as MISRA) and security weaknesses such as the ones pointed in the CWE (Common Weaknesses Enumerator).\newline\newline
 Several tools were used for this purpose:
 \begin{itemize}
 	\item Understand
@@ -47,7 +47,7 @@ Several tools were used for this purpose:
 	\item Rosechecker
 \end{itemize}
 Unfortunately, not all of them were applicable for this work, due to the complexity of the project's architecture or the inflexibility of the tool.\newline
-After collecting results from this tool, these were then compared in terms of:
+After collecting the results, these were then compared in terms of:
 \begin{itemize}
 	\item Violations found
 	\item Performances
@@ -55,7 +55,7 @@ After collecting results from this tool, these were then compared in terms of:
 	\item Easiness of the tool
 \end{itemize}
 \section{Static Analysis}
-Static Analysis is a technique used to analyse softwares without actually executing them.\newline
+Static Analysis is a technique used to analyze softwares without actually executing them.\newline
 In general this methodology relies on tools that inspect the source code in order to detect violations with respect to a set of well-defined rules. These tools usually operate by checking the syntax of the code, the semantic, the execution flow\dots \newline\newline
 There are several advantages when adopting this technique:
 \begin{itemize}
@@ -64,7 +64,7 @@ There are several advantages when adopting this technique:
 	\item The analysis is done with (almost) zero interactions by the human operator
 \end{itemize}
 
-The tools used to perform the analysis can be distinguished with the respect to the phase in which the analysis is performed:
+The tools used to perform an analysis can be distinguished with respect to the phase in which the analysis is performed:
 
 \begin{itemize}
 	\item Unit Level
@@ -90,12 +90,11 @@ In our work we are interested in \textbf{Unit Level Analysis}.
 
 \section{LLVM-Clang Compiler}
 
-The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends \cite{bibitem1}. It is a middle-layer between the frontend (C, C++, Python\dots) and the backend (low-level hardware-dependent assembly). The high-level source code is translated into LLVM bitcode, where optimization and analysis is performed before being translated to low-level code.\newline
-The Clang compiler is a C/C++ (and several others) compiler frontend that uses the LLVM infrastracture.\newline
-The project is structured in a complex hierarchy of directories and files, referencing each others. This was one of the two reasons that forced us to work on a sub-part of the project: the \textbf{tools/libclang} directory. The other reason was that some files made some of the static analyzers crash in unexpected manners, probably because of some sort of overflow.\newline
-
+The LLVM compiler infrastructure project is a "collection of modular and reusable compiler and toolchain technologies" used to develop compiler front ends and back ends \cite{bibitem1}. It is a middle-layer between the frontend (C, C++, Python\dots code) and the backend (low-level hardware-dependent assembly). The high-level source code is translated into \textsl{LLVM bitcode}: an intermediate language (such as the JVM bytecode) where optimization and analysis is performed before being translated to low-level code.\newline
+The Clang compiler is a C/C++ (and several others) compiler frontend that uses the LLVM infrastracture. 
+The project is structured in a complex hierarchy of directories and files, referencing each others. This was one of the two reasons that forced us to work on a sub-part of the project: the \textbf{tools/libclang} directory. The other reason was that some files made some of the static analyzers crash in unexpected manners, probably because of some sort of overflow.\newline\newline
 \begin{minipage}{\linewidth}
 	\includegraphics[width=\textwidth]{img/overflowUnderstand.png}
-	\captionof{figure}{As we can see from this example, the same warning is displayed multiple times. This is most likely an overflow on the specific check}
+	\captionof{figure}{As we can see from this example, the same warning is displayed multiple times. This is most likely an overflow bug on the specific check}
 \end{minipage}
 
