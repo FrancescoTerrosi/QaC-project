@@ -18,11 +18,11 @@ After the output was produced, the second phase of the analysis could start. Sin
 \section{Understand}
 
 Understand is a very powerful tool for static analysis that can be used to analyze software written in multiple languages suchs as Java, Ada, Cobol, Python, C/C++\dots
-Among the tools used, it is the only one that comes with a nice and user-friendly user interface that allows users to navigate through the software files.
+Among the tools used, it is the only one that comes with a nice and user-friendly user interface that allows users to browse the analysis results with different views.
 
 \subsection{Understand Project}
 
-First of all, it must be created an \textsl{Understand Project}. In this first step you are asked to select the language of the software (C/C++ in our case study) and the directories to analyze.\newline\newline
+First of all, it must be created an \textsl{Understand Project}. In this first step you are asked to select the language of the software (C/C++ in our case study) and the directories/source files to be analyzed.\newline\newline
 \vspace{1cm}
 \begin{minipage}{\linewidth}
 	\includegraphics[width=\textwidth]{img/libclangDirectory.png}
@@ -40,23 +40,23 @@ When the files are loaded in the program, the analysis can be run simply by open
 	\item \textsl{SciTools' Recommended Checks} - This is a small set (17 items) of generic good programming rules
 	\item \textsl{Published Standards} - This section contains the published standards supported by Understand
 		\begin{itemize}
-			\item It was used the MISRA-C++ 2008 due to the nature of the source files (.cpp) and because one of the goals of this project was to check the Clang compiler compliance to MISRA rules.
+			\item It was used the MISRA-C++ 2008 due to the nature of the source files (.cpp) and because one of the goals of this project was to check the Clang compiler compliance to MISRA rules
 		\end{itemize}
-	\item \textsl{Clang Static Analyzer} - Is an implementation of the tool incorporated in Understand.
-	\item \textsl{All Checks} - This is a collection of checks which consists of generic good programming rules and some of the MISRA rules. Despite its name, not all the checks are included for real, this is the reason why it is not correct to use only this option for a consistent analysis.
+	\item \textsl{Clang Static Analyzer} - It's an implementation of the Clang Static Analyzer tool, included in Understand
+	\item \textsl{All Checks} - This is a collection of checks which consists of generic good programming rules and some of the MISRA rules. Despite its name, not all the checks are included for real, this is the reason why it's incorrect to use only this option for a consistent analysis
 \end{itemize}
 
 \subsection{Understand Output Format}
 
-When the analysis ends, it is possible to navigate through different perspectives of what has been observed. For example it is possible to list results \textsl{by file}, in order to check which issues are present in each file (and at which line of code) and what files contains the most issues. Another possibility is to display result \textsl{by check}, that is: for each rule (e.g. MISRA) how many times it has been violated and where (in terms of files).\newline
+When the analysis ends, it is possible to navigate through different perspectives of what has been observed. For example it is possible to list results \textsl{by file}, in order to check what issues are present in each file (and at which line of code) and what files contain the most issues. Another possibility is to display results \textsl{by check}, that is: for each rule (e.g. MISRA) how many times it has been violated and where (in terms of files).\newline
 Two very interesting features offered by Understand are the:
 \begin{itemize}
 	\item Result Locator
 	\item Result Treemap
 \end{itemize}
 
-The first one offers the possibility to navigate through the findings, filtering them by file, by violation and some other options, giving the possibility to jump to the desired \textsl{vulnerable} line of code in the source file.\newline
-The result treemap instead gives you a graphic representation of the files vulnerabilities, in terms of criticity and quantity. These characteristics can be viewed graphically using colored boxes, where the meaning of the color/dimension of the boxes can be defined by the user.\newline
+The first offers the possibility to navigate through the findings, filtering them by file, by violation and some other options, giving the possibility to jump to the desired \textsl{vulnerable} line of code in the source file.\newline
+The result treemap instead gives you a graphic representation of the vulnerabilities found in the files, in terms of criticity and quantity. These characteristics can be viewed graphically using colored boxes, where the meaning of the color/dimension of the boxes can be defined by the user.\newline
 Mastering the options of these two powerful features gives to the user much more control of the analysis and a wider perspective of the whole project quality.\newline\newline
 
 \vspace{1cm}
@@ -66,11 +66,11 @@ Mastering the options of these two powerful features gives to the user much more
 \end{minipage}
 \vspace{1cm}
 
-All the output perspectives can be exported in suitable formats (e.g. Treemap is exported in .png files while lists of violations are exported in .txt or .html files) that facilitate the second phase of the analysis.
+All the output perspectives can be exported in suitable formats (e.g. Treemap is exported in .png files while lists of violations are exported in .txt or .html files) that facilitated the second phase of the analysis.
 
 \subsection{Understand Results}
 
-As it has been said in the introduction, multiple analysis with different checks were run:
+As it has been said in the introduction, multiple analyses with different checks were run:
 \begin{itemize}
 	\item[$a)$] MISRA-C++ 2008
 	\item[$b)$] SciTools' Recommended Checks
@@ -79,38 +79,37 @@ As it has been said in the introduction, multiple analysis with different checks
 \end{itemize}
 
 \hspace{-0.6cm} \textbf{$a)$}  
-This check is based on the MISRA-C++ 2008 standard, which is a standard developed for the quality of C++ source files.\newline
-Results have been sorted by files and by MISRA rules. After that a compact view of these was produced showing the numbers of violations for each MISRA and for each file.\newline
+This check is based on the MISRA-C++ 2008 standard, which is a standard developed for the quality check of C++ source files.\newline
+Results have been sorted by file and by MISRA rule. After that a compact view of these was produced showing the amount of violations for each MISRA and for each file.\newline
 Analyzing the reports it can be observed that:
 \begin{itemize}
 	\item The total number of violations in the \textbf{libclang} folder is 8450
 	\item The first three rules that were violated the most are:
 	\begin{itemize}
-		\item[$1.\:$] MISRA08\_7-1-1 - \textbf{A variable which is not modified shall be const qualified} - 1845 violations.\newline If a variable does not need to be modified, then it shall be declared with const qualification so that it cannot be modified. A non-parametric variable will then require its initialization at the point of declaration. Also, future maintenance cannot accidentally modify the value.
-		\item[$2.\:$] MISRA08\_6-4-1 - \textbf{An if condition construct shall be followed by a compund statement. The else keyword shall be followed by either a compound statement or another if statement} - 1239 violations.\newline If the bodies of these constructs are not compound statements, then errors can occur if a developer fails to add the required braces when attempting to change a single statement body to a multistatement body.
-		Requiring that the body of these constructs shall be a compound statement (enclosed within braces) ensures that these errors cannot arise.
-		\item[$3.\:$] MISRA08\_0-1-10 -\textbf{All defined functions called} - 733 violations.\newline Functions or procedures that are not called may be symptomatic of a serious problem, such as missing paths.
+		\item[$1.\:$] MISRA08\_7-1-1 - \textbf{A variable which is not modified shall be const qualified} - 1845 violations.\newline If a variable does not need to be modified, then it shall be declared with const qualification so that it cannot be modified. A non-parametric variable will then require its initialization at the point of declaration. Also, future maintenance cannot accidentally modify the value
+		\item[$2.\:$] MISRA08\_6-4-1 - \textbf{An if condition construct shall be followed by a compund statement. The else keyword shall be followed by either a compound statement or another if statement} - 1239 violations.\newline If the bodies of these constructs are not compound statements, then errors can occur if a developer fails to add the required braces when attempting to change a single statement body to a multistatement body. Requiring that the body of these constructs shall be a compound statement (enclosed within braces) ensures that these errors cannot arise
+		\item[$3.\:$] MISRA08\_0-1-10 -\textbf{All defined functions called} - 733 violations.\newline Functions or procedures that are not called may be symptomatic of a serious problem, such as missing paths
 	\end{itemize}
-	\item The first three files that contains the most violations are:
+	\item The first three files that contain the most violations are:
 		\begin{itemize}
-		\item[$1.\:$] CIndex.cpp - 3828 violations.
-		\item[$2.\:$] CXType.cpp - 757 violations.
-		\item[$3.\:$] CXCursor.cpp - 558 violations.
+		\item[$1.\:$] CIndex.cpp - 3828 violations
+		\item[$2.\:$] CXType.cpp - 757 violations
+		\item[$3.\:$] CXCursor.cpp - 558 violations
 	\end{itemize}
 \end{itemize}
 
 Looking at the complete report, considerations can be made on the following aspects:
 
 \begin{itemize}
-	\item Some of the violations found (e.g. MISRA08\_0-1-10) include for sure some false-positive, due to the fact that the analysis was performed on a small subset of the complete project. Maybe the violation count for these rules could be reduced by performing a more comprehensive analysis.
-	\item The violations distribution is reasonable, that is that most of the files have a similar issues count and the same can be said for MISRA rules.
+	\item Some of the violations found (e.g. MISRA08\_0-1-10) include for sure some false-positive, due to the fact that the analysis was performed on a small subset of the complete project. Maybe the violation count for these rules could be reduced by performing a more comprehensive analysis
+	\item The violations distribution is reasonable, that is that most of the files have a similar issues count and the same can be said for MISRA rules
 	\item There is an exception both for files and for MISRA:
 	\begin{itemize}
 		\item[FILE: ] CIndex.cpp (3828 violations wrt 8450 total violations)
 		\item[MISRA: ] MISRA08\_7-1-1 (1845 violations wrt 8450 total violations)
 	\end{itemize}
-	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.27 - 1.75].
-	\item Combining the use of the Result Treemap and Result Locator it is observable that the first 3 files in terms of $NumberOfViolations/CountLineCode$ ratio are relatively small files compared to the others.
+	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.27 - 1.75]
+	\item Combining the use of the Result Treemap and Result Locator it is observable that the first 3 files in terms of $NumberOfViolations/CountLineCode$ ratio are relatively small files compared to the others
 	
 \end{itemize}
 
