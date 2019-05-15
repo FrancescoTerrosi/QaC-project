@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  15 MAY 2019 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  15 MAY 2019 18:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2325,24 +2325,9 @@ ra-tion should have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
-
- []
-
-
 Overfull \hbox (0.50023pt too wide) in paragraph at lines 133--134
 []\T1/pplj/m/n/12 (-20) RECOMMENDED_13 - \T1/pplj/b/n/12 Ev-ery de-fined func-t
 ion shall be called
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--134
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--135
-
  []
 
 [16]
@@ -2391,21 +2376,6 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 165--169
 
 [18 <./img/SciToolsViolationsRatio.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 172--175
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 181--182
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 182--183
 
  []
 
@@ -2458,18 +2428,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 226--227
 <pdf/Misra_Summary.pdf, id=284, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: pdf/Misra_Summary.pdf Graphic file (type pdf)
 <use pdf/Misra_Summary.pdf>
-Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 247. on inpu
-t line 247.
+Package pdftex.def Info: pdf/Misra_Summary.pdf  used on input line 246. on inpu
+t line 246.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-247.
+246.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 248.
+(caption)                particular \caption on input line 247.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 246--250
+Overfull \hbox (12.0pt too wide) in paragraph at lines 245--249
 []$[]$ 
  []
 
@@ -2477,18 +2447,18 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 246--250
 <pdf/SciTools_Summary.pdf, id=298, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: pdf/SciTools_Summary.pdf Graphic file (type pdf)
 <use pdf/SciTools_Summary.pdf>
-Package pdftex.def Info: pdf/SciTools_Summary.pdf  used on input line 254. on i
-nput line 254.
+Package pdftex.def Info: pdf/SciTools_Summary.pdf  used on input line 253. on i
+nput line 253.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-254.
+253.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 255.
+(caption)                particular \caption on input line 254.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 253--257
+Overfull \hbox (12.0pt too wide) in paragraph at lines 252--256
 []$[]$ 
  []
 
@@ -2497,48 +2467,48 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 253--257
 
 File: pdf/AllChecks_Summary.pdf Graphic file (type pdf)
 <use pdf/AllChecks_Summary.pdf>
-Package pdftex.def Info: pdf/AllChecks_Summary.pdf  used on input line 261. on 
-input line 261.
+Package pdftex.def Info: pdf/AllChecks_Summary.pdf  used on input line 260. on 
+input line 260.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-261.
+260.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 262.
+(caption)                particular \caption on input line 261.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 260--264
+Overfull \hbox (12.0pt too wide) in paragraph at lines 259--263
 []$[]$ 
  []
 
 [26 <./pdf/AllChecks_Summary.pdf>] [27]
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 302--304
+Underfull \hbox (badness 10000) in paragraph at lines 301--303
 
  []
 
 [28]
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--328
+Underfull \hbox (badness 10000) in paragraph at lines 324--327
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--332
+Underfull \hbox (badness 10000) in paragraph at lines 328--331
 
  []
 
 [29]
-Overfull \hbox (5.26044pt too wide) in paragraph at lines 353--357
+Overfull \hbox (5.26044pt too wide) in paragraph at lines 352--356
 \T1/pplj/m/n/12 (-20) It is odd that the $\U/zeur/m/n/12 UnusedFunctions=TotalV
 iolations$ \T1/pplj/m/n/12 (-20) pro-por-tion changes
  []
@@ -2547,45 +2517,45 @@ iolations$ \T1/pplj/m/n/12 (-20) pro-por-tion changes
 <pdf/Cppcheck_Summary.pdf, id=351, pagebox=cropbox, 597.55246pt x 845.07718pt>
 File: pdf/Cppcheck_Summary.pdf Graphic file (type pdf)
 <use pdf/Cppcheck_Summary.pdf>
-Package pdftex.def Info: pdf/Cppcheck_Summary.pdf  used on input line 359. on i
-nput line 359.
+Package pdftex.def Info: pdf/Cppcheck_Summary.pdf  used on input line 358. on i
+nput line 358.
 Package pdftex.def Info: Requested size: 384.1122pt x 543.2331pt on input line 
-359.
+358.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 360.
+(caption)                particular \caption on input line 359.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 358--362
+Overfull \hbox (12.0pt too wide) in paragraph at lines 357--361
 []$[]$ 
  []
 
 
-Overfull \hbox (5.79417pt too wide) in paragraph at lines 365--369
+Overfull \hbox (5.79417pt too wide) in paragraph at lines 364--368
 \T1/pplj/m/n/12 (-20) Flawfinder has the same charach-ter-is-tics as Cp-pcheck.
  It is a light (runnable
  []
 
 
-Overfull \hbox (15.52132pt too wide) in paragraph at lines 365--369
+Overfull \hbox (15.52132pt too wide) in paragraph at lines 364--368
 \T1/pplj/m/n/12 (-20) It can be down-loaded at []$\T1/fvm/m/n/12 https : / / dw
 heeler . com / flawfinder / #downloading$[]\T1/pplj/m/n/12 (-20) . 
  []
 
 [31 <./pdf/Cppcheck_Summary.pdf>] [32]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 
  []
 
 [33]
-Underfull \hbox (badness 10000) in paragraph at lines 429--431
+Underfull \hbox (badness 10000) in paragraph at lines 428--430
 
  []
 
@@ -2593,62 +2563,62 @@ Underfull \hbox (badness 10000) in paragraph at lines 429--431
 <img/Flawfinder_Summary.jpg, id=386, 386.4036pt x 219.4599pt>
 File: img/Flawfinder_Summary.jpg Graphic file (type jpg)
 <use img/Flawfinder_Summary.jpg>
-Package pdftex.def Info: img/Flawfinder_Summary.jpg  used on input line 435. on
- input line 435.
+Package pdftex.def Info: img/Flawfinder_Summary.jpg  used on input line 434. on
+ input line 434.
 Package pdftex.def Info: Requested size: 384.1122pt x 218.17345pt on input line
- 435.
+ 434.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 436.
+(caption)                particular \caption on input line 435.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 434--438
+Overfull \hbox (12.0pt too wide) in paragraph at lines 433--437
 []$[]$ 
  []
 
 [35 <./img/Flawfinder_Summary.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 444--447
+Underfull \hbox (badness 10000) in paragraph at lines 443--446
 
  []
 
 <img/sonarqube-init.png, id=393, 429.605pt x 224.84pt>
 File: img/sonarqube-init.png Graphic file (type png)
 <use img/sonarqube-init.png>
-Package pdftex.def Info: img/sonarqube-init.png  used on input line 455. on inp
-ut line 455.
+Package pdftex.def Info: img/sonarqube-init.png  used on input line 454. on inp
+ut line 454.
 Package pdftex.def Info: Requested size: 384.1122pt x 201.03328pt on input line
- 455.
+ 454.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 456.
+(caption)                particular \caption on input line 455.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 454--458
+Overfull \hbox (12.0pt too wide) in paragraph at lines 453--457
 []$[]$ 
  []
 
 <img/sonarqube-scan.png, id=394, 870.25125pt x 306.14375pt>
 File: img/sonarqube-scan.png Graphic file (type png)
 <use img/sonarqube-scan.png>
-Package pdftex.def Info: img/sonarqube-scan.png  used on input line 460. on inp
-ut line 460.
+Package pdftex.def Info: img/sonarqube-scan.png  used on input line 459. on inp
+ut line 459.
 Package pdftex.def Info: Requested size: 384.1122pt x 135.12875pt on input line
- 460.
+ 459.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 463.
+(caption)                particular \caption on input line 462.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 459--465
+Overfull \hbox (12.0pt too wide) in paragraph at lines 458--464
 []$[]$ 
  []
 
 [36 <./img/sonarqube-init.png>]
-Overfull \hbox (9.76111pt too wide) in paragraph at lines 468--470
+Overfull \hbox (9.76111pt too wide) in paragraph at lines 467--469
 \T1/fvm/m/n/12 sourceforge . net / projects / rosecheckers/$[] \T1/pplj/m/n/12 
 (-20) and it is avail-able pre-installed
  []
@@ -2657,59 +2627,59 @@ Overfull \hbox (9.76111pt too wide) in paragraph at lines 468--470
 File: img/rosechecker-commandline.png Graphic file (type png)
 <use img/rosechecker-commandline.png>
 Package pdftex.def Info: img/rosechecker-commandline.png  used on input line 47
-6. on input line 476.
+5. on input line 475.
 Package pdftex.def Info: Requested size: 384.1122pt x 98.75375pt on input line 
-476.
+475.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 477.
+(caption)                particular \caption on input line 476.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 475--480
+Overfull \hbox (12.0pt too wide) in paragraph at lines 474--479
 []$[]$
  []
 
 [37 <./img/sonarqube-scan.png> <./img/rosechecker-commandline.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 490--491
+Underfull \hbox (badness 10000) in paragraph at lines 489--490
 
  []
 
 <img/rosechecker-error.png, id=410, 160.9212pt x 112.0185pt>
 File: img/rosechecker-error.png Graphic file (type png)
 <use img/rosechecker-error.png>
-Package pdftex.def Info: img/rosechecker-error.png  used on input line 493. on 
-input line 493.
+Package pdftex.def Info: img/rosechecker-error.png  used on input line 492. on 
+input line 492.
 Package pdftex.def Info: Requested size: 384.1122pt x 267.40721pt on input line
- 493.
+ 492.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 494.
+(caption)                particular \caption on input line 493.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 492--497
+Overfull \hbox (12.0pt too wide) in paragraph at lines 491--496
 []$[]$
  []
 
 [38 <./img/rosechecker-error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 504--507
+Underfull \hbox (badness 10000) in paragraph at lines 503--506
 
  []
 
 
-Overfull \hbox (0.19093pt too wide) in paragraph at lines 509--510
+Overfull \hbox (0.19093pt too wide) in paragraph at lines 508--509
 []\T1/pplj/m/n/12 (-20) To solve the miss-ing in-clude is-sue is nec-es-sary to
  copy the \T1/pplj/m/it/12 (-20) clang/AST)
  []
 
 
-Overfull \hbox (1.46634pt too wide) in paragraph at lines 513--514
+Overfull \hbox (1.46634pt too wide) in paragraph at lines 512--513
 []\T1/pplj/m/n/12 (-20) At this point we have this sit-u-a-tion: \T1/pplj/m/it/
 12 (-20) analysis-root/clang/AST/clang/AST 
  []
@@ -2852,7 +2822,7 @@ are/texlive/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (46 pages, 2620968 bytes).
+Output written on thesis.pdf (46 pages, 2620897 bytes).
 PDF statistics:
  539 PDF objects out of 1000 (max. 8388607)
  447 compressed objects within 5 object streams

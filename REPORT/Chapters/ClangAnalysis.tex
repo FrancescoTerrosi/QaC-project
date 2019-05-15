@@ -126,33 +126,33 @@ SciTools Recommended Checks is a set of 17 quality checks based on code quality 
 Results has been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
 
 \begin{itemize}
-	\item The total number of violations in the \textbf{libclang} folder is 3299 (roughly 1000 violations less than the MISRA-check).
+	\item The total number of violations in the \textbf{libclang} folder is 3299 (roughly 1000 violations less than the MISRA-check)
 	\item The first three checks that were violated the most are:
 	\begin{itemize}
-		\item[$1.\:$] RECOMMENDED\_16 - \textbf{Each variable declaration should have a comment} - 1774 violations.\newline
-		\item[$2.\:$] RECOMMENDED\_13 - \textbf{Every defined function shall be called at least once} - 733 violations.\newline 
-		\item[$3.\:$] RECOMMENDED\_08 -\textbf{All fixed values will be defined constants} - 405 violations.\newline
+		\item[$1.\:$] RECOMMENDED\_16 - \textbf{Each variable declaration should have a comment} - 1774 violations
+		\item[$2.\:$] RECOMMENDED\_13 - \textbf{Every defined function shall be called at least once} - 733 violations
+		\item[$3.\:$] RECOMMENDED\_08 -\textbf{All fixed values will be defined constants} - 405 violations
 	\end{itemize}
 	\item The first three files that contains the most violations are:
 		\begin{itemize}
-		\item[$1.\:$] CIndex.cpp - 1472 violations.
-		\item[$2.\:$] CXType.cpp - 266 violations.
-		\item[$3.\:$] CXCursor.cpp - 250 violations.
+		\item[$1.\:$] CIndex.cpp - 1472 violations
+		\item[$2.\:$] CXType.cpp - 266 violations
+		\item[$3.\:$] CXCursor.cpp - 250 violations
 	\end{itemize}
 \end{itemize}
 
 As it can be noticed by these data, the three files that have the most violations are the same as in the MISRA analysis.\newline
 Looking at the complete dataset and comparing it to the previous one, the following considerations can be made:
 \begin{itemize}
-	\item The \textsl{RECOMMENDED\_13} plays a similar role as the MISRA08\_0-1-10. We can expect that when the analysis runs on the whole project the count number of this violation (\textsl{Every defined function shall be called at least once}) drops.
-	\item The \textsl{RECOMMENDED\_16} check may seem too exaggerated but, if we think to big project as LLVM-Clang is, where multiple teams cooperate writing different chunks of code, this check become reasonable.
-	\item The violations distribution with respect to files is quite odd. It can be observed that the average of the violations count is approximately 100. If we exclude the CIndex.cpp file the average drops approximately to 55.
+	\item The \textsl{RECOMMENDED\_13} plays a similar role as the MISRA08\_0-1-10. We can expect that when the analysis runs on the whole project the count number of this violation (\textsl{Every defined function shall be called at least once}) drops
+	\item The \textsl{RECOMMENDED\_16} check may seem too exaggerated but, if we think to big project as LLVM-Clang is, where multiple teams cooperate writing different chunks of code, this check become reasonable
+	\item The violations distribution with respect to files is quite odd. It can be observed that the average of the violations count is approximately 100. If we exclude the CIndex.cpp file the average drops approximately to 55
 	\item There is an exception both for files and for check, as we saw in the previous section:
 	\begin{itemize}
 		\item[FILE: ] CIndex.cpp (1472 violations wrt 3299 total violations)
 		\item[MISRA: ] RECOMMENDED\_16(1774 violations wrt 3299 total violations)
 	\end{itemize}
-	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.09 - 0.39].
+	\item Using the Result Treemap feature it is possible to observe that the $NumberOfViolations/CountLineCode$ ratio varies between [0.09 - 0.39]
 \end{itemize}
 
 \vspace{1cm}
@@ -171,21 +171,21 @@ Looking at the complete dataset and comparing it to the previous one, the follow
 
 \hspace{-0.6cm} \textbf{$c)$}  
 The \textsl{AllChecks} check set is the biggest among the provided ones. It includes most of the checks already seen in the previous sections, plus some completely new checks.\newline
-Results has been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
+Results have been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
 
 \begin{itemize}
-	\item The total number of violations in the \textbf{libclang} folder is 30604 (indeed a very huge number compared to the previous ones).
+	\item The total number of violations in the \textbf{libclang} folder is 30604 (indeed a very huge number compared to the previous ones)
 	\item The first three checks that were violated the most are:
 	\begin{itemize}
-		\item[$1.\:$] CPP\_L000 - \textbf{Calls to COTS (Commercial Off The Shelf) library functions that might throw an exception, must be enclosed in a try block} - 5921 violations.\newline
-		\item[$2.\:$] CPP\_I005 - \textbf{Identifier name reuse} - This check is concerned about variables' names. It requires that, in the same file, a different name is given to every different variable - 3546 violations.\newline 
-		\item[$3.\:$] CPP\_V006 -\textbf{A variable which is not modified should be const qualified} - same as MISRA analysis - 1845 violations.\newline
+		\item[$1.\:$] CPP\_L000 - \textbf{Calls to COTS (Commercial Off The Shelf) library functions that might throw an exception, must be enclosed in a try block} - 5921 violations
+		\item[$2.\:$] CPP\_I005 - \textbf{Identifier name reuse} - This check is concerned about variables' names. It requires that, in the same file, a different name is given to every different variable - 3546 violations
+		\item[$3.\:$] CPP\_V006 -\textbf{A variable which is not modified should be const qualified} - same as MISRA analysis - 1845 violations
 	\end{itemize}
 	\item The first three files that contains the most violations are:
 		\begin{itemize}
-		\item[$1.\:$] CIndex.cpp - 14004 violations.
-		\item[$2.\:$] CXType.cpp - 2311 violations.
-		\item[$3.\:$] CXIndexDataConsumer.cpp - 2078 violations.
+		\item[$1.\:$] CIndex.cpp - 14004 violations
+		\item[$2.\:$] CXType.cpp - 2311 violations
+		\item[$3.\:$] CXIndexDataConsumer.cpp - 2078 violations
 	\end{itemize}
 \end{itemize}
 
@@ -193,9 +193,9 @@ It is noticeable that, with this set of checks, the third file with most violati
 Let's now proceed with some considerations on this analysis as well:
 
 \begin{itemize}
-	\item Since this analysis include the previous ones, we assume that there are false-positives but they are caused mostly by the fact that the inspection was done on a subpart of the project. We don't have evidences of false-positives among the most common violations (see the complete excel report for more details).
-	\item The most frequent violation is of a new kind. It is an important vulnerability that was pointed by none of the other analysis. This is quite odd since this is a quite important rule, well accepted by the developer community.
-	\item The violations distribution with respect to files is similar to the previous ones.
+	\item Since this analysis include the previous ones, we assume that there are false-positives but they are caused mostly by the fact that the inspection was done on a subpart of the project. We don't have evidences of false-positives among the most common violations (see the complete excel report for more details)
+	\item The most frequent violation is of a new kind. It is an important vulnerability that was pointed by none of the other analysis. This is quite odd since this is a quite important rule, well accepted by the developer community
+	\item The violations distribution with respect to files is similar to the previous ones
 	\item The violations distribution with respect to checks is almost uniformly distributed. This behaviour is gradually lost when the violations count goes over approximately 400)
 	\item As well as the previous analysis, there is an exception both for files and for checks:
 	\begin{itemize}
@@ -225,14 +225,13 @@ This analysis did not find any violation. This seems reasonable since the metric
 
 In this conclusive section for the Understand analyzer, will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analysis are reported at the end of the \textsl{Understand section}.\newline
 \begin{itemize}
-
-	\item All the analysis agreed that CIndex.cpp is the file with the largest violations count. The violations number of this file is usually very large, compared to the others.
-	\item CXType.cpp is always the second file with the largest violations count. There are variations from the third position onwards, for example: CXCursor.cpp appears 2 times in the third position, while CXIndexDataConsumer.cpp appears 1 time.
-	\item Looking at the $violationsCount/countLineCode$ ratio, it is observable that across the three analysis the $min/max$ proportion is very similar ($\approx 5.5 \pm 1$).
-	\item It seems reasonable that using the metrics chosen by the project developers to analyze the source code no violations are found while, when different metrics are used, there are some violations.
-	\item In some cases the violated metrics could be considered as a warning (e.g. to write a comment for every variable helps to keep the project well documented) while in some other cases (e.g. do not use try-catch construct) they are critical issues.
-	\item Very likely, in these analyses, there are some false positives. This is because of the fact that the analyses were not performed on the whole project (e.g. functions that are never called in the analyzed modules could be called somewhere else).
-	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues had been removed in order to clean the dataset. No duplications were found using the other sets of rules.
+	\item All the analysis agreed that CIndex.cpp is the file with the largest violations count which is very large compared to the other files
+	\item CXType.cpp is always the second file with the largest violations count. There are variations from the third position onwards, for example: CXCursor.cpp appears 2 times in the third position, while CXIndexDataConsumer.cpp appears 1 time
+	\item Looking at the $violationsCount/countLineCode$ ratio, it is observable that across the three analysis the $min/max$ proportion is very similar ($\approx 5.5 \pm 1$)
+	\item It seems reasonable that using the metrics chosen by the project developers to analyze the source code no violations are found while, when different metrics are used, there are some violations
+	\item In some cases the violated metrics could be considered as a warning (e.g. to write a comment for every variable helps to keep the project well documented) while in some other cases (e.g. do not use try-catch construct) they are critical issues
+	\item Very likely, in these analyses, there are some false positives. This is because of the fact that the analyses were not performed on the whole project (e.g. functions that are never called in the analyzed modules could be called somewhere else)
+	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues had been removed in order to clean the dataset. No duplications were found using the other sets of rules
 \end{itemize}
 
 \subsection{Understand Performances}
@@ -281,7 +280,7 @@ The [OPTIONS] option offers some sort of customization of the analyses, for exam
 	\item Print the error list in xml format (on the console)
 	\item Suppress specific warnings
 	\item Define/undefine preprocessor symbol
-	\item And more (see cppcheck --help for more informations)\dots
+	\item And more\dots (see cppcheck --help for more informations)
 \end{itemize}
 The analyzer can be fed with a single file, a list of files, or a whole directory. In this study, for compliance with the \textsl{Understand} analysis, the check was done on the \textbf{tools/libclang} directory.\newline
 The output was written to an xml file and postprocessed with excel.
@@ -293,10 +292,10 @@ The CWE list stands for Common Weakness Enumeration. It associate IDs to code is
 \newline In this analysis were found issues related to four CWE categories:
 
 \begin{itemize}
-	\item[(CWE-398) ] \textbf{Code Quality} - This category represents one of the phyla in the Seven Pernicious Kingdoms vulnerability classification. It includes weaknesses that do not directly introduce a weakness or vulnerability, but indicate that the product has not been carefully developed or maintained. According to the authors of the Seven Pernicious Kingdoms, "Poor code quality leads to unpredictable behavior. From a user's perspective that often manifests itself as poor usability. For an adversary it provides an opportunity to stress the system in unexpected ways." \cite{bibitem3}.
-	\item[(CWE-561) ] \textbf{Dead Code} - Dead code is source code that can never be executed in a running program. The surrounding code makes it impossible for a section of code to ever be executed \cite{bibitem4}.
-	\item[(CWE-563) ] \textbf{Assignment to Variable without Use} - After the assignment, the variable is either assigned another value or goes out of scope. It is likely that the variable is simply vestigial, but it is also possible that the unused variable points out a bug \cite{bibitem5}. 
-	\item[(CWE-686) ] \textbf{Function Call With Incorrect Argument Type} - This weakness is most likely to occur in loosely typed languages, or in strongly typed languages in which the types of variable arguments cannot be enforced at compilation time, or where there is implicit casting \cite{bibitem6}.
+	\item[(CWE-398) ] \textbf{Code Quality} - This category represents one of the phyla in the Seven Pernicious Kingdoms vulnerability classification. It includes weaknesses that do not directly introduce a weakness or vulnerability, but indicate that the product has not been carefully developed or maintained. According to the authors of the Seven Pernicious Kingdoms, "Poor code quality leads to unpredictable behavior. From a user's perspective that often manifests itself as poor usability. For an adversary it provides an opportunity to stress the system in unexpected ways." \cite{bibitem3}
+	\item[(CWE-561) ] \textbf{Dead Code} - Dead code is source code that can never be executed in a running program. The surrounding code makes it impossible for a section of code to ever be executed \cite{bibitem4}
+	\item[(CWE-563) ] \textbf{Assignment to Variable without Use} - After the assignment, the variable is either assigned another value or goes out of scope. It is likely that the variable is simply vestigial, but it is also possible that the unused variable points out a bug \cite{bibitem5}
+	\item[(CWE-686) ] \textbf{Function Call With Incorrect Argument Type} - This weakness is most likely to occur in loosely typed languages, or in strongly typed languages in which the types of variable arguments cannot be enforced at compilation time, or where there is implicit casting \cite{bibitem6}
 \end{itemize}
 
 Moreover, Cppcheck rise a warning about missing files that are included in source cpp files but that are not found in the analyzed directory.\newline
@@ -308,15 +307,15 @@ Analyzing the reports it can be observed that:
 	\item The total number of violations in the \textbf{libclang} folder is 414 (very small number compared to e.g. MISRA violations)
 	\item The first three rules that were violated the most are:
 	\begin{itemize}
-		\item[$1.\:$] CWE-561 - \textbf{Unused Function} - 375 violations.
-		\item[$2.\:$] CWE-398 - \textbf{No explicit contructor} - 11 violations.
-		\item[$3.\:$] CWE-398 -\textbf{Uninit Member Var} - 10 violations.
+		\item[$1.\:$] CWE-561 - \textbf{Unused Function} - 375 violations
+		\item[$2.\:$] CWE-398 - \textbf{No explicit contructor} - 11 violations
+		\item[$3.\:$] CWE-398 -\textbf{Uninit Member Var} - 10 violations
 	\end{itemize}
 	\item The first three files that contains the most violations are:
 		\begin{itemize}
-		\item[$1.\:$] CIndex.cpp - 158 violations.
-		\item[$2.\:$] CXType.cpp - 47 violations.
-		\item[$3.\:$] Indexing.cpp - 35 violations.
+		\item[$1.\:$] CIndex.cpp - 158 violations
+		\item[$2.\:$] CXType.cpp - 47 violations
+		\item[$3.\:$] Indexing.cpp - 35 violations
 	\end{itemize}
 \end{itemize}
 
@@ -375,8 +374,8 @@ Flawfinder has much more [OPTIONS] than Cppcheck, for example:\begin{itemize}
 	\item Ignore specific files
 	\item Set the minimum risk level to be included in the \textsl{hit list}
 	\item Display hits without waiting for the end of the analysis
-	\item An option to don't include false positive. This option was used for one analysis but, as pointed in the documentation, this is risky since it does not follow any standard procedure to exclude likely false positives. For this reason, results found using this options were not considered to be trustable.
-	\item And more (see flawfinder --help for more informations)\dots
+	\item An option to don't include false positive. This option was used for one analysis but, as pointed in the documentation, this is risky since it does not follow any standard procedure to exclude likely false positives. For this reason, results found using this options were not considered to be trustable
+	\item And more\dots (see flawfinder --help for more informations)
 \end{itemize}
 
 As with the previous tools, Flawfinder performed its analyses on the \textbf{tools/libclang} directory.
@@ -387,10 +386,10 @@ The checks performed by Flawfinder are based on the MITRE-CWE list as well as Cp
 The issues categories found during the analyses are listed below:
 
 \begin{itemize}
-	\item[(CWE-20) ] \textbf{Improper Input Validation} - When software does not validate input properly, an attacker is able to craft the input in a form that is not expected by the rest of the application. This will lead to parts of the system receiving unintended input, which may result in altered control flow, arbitrary control of a resource, or arbitrary code execution \cite{bibitem7}.
-	\item[(CWE-120) ] \textbf{Buffer Copy without Checking Size of Input} - A buffer overflow condition exists when a program attempts to put more data in a buffer than it can hold, or when a program attempts to put data in a memory area outside of the boundaries of a buffer. The simplest type of error, and the most common cause of buffer overflows, is the "classic" case in which the program copies the buffer without restricting how much is copied. Other variants exist, but the existence of a classic overflow strongly suggests that the programmer is not considering even the most basic of security protections \cite{bibitem8}.
+	\item[(CWE-20) ] \textbf{Improper Input Validation} - When software does not validate input properly, an attacker is able to craft the input in a form that is not expected by the rest of the application. This will lead to parts of the system receiving unintended input, which may result in altered control flow, arbitrary control of a resource, or arbitrary code execution \cite{bibitem7}
+	\item[(CWE-120) ] \textbf{Buffer Copy without Checking Size of Input} - A buffer overflow condition exists when a program attempts to put more data in a buffer than it can hold, or when a program attempts to put data in a memory area outside of the boundaries of a buffer. The simplest type of error, and the most common cause of buffer overflows, is the "classic" case in which the program copies the buffer without restricting how much is copied. Other variants exist, but the existence of a classic overflow strongly suggests that the programmer is not considering even the most basic of security protections \cite{bibitem8}
 	\item[(CWE-807) ] \textbf{Reliance on Untrusted Inputs in a Security Decision} - Developers may assume that inputs such as cookies, environment variables, and hidden form fields cannot be modified. However, an attacker could change these inputs using customized clients or other attacks. This change might not be detected. When security decisions such as authentication and authorization are made based on the values of these inputs, attackers can bypass the security of the software.\newline
-Without sufficient encryption, integrity checking, or other mechanism, any input that originates from an outsider cannot be trusted \cite{bibitem9}.
+Without sufficient encryption, integrity checking, or other mechanism, any input that originates from an outsider cannot be trusted \cite{bibitem9}
 \end{itemize}
 
 Some of the issues found by Flawfinder are tagged with the tag: [MS-banned]. This tag refers to particular functions that are in the \textsl{banned functions list} published by Microsoft \cite{bibitem10}. These are functions that contains critical and well-known security vulnerabilities such, e.g. \textsl{strcpy} that introduces a \textsl{buffer overflow} vulnerability.\newline\newline
@@ -399,31 +398,31 @@ Comparing the issues found with the previous reports, Flawfinder found a small n
 The total vulnerability count is 32, distributed in the 3 CWE categories listed above.\newline
 The top three vulnerabilities are:
 	\begin{itemize}
-		\item[$1.\:$] CWE-807, CWE-20 - Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once - 17 violations.
-		\item[$2.\:$] CWE-120 - Does not check for buffer overflows when copying to destination - 6 violations.
-		\item[$3.\:$] CWE-120 \textbf{[MS-banned]} - \textsl{strncpy} easily used incorrectly; doesn't always $\backslash0$-terminate or check for invalid pointers - 5 violations.
+		\item[$1.\:$] CWE-807, CWE-20 - Environment variables are untrustable input if they can be set by an attacker. They can have any content and length, and the same variable can be set more than once - 17 violations
+		\item[$2.\:$] CWE-120 - Does not check for buffer overflows when copying to destination - 6 violations
+		\item[$3.\:$] CWE-120 \textbf{[MS-banned]} - \textsl{strncpy} easily used incorrectly; doesn't always $\backslash0$-terminate or check for invalid pointers - 5 violations
 	\end{itemize}
 
 And the top three files are:
 
 \begin{itemize}
-		\item[$1.\:$] CIndex.cpp - 14 violations.
-		\item[$2.\:$] CIndexCodeCompletion.cpp - 6 violations.
-		\item[$3.\:$] CIndexer.cpp \& Indexing.cpp - 3 violations. 
+		\item[$1.\:$] CIndex.cpp - 14 violations
+		\item[$2.\:$] CIndexCodeCompletion.cpp - 6 violations
+		\item[$3.\:$] CIndexer.cpp \& Indexing.cpp - 3 violations
 \end{itemize}
 
 The number of violations found is very small so the only things that are noticeable are that:
 \begin{itemize}
-		\item CIndex.cpp also in this analysis is the file that contains the biggest amount of violations.
-		\item Differing from the other analyses, Flawfinder found vulnerabilities only on 8 files out of 33.
-		\item The most common causes of vulnerabilities found in this project are related to the use of environmental variables (17 violations out of 32) and the possible arise of buffer overflows (14 violations out of 32, combining different CWE checks).
+		\item CIndex.cpp also in this analysis is the file that contains the biggest amount of violations
+		\item Differing from the other analyses, Flawfinder found vulnerabilities only on 8 files out of 33
+		\item The most common causes of vulnerabilities found in this project are related to the use of environmental variables (17 violations out of 32) and the possible arise of buffer overflows (14 violations out of 32, combining different CWE checks)
 \end{itemize}
 
 Flawfinder offers an option to run the analysis without including possible false positives.\newline
 As already said in the beginning of this section, results found with this options are not accurate. In particular, it has been reported that the possible false positive is:
 
 \begin{itemize}
-	\item[(CWE-119/120) ] Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues.
+	\item[(CWE-119/120) ] Statically-sized arrays can be improperly restricted, leading to potential overflows or other issues
 \end{itemize}
 
 This clearly isn't a false positive since this is a well-known vulnerability.\newline\newline
@@ -484,7 +483,7 @@ Listed below are some of the main options offered by Rosechecker:
 	\item \textsl{C\_Only}, \textsl{Fortran}, \textsl{Cxx\_Only} and more to select specific languages source files
 	\item \textsl{strict} for a strict enforncement of ANSI/ISO standards
 	\item \textsl{excludeCommentsAndDirectives} to exlude comments and preprocessor directives
-	\item And more (see rosechekers --help for more informations)
+	\item And more\dots (see rosechekers --help for more informations)
 \end{itemize}
 
 The problem with this tool was that it requires all the \textsl{\#include} files to be in the same directory.\newline\newline
@@ -506,7 +505,7 @@ The second approach is more reasonable (even if the project structure is modifie
 [e.g.]
 \begin{itemize}
 	\item CIndex.cpp has the include directive "\#include "clang/AST/Attr.h""
-	\item To solve the missing include issue is necessary to copy the \textsl{clang/AST)} directory in the analysis-root folder.
+	\item To solve the missing include issue is necessary to copy the \textsl{clang/AST)} directory in the analysis-root folder
 	\item Rosechecker will then check the "include files" of the included file "Attr.h"
 	\item Attr.h has the include directive "\#include "clang/AST/Type.h""
 	\item To solve the missing include is necessary to to copy the \textsl{clang/AST)} directory in this path: \textsl{analysis-root/clang/AST}
