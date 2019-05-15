@@ -16,14 +16,15 @@ The analysis with this tool provided no results. Seeing this we can suppose that
 \newline\newline
 
 During the analyses it emerged that the file \textsl{CIndex.cpp}, which is the biggest source file in the analyzed directory \textsl{tools/libclang}, has always been the file with the most detected issues (always $\approx\: 50\%$ of the whole issues set). Since this anomaly was observed with all the tools we can consider it to be relevant and that this file needs some refactoring.\newline
-Another interesting thing noticed is that if we exlclude limit cases such as \textsl{CIndex.cpp} or very small files (2-3 
+Another interesting thing noticed is that if we exlclude limit cases such as \textsl{CIndex.cpp} or very small files (4-5 lines) we can observe a direct proportionality of the issues count with respect to the size of files (i.e. we have a quasi-uniform distribution of the issues in the files wrt to the their sizes).\newline\newline
 
-ISSUES PROPORZIONATI A DIMENSIONE FILE
-50\% DIVISO FRA GLI ALTRI 32 FILE OSSERVIAMO DISTRIBUZIONE PIU O MENO NORMALE (GAUSSIANA A CAMPANA)
+Looking at the various checks, it is observable that some of them are overlapping (even if with different tools found different amounts of them). The most common issue that arise in all the analyses (excluding Flawfinder due to its nature) is the \textsl{unusedFunction} issue. However some of the violations reported are probably false positive because of the fact that not the whole project has been analyzed. We can suppose that if we analyze the whole project the violation count of this issue decreases (maybe going to conform to the issues distribution of the other violations).\newline
+In general, the analyses performed with the MISRA-C++ standard reported a much greater violations count while all the others standards/checks were much fewer (excluding the Understand \textsl{AllCheck} checks that is a collection of a lot of standards and quality practices).\newline\newline
 
+Of all the tools used, Understand is the most useful for static analysis of a project. First of all because it has a user-friendly UI, because it offers a lot of different perspectives of the analysis, and because it includes a lot of different features/standards/checks.\newline
+A good idea could be to use in combination both Understand and Flawfinder in order to have a complete view of the project code quality and security robustness.\newline
+Instead of using two different tools in combination, it could be used SonarQube solely, since it is able to check both of the aspects described above but, since it requires the build of the project it wasn't possible to use it in this work.\newline\newline
 
-
-
-
-
-IL PROGETTO FA SCHIFO QUALITY MERDA
+Looking at the LLVM-Clang compiler a large number of Quality issues was found with all the tools. This is indeed an evidence of the fact that the Code Quality of this project could (must) be improved.\newline
+The Security issues count, compared to the Quality issues count, is very little (32 Security problems). However every single Security issue introduces some vulnerability in the software that could be exploited by an attacker or cause a crash of the program (i.e. the \textsl{buffer overflow} vulnerabilities found).\newline
+Concluding, the big amount of violations found in general evidences the fact the this project should be revised. More accurate results can be achieved by analyzing the complete project.

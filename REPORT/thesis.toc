@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {2.4.2}Cppcheck Performance \& Comparison with Understand}{27}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}Flawfinder Analysis}{30}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Flawfinder Results}{30}{subsection.2.5.1}
-\contentsline {section}{\numberline {2.6}SonarQube \& CERT Rosecheckers}{33}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}SonarQube}{33}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}CERT Rosechecker}{34}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.6}SonarQube \& CERT Rosecheckers}{34}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}SonarQube}{34}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}CERT Rosechecker}{35}{subsection.2.6.2}
 \contentsline {chapter}{\numberline {3}Conclusions}{39}{chapter.3}

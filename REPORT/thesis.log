@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  15 MAY 2019 15:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.5.14)  15 MAY 2019 17:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2611,112 +2611,108 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 435--439
 []$[]$ 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 442--445
+[33 <./img/Flawfinder_Summary.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 445--448
 
  []
 
-<img/sonarqube-init.png, id=377, 429.605pt x 224.84pt>
+<img/sonarqube-init.png, id=382, 429.605pt x 224.84pt>
 File: img/sonarqube-init.png Graphic file (type png)
 <use img/sonarqube-init.png>
-Package pdftex.def Info: img/sonarqube-init.png  used on input line 453. on inp
-ut line 453.
+Package pdftex.def Info: img/sonarqube-init.png  used on input line 456. on inp
+ut line 456.
 Package pdftex.def Info: Requested size: 384.1122pt x 201.03328pt on input line
- 453.
+ 456.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 454.
+(caption)                particular \caption on input line 457.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 452--456
+Overfull \hbox (12.0pt too wide) in paragraph at lines 455--459
 []$[]$ 
  []
 
-[33 <./img/Flawfinder_Summary.jpg>]
 <img/sonarqube-scan.png, id=383, 870.25125pt x 306.14375pt>
 File: img/sonarqube-scan.png Graphic file (type png)
 <use img/sonarqube-scan.png>
-Package pdftex.def Info: img/sonarqube-scan.png  used on input line 458. on inp
-ut line 458.
+Package pdftex.def Info: img/sonarqube-scan.png  used on input line 461. on inp
+ut line 461.
 Package pdftex.def Info: Requested size: 384.1122pt x 135.12875pt on input line
- 458.
-
+ 461.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 461.
+(caption)                particular \caption on input line 464.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 457--463
+Overfull \hbox (12.0pt too wide) in paragraph at lines 460--466
 []$[]$ 
  []
 
-
-Overfull \hbox (9.76111pt too wide) in paragraph at lines 466--468
+[34 <./img/sonarqube-init.png>]
+Overfull \hbox (9.76111pt too wide) in paragraph at lines 469--471
 \T1/fvm/m/n/12 sourceforge . net / projects / rosecheckers/$[] \T1/pplj/m/n/12 
 (-20) and it is avail-able pre-installed
  []
 
-[34 <./img/sonarqube-init.png> <./img/sonarqube-scan.png>]
-<img/rosechecker-commandline.png, id=392, 671.50874pt x 172.645pt>
+<img/rosechecker-commandline.png, id=390, 671.50874pt x 172.645pt>
 File: img/rosechecker-commandline.png Graphic file (type png)
 <use img/rosechecker-commandline.png>
 Package pdftex.def Info: img/rosechecker-commandline.png  used on input line 47
-4. on input line 474.
+7. on input line 477.
 Package pdftex.def Info: Requested size: 384.1122pt x 98.75375pt on input line 
-474.
-
+477.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 475.
+(caption)                particular \caption on input line 478.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 473--478
+Overfull \hbox (12.0pt too wide) in paragraph at lines 476--481
 []$[]$
  []
 
-[35 <./img/rosechecker-commandline.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+[35 <./img/sonarqube-scan.png> <./img/rosechecker-commandline.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 488--489
+Underfull \hbox (badness 10000) in paragraph at lines 491--492
 
  []
 
 <img/rosechecker-error.png, id=398, 160.9212pt x 112.0185pt>
 File: img/rosechecker-error.png Graphic file (type png)
 <use img/rosechecker-error.png>
-Package pdftex.def Info: img/rosechecker-error.png  used on input line 491. on 
-input line 491.
+Package pdftex.def Info: img/rosechecker-error.png  used on input line 494. on 
+input line 494.
 Package pdftex.def Info: Requested size: 384.1122pt x 267.40721pt on input line
- 491.
+ 494.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 492.
+(caption)                particular \caption on input line 495.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 490--495
+Overfull \hbox (12.0pt too wide) in paragraph at lines 493--498
 []$[]$
  []
 
 [36 <./img/rosechecker-error.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 502--505
+Underfull \hbox (badness 10000) in paragraph at lines 505--508
 
  []
 
 
-Overfull \hbox (0.19093pt too wide) in paragraph at lines 507--508
+Overfull \hbox (0.19093pt too wide) in paragraph at lines 510--511
 []\T1/pplj/m/n/12 (-20) To solve the miss-ing in-clude is-sue is nec-es-sary to
  copy the \T1/pplj/m/it/12 (-20) clang/AST)
  []
 
 
-Overfull \hbox (1.46634pt too wide) in paragraph at lines 511--512
+Overfull \hbox (1.46634pt too wide) in paragraph at lines 514--515
 []\T1/pplj/m/n/12 (-20) At this point we have this sit-u-a-tion: \T1/pplj/m/it/
 12 (-20) analysis-root/clang/AST/clang/AST 
  []
@@ -2731,14 +2727,54 @@ Overfull \hbox (1.46634pt too wide) in paragraph at lines 511--512
 
 ]
 chapter 3.
-) [39]
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--27
+
+ []
+
+) [40] [41]
 \openout2 = `Chapters/bibliografia.aux'.
 
  (./Chapters/bibliografia.tex (./thesis.brf)
 \tf@brf=\write7
 \openout7 = `thesis.brf'.
 
- [40
+ [42
 
 
 
@@ -2784,7 +2820,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 / data / definitions / 807 . html$[]
  []
 
-) [41]
+) [43]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 111.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 111.
  (./thesis.aux (./titlePage.aux) (./Chapters/Introduzione.aux)
@@ -2799,13 +2835,13 @@ Package rerunfilecheck Info: File `thesis.brf' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 37806 strings out of 492990
- 720314 string characters out of 6135005
+ 37820 strings out of 492990
+ 720451 string characters out of 6135005
  899456 words of memory out of 5000000
- 40160 multiletter control sequences out of 15000+600000
- 619491 words of font info for 453 fonts, out of 8000000 for 9000
+ 40162 multiletter control sequences out of 15000+600000
+ 620063 words of font info for 461 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 64i,14n,73p,10405b,899s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 64i,13n,73p,10405b,899s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/share/texlive/texmf-d
@@ -2819,10 +2855,10 @@ are/texlive/texmf-dist/fonts/type1/public/bera/fvmro8a.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on thesis.pdf (42 pages, 2616045 bytes).
+Output written on thesis.pdf (44 pages, 2620297 bytes).
 PDF statistics:
- 518 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 96 named destinations out of 1000 (max. 500000)
+ 528 PDF objects out of 1000 (max. 8388607)
+ 438 compressed objects within 5 object streams
+ 98 named destinations out of 1000 (max. 500000)
  77599 words of extra memory for PDF output out of 89155 (max. 10000000)
 
