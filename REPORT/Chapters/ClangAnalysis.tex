@@ -144,7 +144,7 @@ Results has been sorted by files and by the checkID provided by Understand. The 
 As it can be noticed by these data, the three files that have the most violations are the same as in the MISRA analysis.\newline
 Looking at the complete dataset and comparing it to the previous one, the following considerations can be made:
 \begin{itemize}
-	\item The \textsl{RECOMMENDED\_13} plays a similar role as the MISRA08\_0-1-10. We can expect that when the analysis runs on the whole project the count number of this violation (\textsl{Every defined function shall be called at least once}) drops
+	\item The \textsl{RECOMMENDED\_13} plays a similar role as the MISRA08\_0-1-10. We can expect that when the analysis runs on the whole project the count number of this violation (\textsl{Every defined function shall be called at least once}) is reduced
 	\item The \textsl{RECOMMENDED\_16} check may seem too exaggerated but, if we think to big project as LLVM-Clang is, where multiple teams cooperate writing different chunks of code, this check become reasonable
 	\item The violations distribution with respect to files is quite odd. It can be observed that the average of the violations count is approximately 100. If we exclude the CIndex.cpp file the average drops approximately to 55
 	\item There is an exception both for files and for check, as we saw in the previous section:
@@ -171,7 +171,7 @@ Looking at the complete dataset and comparing it to the previous one, the follow
 
 \hspace{-0.6cm} \textbf{$c)$}  
 The \textsl{AllChecks} check set is the biggest among the provided ones. It includes most of the checks already seen in the previous sections, plus some completely new checks.\newline
-Results have been sorted by files and by the checkID provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
+Results have been sorted by files and by checkID, an indentifier provided by Understand. The postprocess phase was very similar to the previous one in order to obtain a compact view of data.\newline
 
 \begin{itemize}
 	\item The total number of violations in the \textbf{libclang} folder is 30604 (indeed a very huge number compared to the previous ones)
@@ -179,7 +179,7 @@ Results have been sorted by files and by the checkID provided by Understand. The
 	\begin{itemize}
 		\item[$1.\:$] CPP\_L000 - \textbf{Calls to COTS (Commercial Off The Shelf) library functions that might throw an exception, must be enclosed in a try block} - 5921 violations
 		\item[$2.\:$] CPP\_I005 - \textbf{Identifier name reuse} - This check is concerned about variables' names. It requires that, in the same file, a different name is given to every different variable - 3546 violations
-		\item[$3.\:$] CPP\_V006 -\textbf{A variable which is not modified should be const qualified} - same as MISRA analysis - 1845 violations
+		\item[$3.\:$] CPP\_V006 -\textbf{A variable which is not modified should be const qualified} - same as in the MISRA analysis - 1845 violations
 	\end{itemize}
 	\item The first three files that contains the most violations are:
 		\begin{itemize}
@@ -189,15 +189,15 @@ Results have been sorted by files and by the checkID provided by Understand. The
 	\end{itemize}
 \end{itemize}
 
-It is noticeable that, with this set of checks, the third file with most violations is \textsl{CXIndexDataConsumer.cpp} instead of \textsl{CIndex.cpp}.\newline
-Let's now proceed with some considerations on this analysis as well:
+It is noticeable that, with this set of checks, the third file with most violations is \textsl{CXIndexDataConsumer.cpp} instead of \textsl{CXCursor.cpp}.\newline
+Let's now proceed with some considerations on these results:
 
 \begin{itemize}
-	\item Since this analysis include the previous ones, we assume that there are false-positives but they are caused mostly by the fact that the inspection was done on a subpart of the project. We don't have evidences of false-positives among the most common violations (see the complete excel report for more details)
-	\item The most frequent violation is of a new kind. It is an important vulnerability that was pointed by none of the other analysis. This is quite odd since this is a quite important rule, well accepted by the developer community
+	\item Since this analysis includes the checks of the previous ones, we assume that there are false-positives but they are caused mostly by the fact that the inspection was done on a subpart of the project. We don't have evidences of false-positives among the most common violations (see the complete Excel report for more details)
+	\item The most frequent violation is of a new kind. It is an important vulnerability that was pointed by none of the other analyses. This is quite odd since it is an important rule, well known and well accepted by the developer community
 	\item The violations distribution with respect to files is similar to the previous ones
-	\item The violations distribution with respect to checks is almost uniformly distributed. This behaviour is gradually lost when the violations count goes over approximately 400)
-	\item As well as the previous analysis, there is an exception both for files and for checks:
+	\item The violations distribution with respect to checks tends to a normal distribution. This behaviour is gradually lost when the violations count goes over approximately 400)
+	\item As well as the previous analyses, there is an exception both for files and for checks:
 	\begin{itemize}
 		\item[FILE: ] CIndex.cpp (14004 violations wrt 30604 total violations, almost half of the total)
 		\item[MISRA: ] CPP\_L000(5921 violations wrt 30604 total violations. Recall that the second most common check had more than 2000 violations less)
@@ -223,22 +223,22 @@ This analysis did not find any violation. This seems reasonable since the metric
 
 \subsection{Reports Summary}
 
-In this conclusive section for the Understand analyzer, will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analysis are reported at the end of the \textsl{Understand section}.\newline
+In this conclusive section for the Understand analyzer, it will be presented a summary of the most important observations along with some cross-checks. Summaries of the data collected throughout these analyses are reported at the end of the \textsl{Understand section}.\newline
 \begin{itemize}
-	\item All the analysis agreed that CIndex.cpp is the file with the largest violations count which is very large compared to the other files
+	\item All the analyses agreed that CIndex.cpp is the file with the largest violations count which is very large compared to the other files
 	\item CXType.cpp is always the second file with the largest violations count. There are variations from the third position onwards, for example: CXCursor.cpp appears 2 times in the third position, while CXIndexDataConsumer.cpp appears 1 time
-	\item Looking at the $violationsCount/countLineCode$ ratio, it is observable that across the three analysis the $min/max$ proportion is very similar ($\approx 5.5 \pm 1$)
+	\item Looking at the $violationsCount/countLineCode$ ratio, it is observable that across the three analysis the $max/min$ proportion is very similar ($\approx 5.5 \pm 1$)
 	\item It seems reasonable that using the metrics chosen by the project developers to analyze the source code no violations are found while, when different metrics are used, there are some violations
 	\item In some cases the violated metrics could be considered as a warning (e.g. to write a comment for every variable helps to keep the project well documented) while in some other cases (e.g. do not use try-catch construct) they are critical issues
 	\item Very likely, in these analyses, there are some false positives. This is because of the fact that the analyses were not performed on the whole project (e.g. functions that are never called in the analyzed modules could be called somewhere else)
-	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues had been removed in order to clean the dataset. No duplications were found using the other sets of rules
+	\item Some duplicated violations were reported when performing the analysis using the MISRA set. This is likely to be attributable to a possible overflow issue that has been noted also in the very first phase of the use of Understand. The duplicated issues were removed in order to clean the dataset. No duplications were found using the other sets of rules
 \end{itemize}
 
 \subsection{Understand Performances}
 
 Understand is a very powerful tool. With its UI it gives a lot of informations about the performed analysis (e.g. result Treemap, result Locator, sort by check/file\dots).
 On the other hand, it is not a lightweight program: we experienced unexpected crashes during analyses, issues duplication and a slow execution time in general. These are some of the main reasons that forced us to work on a subset of the LLVM-Clang compiler.\newline
-Compared to the tools that will be presented in the next sections, this is indeed the most efficient in terms of \textsl{informations} and \textsl{versatility} (The various views it offers are a very powerful tool to navigate through the data). On the other hand, in terms of speed performance, it was the slowest one.
+Compared to the tools that will be presented in the next sections, this is indeed the most efficient in terms of \textsl{informations} and \textsl{versatility} (the offered perspectives are a very powerful tool to navigate through the data). On the other hand, in terms of speed performance, it was the slowest one.
 
 \pagebreak
 
@@ -268,7 +268,7 @@ Cppcheck is a lightweight, open-source tool for static analysis of C/C++ files. 
 	\item sudo apt-get install cppcheck (Linux)
 	\item brew install cppcheck (Mac)
 \end{itemize}
-Once installed, the tool can be run via terminal using the following command:
+Once installed, the tool can be run from a shell using the following command:
 \begin{itemize}
 	\item cppcheck [OPTIONS] [files or directories]
 \end{itemize}
@@ -283,13 +283,13 @@ The [OPTIONS] option offers some sort of customization of the analyses, for exam
 	\item And more\dots (see cppcheck --help for more informations)
 \end{itemize}
 The analyzer can be fed with a single file, a list of files, or a whole directory. In this study, for compliance with the \textsl{Understand} analysis, the check was done on the \textbf{tools/libclang} directory.\newline
-The output was written to an xml file and postprocessed with excel.
+The output was written to an xml file and postprocessed with Excel.
 
 \subsection{Cppcheck Results}
 
-Cppcheck relies on the MITRE-CWE list to detect vulnerabilities and quality issues, plus some generic quality checks based on standard code quality practices.\newline
-The CWE list stands for Common Weakness Enumeration. It associate IDs to code issues categories that can be refined by users (e.g. it was not possible to find a 1:1 correspondence between the checkNames provided by Cppcheck and the checkNames provided in the CWE list, although the CWE IDs were identical).
-\newline In this analysis were found issues related to four CWE categories:
+Cppcheck relies on the MITRE-CWE (Commone Weakness Enumeration) list to detect vulnerabilities and quality issues, plus some generic quality checks based on standard code quality practices.\newline
+This list associates IDs to code issues categories that can be refined by users (i.e. it was not possible to find a 1:1 correspondence between the checkNames provided by Cppcheck and the checkNames in the CWE list, although the CWE IDs were identical).
+\newline In this analysis issues were found related to four CWE categories:
 
 \begin{itemize}
 	\item[(CWE-398) ] \textbf{Code Quality} - This category represents one of the phyla in the Seven Pernicious Kingdoms vulnerability classification. It includes weaknesses that do not directly introduce a weakness or vulnerability, but indicate that the product has not been carefully developed or maintained. According to the authors of the Seven Pernicious Kingdoms, "Poor code quality leads to unpredictable behavior. From a user's perspective that often manifests itself as poor usability. For an adversary it provides an opportunity to stress the system in unexpected ways." \cite{bibitem3}
@@ -298,10 +298,10 @@ The CWE list stands for Common Weakness Enumeration. It associate IDs to code is
 	\item[(CWE-686) ] \textbf{Function Call With Incorrect Argument Type} - This weakness is most likely to occur in loosely typed languages, or in strongly typed languages in which the types of variable arguments cannot be enforced at compilation time, or where there is implicit casting \cite{bibitem6}
 \end{itemize}
 
-Moreover, Cppcheck rise a warning about missing files that are included in source cpp files but that are not found in the analyzed directory.\newline
+Moreover, Cppcheck rises a warning about missing files that are included in source cpp files but that are not found in the analyzed directory.\newline
 This warning tells the user that the analysis will terminate but "results will probably be more accurate if all the include files are found".\newline\newline
 
-Results have been sorted, as the previous analyses, by files and by the checkName provided by Cppcheck. Again, results were aggregated in excel files to ease data observation.\newline
+Results have been sorted, as for the previous analyses, by files and by the checkName provided by Cppcheck. Again, results were aggregated in Excel files to ease data observation.\newline
 Analyzing the reports it can be observed that:
 \begin{itemize}
 	\item The total number of violations in the \textbf{libclang} folder is 414 (very small number compared to e.g. MISRA violations)
@@ -319,14 +319,16 @@ Analyzing the reports it can be observed that:
 	\end{itemize}
 \end{itemize}
 
+It is reasonable to think that the \textbf{Unused Function} violation count includes a lot of false-positives. First of all it is much greater than the second violation count (375 vs. 11), which is suspicious, moreover, as it was said in the previous sections, this is confirmed by the fact that only one directory was analyzed.
+
 \subsection{Cppcheck Performance \& Comparison with Understand}
 
 Cppcheck is a much faster tool than Understand. The absence of UI and its simpleness play an important role on its performances: it works directly on the directories instead of creating a \textsl{project file} that acts as a link from the source files to the tools; on the other hand this simpleness provides less informations on the project issues.\newline
-Cppcheck output is displayed on console only by default. Using a proper option it is possible to write the outputs to an xml file, reducing its readibility.\newline
+Cppcheck output is displayed only on console by default. Using a proper option it is possible to write the outputs to an xml file even if this reduces the readability of the reports.\newline
 Comparing it to Understand, it has been seen that, in this study, Cppcheck did not produced any duplicate issue (same file, same issue, same line of code).\newline\newline
 
 We now present some comparison of the results achieved with Understand and the ones obtained by Cppcheck.\newline
-First of all the issues count distribution for checks and files is almost uniformly distributed, at least compared to the MISRA-checks, although there is always the exception of the false positive \textsl{unused functions} and the \textsl{CIndex.cpp} file, which is the biggest file in the directory (therefore it contains much more violations with respect to the others).\newline\newline
+First of all the issues count distribution for checks and files is almost uniformly distributed, at least compared to the MISRA-checks, although there is always the exception of the false positive \textsl{unused functions} and the source file \textsl{CIndex.cpp}, which is the biggest file in the directory (therefore it contains much more violations with respect to the others).\newline\newline
 Some of the Cppcheck CWE-checks are overlapping with the MISRA checks. The "duplicated" issues that were found are:
 
 \begin{itemize}
@@ -361,7 +363,7 @@ Generally speaking Cppcheck reported less issues than Understand.
 
 \section{Flawfinder Analysis}
 
-Flawfinder has the same charachteristics as Cppcheck. It is a light (runnable from console, without UI) and open-source.\newline
+Flawfinder has the same characteristics as Cppcheck. It is a light (runnable from console, without UI) and open-source.\newline
 The big difference with the previous tools is that Flawfinder is designed to find vulnerabilities more related to \textsl{computer security} rather than code quality issues and bugs.\newline
 It can be downloaded at \url{https://dwheeler.com/flawfinder/#downloading}.\newline
 Once installed, the tool can be run via terminal using the following command:
@@ -392,7 +394,7 @@ The issues categories found during the analyses are listed below:
 Without sufficient encryption, integrity checking, or other mechanism, any input that originates from an outsider cannot be trusted \cite{bibitem9}
 \end{itemize}
 
-Some of the issues found by Flawfinder are tagged with the tag: [MS-banned]. This tag refers to particular functions that are in the \textsl{banned functions list} published by Microsoft \cite{bibitem10}. These are functions that contains critical and well-known security vulnerabilities such, e.g. \textsl{strcpy} that introduces a \textsl{buffer overflow} vulnerability.\newline\newline
+Some of the issues found by Flawfinder are tagged with the tag: [MS-banned]. This tag refers to particular functions that are in the \textsl{banned functions list} published by Microsoft \cite{bibitem10}. These are functions that contain critical and well-known security vulnerabilities such, e.g. \textsl{strcpy} that introduces a \textsl{buffer overflow} vulnerability.\newline\newline
 
 Comparing the issues found with the previous reports, Flawfinder found a small number of vulnerabilities, this is also caused by the fact that this tool only looks for security issues.\newline
 The total vulnerability count is 32, distributed in the 3 CWE categories listed above.\newline
@@ -426,7 +428,7 @@ As already said in the beginning of this section, results found with this option
 \end{itemize}
 
 This clearly isn't a false positive since this is a well-known vulnerability.\newline\newline
-Looking at performances, in terms of speed of analysis and easiness of the tool, it compares favoribly with the considerations made for Cppcheck.
+Looking at performances, in terms of speed of analysis and easiness of the tool, it compares favorably with the considerations made for Cppcheck.
 
 \pagebreak
 
@@ -442,7 +444,8 @@ Looking at performances, in terms of speed of analysis and easiness of the tool,
 
 SonarQube is a well known tool for static analysis, capable of detecting both code quality issues (referred as \textsl{Code Smells} and security issuds.\newline
 CERT Rosecheckers is a tool that follows the CERT C coding standard to perform it analyses, including CWEs entries and MISRA rules.\newline\newline
-These tools were not used in this work since they requires the build of the whole project.
+SonarQube was not used because it requires the build of the whole project in order to perform an analysis. Since Clang is a very huge project this could not be done.\newline
+CERT Rosecheckers does not require the project to be built but its inability to use \textsl{make files} to link source files caused various issues that will be described later.
 
 \subsection{SonarQube}
 
@@ -482,7 +485,7 @@ Listed below are some of the main options offered by Rosechecker:
 \begin{itemize}
 	\item \textsl{C\_Only}, \textsl{Fortran}, \textsl{Cxx\_Only} and more to select specific languages source files
 	\item \textsl{strict} for a strict enforncement of ANSI/ISO standards
-	\item \textsl{excludeCommentsAndDirectives} to exlude comments and preprocessor directives
+	\item \textsl{excludeCommentsAndDirectives} to exclude comments and preprocessor directives
 	\item And more\dots (see rosechekers --help for more informations)
 \end{itemize}
 
